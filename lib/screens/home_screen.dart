@@ -5,7 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../models/alarm_model.dart';
 import '../widgets/alarm_card.dart';
 import 'add_alarm_screen.dart';
-import 'challenge_screen.dart';
+import 'alarm_ringing_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -92,7 +92,7 @@ class _HomeScreenState extends State<HomeScreen> {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => ChallengeScreen(alarm: alarm),
+        builder: (context) => AlarmRingingScreen(alarm: alarm),
       ),
     );
   }
@@ -201,7 +201,7 @@ class _HomeScreenState extends State<HomeScreen> {
                          Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => ChallengeScreen(alarm: alarms[index]),
+                            builder: (context) => AlarmRingingScreen(alarm: alarms[index]),
                           ),
                         );
                       },

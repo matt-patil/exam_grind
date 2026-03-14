@@ -10,6 +10,7 @@ class AlarmModel {
   List<bool> activeDays; // Represents [Sun, Mon, Tue, Wed, Thu, Fri, Sat]
   List<String> motivationalQuotes; // The 3 quotes for the challenge
   String soundPath; // Path to the alarm sound file
+  Map<String, dynamic>? mission; // Mission configuration
 
   AlarmModel({
     required this.id,
@@ -20,6 +21,7 @@ class AlarmModel {
     required this.activeDays,
     required this.motivationalQuotes,
     this.soundPath = 'sounds/alarm.mp3',
+    this.mission,
   });
 
   Map<String, dynamic> toJson() {
@@ -33,6 +35,7 @@ class AlarmModel {
       'activeDays': activeDays,
       'motivationalQuotes': motivationalQuotes,
       'soundPath': soundPath,
+      'mission': mission,
     };
   }
 
@@ -46,6 +49,7 @@ class AlarmModel {
       activeDays: List<bool>.from(json['activeDays']),
       motivationalQuotes: List<String>.from(json['motivationalQuotes']),
       soundPath: json['soundPath'],
+      mission: json['mission'],
     );
   }
 }

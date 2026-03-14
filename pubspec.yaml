@@ -57,6 +57,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/sounds/
+    - assets/quotes.json
 
   # To add assets to your application, add an assets section, like this:
   # assets:

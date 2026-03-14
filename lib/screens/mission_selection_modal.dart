@@ -4,7 +4,8 @@ import 'typing_challenge_screen.dart';
 import 'shake_challenge_screen.dart';
 
 class MissionSelectionModal extends StatelessWidget {
-  const MissionSelectionModal({super.key});
+  final Map<String, dynamic>? initialConfig;
+  const MissionSelectionModal({super.key, this.initialConfig});
 
   @override
   Widget build(BuildContext context) {
@@ -53,14 +54,16 @@ class MissionSelectionModal extends StatelessWidget {
                 icon: Icons.calculate,
                 color: const Color(0xFF5B6FFF),
                 onTap: () async {
-                  Navigator.pop(context);
-                  if (context.mounted) {
-                    await Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const MathChallengeScreen(),
+                  final result = await Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => MathChallengeScreen(
+                        initialConfig: initialConfig?['type'] == 'Math' ? initialConfig : null,
                       ),
-                    );
+                    ),
+                  );
+                  if (context.mounted && result != null) {
+                    Navigator.pop(context, result);
                   }
                 },
               ),
@@ -71,14 +74,14 @@ class MissionSelectionModal extends StatelessWidget {
                 icon: Icons.keyboard,
                 color: const Color(0xFFFF5261),
                 onTap: () async {
-                  Navigator.pop(context);
-                  if (context.mounted) {
-                    await Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const TypingChallengeScreen(),
-                      ),
-                    );
+                  final result = await Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const TypingChallengeScreen(),
+                    ),
+                  );
+                  if (context.mounted && result != null) {
+                    Navigator.pop(context, result);
                   }
                 },
               ),
@@ -89,14 +92,14 @@ class MissionSelectionModal extends StatelessWidget {
                 icon: Icons.vibration,
                 color: const Color(0xFF00D084),
                 onTap: () async {
-                  Navigator.pop(context);
-                  if (context.mounted) {
-                    await Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const ShakeChallengeScreen(),
-                      ),
-                    );
+                  final result = await Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const ShakeChallengeScreen(),
+                    ),
+                  );
+                  if (context.mounted && result != null) {
+                    Navigator.pop(context, result);
                   }
                 },
               ),

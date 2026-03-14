@@ -22,6 +22,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
   late String selectedSoundPath;
   final AudioPlayer _audioPlayer = AudioPlayer();
   double _volume = 0.8;
+  Map<String, dynamic>? selectedMission;
   
   // Controllers
   late final TextEditingController _nameController;
@@ -36,6 +37,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
       isOneTime = widget.alarm!.isOneTime;
       activeDays = List.from(widget.alarm!.activeDays);
       selectedSoundPath = widget.alarm!.soundPath;
+      selectedMission = widget.alarm!.mission;
     } else {
       selectedTime = TimeOfDay.now();
       alarmName = '';
@@ -74,6 +76,17 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
     int hours = diff.inHours;
     int minutes = diff.inMinutes % 60;
     return 'Ring in $hours hr $minutes min';
+  }
+
+  String _getMissionSummary() {
+    if (selectedMission == null) return 'No mission selected';
+    final type = selectedMission!['type'] ?? 'Mission';
+    if (type == 'Math') {
+      final difficulty = selectedMission!['difficultyLabel'] ?? 'Easy';
+      final count = selectedMission!['problemCount'] ?? 3;
+      return 'Math ($difficulty, $count problems)';
+    }
+    return type;
   }
 
   @override
@@ -200,9 +213,9 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
           const SizedBox(height: 12),
           GestureDetector(
             onTap: () async {
-              showModalBottomSheet(
+              final result = await showModalBottomSheet<Map<String, dynamic>>(
                 context: context,
-                builder: (context) => const MissionSelectionModal(),
+                builder: (context) => MissionSelectionModal(initialConfig: selectedMission),
                 shape: const RoundedRectangleBorder(
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(24),
@@ -212,9 +225,14 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                 backgroundColor: const Color(0xFF1E1E1E),
                 isScrollControlled: true,
               );
+              if (result != null) {
+                setState(() {
+                  selectedMission = result;
+                });
+              }
             },
             child: Container(
-              height: 120,
+              height: 100,
               decoration: BoxDecoration(
                 color: const Color(0xFF1C1C1E),
                 borderRadius: BorderRadius.circular(16),
@@ -223,20 +241,65 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                   width: 2,
                 ),
               ),
-              child: Center(
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
-                    shape: BoxShape.circle,
+              child: selectedMission == null 
+                ? Center(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
+                        shape: BoxShape.circle,
+                      ),
+                      padding: const EdgeInsets.all(16),
+                      child: Icon(
+                        Icons.add,
+                        color: Theme.of(context).colorScheme.primary,
+                        size: 40,
+                      ),
+                    ),
+                  )
+                : Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    child: Row(
+                      children: [
+                        Container(
+                          padding: const EdgeInsets.all(12),
+                          decoration: BoxDecoration(
+                            color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: Icon(
+                            selectedMission!['type'] == 'Math' ? Icons.calculate : Icons.extension,
+                            color: Theme.of(context).colorScheme.primary,
+                            size: 30,
+                          ),
+                        ),
+                        const SizedBox(width: 16),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                selectedMission!['type'] ?? 'Mission',
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                _getMissionSummary(),
+                                style: TextStyle(
+                                  color: Colors.grey[400],
+                                  fontSize: 14,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        const Icon(Icons.chevron_right, color: Colors.grey),
+                      ],
+                    ),
                   ),
-                  padding: const EdgeInsets.all(16),
-                  child: Icon(
-                    Icons.add,
-                    color: Theme.of(context).colorScheme.primary,
-                    size: 40,
-                  ),
-                ),
-              ),
             ),
           ),
           
@@ -342,6 +405,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                     "Discipline equals freedom",
                   ],
                   soundPath: selectedSoundPath,
+                  mission: selectedMission,
                 );
                 Navigator.pop(context, newAlarm);
               }
