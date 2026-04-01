@@ -77,7 +77,9 @@ class MissionSelectionModal extends StatelessWidget {
                   final result = await Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const TypingChallengeScreen(),
+                      builder: (context) => TypingChallengeScreen(
+                        initialConfig: initialConfig?['type'] == 'Typing' ? initialConfig : null,
+                      ),
                     ),
                   );
                   if (context.mounted && result != null) {
@@ -95,7 +97,9 @@ class MissionSelectionModal extends StatelessWidget {
                   final result = await Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const ShakeChallengeScreen(),
+                      builder: (context) => ShakeChallengeScreen(
+                        initialConfig: initialConfig?['type'] == 'Shake' ? initialConfig : null,
+                      ),
                     ),
                   );
                   if (context.mounted && result != null) {

@@ -2,8 +2,10 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:permission_handler/permission_handler.dart';
 import '../models/alarm_model.dart';
 import '../widgets/alarm_card.dart';
+import '../services/native_alarm_service.dart';
 import 'add_alarm_screen.dart';
 import 'alarm_ringing_screen.dart';
 
@@ -15,19 +17,36 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  Timer? _timer;
-  String? _lastTriggeredMinute; // To prevent multiple triggers in same minute
   List<AlarmModel> alarms = [];
   late SharedPreferences _prefs;
 
   @override
   void initState() {
     super.initState();
+    _requestPermissions();
     _loadAlarms();
-    // Start the timer to check every 10 seconds (more efficient than every second)
-    _timer = Timer.periodic(const Duration(seconds: 10), (timer) {
-      _checkAlarms();
+    
+    NativeAlarmService.setAlarmHandler((alarmId) {
+      _triggerAlarmById(alarmId);
     });
+    
+    // Check if launched from alarm
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      final initialAlarmId = await NativeAlarmService.getInitialAlarm();
+      if (initialAlarmId != null) {
+        _triggerAlarmById(initialAlarmId);
+      }
+    });
+  }
+
+  Future<void> _requestPermissions() async {
+    await Permission.notification.request();
+    if (await Permission.scheduleExactAlarm.isDenied) {
+      await Permission.scheduleExactAlarm.request();
+    }
+    if (await Permission.systemAlertWindow.isDenied) {
+      await Permission.systemAlertWindow.request();
+    }
   }
 
   Future<void> _loadAlarms() async {
@@ -36,63 +55,83 @@ class _HomeScreenState extends State<HomeScreen> {
     setState(() {
       alarms = alarmsJson.map((a) => AlarmModel.fromJson(jsonDecode(a))).toList();
     });
+    // Ensure all loaded alarms are synced with native service
+    _syncNativeAlarms();
   }
 
   Future<void> _saveAlarms() async {
     final alarmsJson = alarms.map((a) => jsonEncode(a.toJson())).toList();
     await _prefs.setStringList('alarms', alarmsJson);
+    _syncNativeAlarms();
   }
 
-  @override
-  void dispose() {
-    _timer?.cancel();
-    super.dispose();
-  }
+  DateTime? _getNextAlarmTime(AlarmModel alarm) {
+    if (!alarm.isEnabled) return null;
+    DateTime now = DateTime.now();
 
-  void _checkAlarms() {
-    final now = DateTime.now();
-    final currentTime = TimeOfDay.fromDateTime(now);
-    final currentMinuteString = '${now.hour}:${now.minute}';
-
-    if (_lastTriggeredMinute == currentMinuteString) return;
-
-    for (var alarm in alarms) {
-      if (alarm.isEnabled && 
-          alarm.time.hour == currentTime.hour && 
-          alarm.time.minute == currentTime.minute) {
+    if (alarm.isOneTime) {
+      DateTime alarmDT = DateTime(now.year, now.month, now.day, alarm.time.hour, alarm.time.minute);
+      if (alarmDT.isBefore(now)) {
+        alarmDT = alarmDT.add(const Duration(days: 1));
+      }
+      return alarmDT;
+    } else {
+      for (int i = 0; i < 7; i++) {
+        int dayToCheck = (now.weekday + i) % 7;
+        if (dayToCheck == 0) dayToCheck = 7;
+        int alarmDayIndex = dayToCheck == 7 ? 0 : dayToCheck;
         
-        // Check if it's the right day for recurring alarms
-        bool shouldTrigger = false;
-        if (alarm.isOneTime) {
-          shouldTrigger = true;
-          // Disable one-time alarm after it triggers
-          setState(() {
-            alarm.isEnabled = false;
-            _saveAlarms();
-          });
-        } else {
-          // DateTime.weekday: 1 = Mon, ..., 7 = Sun
-          // activeDays: 0 = Sun, 1 = Mon, ...
-          int dayIndex = now.weekday == 7 ? 0 : now.weekday;
-          if (alarm.activeDays[dayIndex]) {
-            shouldTrigger = true;
+        if (alarm.activeDays[alarmDayIndex]) {
+          DateTime alarmDT = DateTime(now.year, now.month, now.day, alarm.time.hour, alarm.time.minute).add(Duration(days: i));
+          if (i == 0 && alarmDT.isBefore(now)) {
+            continue; 
           }
+          return alarmDT;
         }
+      }
+    }
+    return null;
+  }
 
-        if (shouldTrigger) {
-          _lastTriggeredMinute = currentMinuteString;
-          _triggerAlarm(alarm);
-          break; // Only trigger one alarm at a time
+  Future<void> _syncNativeAlarms() async {
+    for (var alarm in alarms) {
+      await NativeAlarmService.cancelAlarm(alarm.id);
+      if (alarm.isEnabled) {
+        final nextTime = _getNextAlarmTime(alarm);
+        if (nextTime != null) {
+          await NativeAlarmService.scheduleAlarm(alarm.id, nextTime, alarm.soundPath, alarm.volume);
         }
       }
     }
   }
 
-  void _triggerAlarm(AlarmModel alarm) {
+  void _triggerAlarmById(String id) {
+    if (alarms.isEmpty) return;
+    
+    // Check if we are already on the ringing screen
+    if (id == "relaunch") {
+      return; 
+    }
+    
+    int index = alarms.indexWhere((a) => a.id == id);
+    if (index == -1) index = 0; // Fallback
+    
+    final alarm = alarms[index];
+    
+    if (alarm.isOneTime) {
+      setState(() {
+        alarm.isEnabled = false;
+        _saveAlarms();
+      });
+    }
+    _triggerAlarm(alarm, isTest: false);
+  }
+
+  void _triggerAlarm(AlarmModel alarm, {required bool isTest}) {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => AlarmRingingScreen(alarm: alarm),
+        builder: (context) => AlarmRingingScreen(alarm: alarm, isTest: isTest),
       ),
     );
   }
@@ -102,38 +141,10 @@ class _HomeScreenState extends State<HomeScreen> {
     DateTime? nearestAlarmTime;
 
     for (var alarm in alarms) {
-      if (!alarm.isEnabled) continue;
-
-      if (alarm.isOneTime) {
-        DateTime alarmDT = DateTime(now.year, now.month, now.day, alarm.time.hour, alarm.time.minute);
-        if (alarmDT.isBefore(now)) {
-          alarmDT = alarmDT.add(const Duration(days: 1));
-        }
-        if (nearestAlarmTime == null || alarmDT.isBefore(nearestAlarmTime)) {
-          nearestAlarmTime = alarmDT;
-        }
-      } else {
-        // Find the next active day
-        for (int i = 0; i < 7; i++) {
-          int dayToCheck = (now.weekday + i) % 7;
-          if (dayToCheck == 0) dayToCheck = 7; // DateTime uses 1-7 (Mon-Sun)
-          
-          int alarmDayIndex = dayToCheck == 7 ? 0 : dayToCheck; // activeDays uses 0-6 (Sun-Sat)
-          
-          if (alarm.activeDays[alarmDayIndex]) {
-            DateTime alarmDT = DateTime(now.year, now.month, now.day, alarm.time.hour, alarm.time.minute).add(Duration(days: i));
-            
-            // If it's today but the time has already passed
-            if (i == 0 && alarmDT.isBefore(now)) {
-              // Find the next scheduled day after today
-              continue; 
-            }
-            
-            if (nearestAlarmTime == null || alarmDT.isBefore(nearestAlarmTime)) {
-              nearestAlarmTime = alarmDT;
-            }
-            break; // Found earliest for this specific recurring alarm
-          }
+      final nextTime = _getNextAlarmTime(alarm);
+      if (nextTime != null) {
+        if (nearestAlarmTime == null || nextTime.isBefore(nearestAlarmTime)) {
+          nearestAlarmTime = nextTime;
         }
       }
     }
@@ -172,13 +183,12 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               const SizedBox(height: 40),
               const Text(
-                'Upcoming alarms', // Or 'No upcoming alarms' based on list
+                'Upcoming alarms',
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 8),
               _buildNextAlarmStatus(),
               const SizedBox(height: 20),
-              // List of Alarms
               Expanded(
                 child: ListView.builder(
                   itemCount: alarms.length,
@@ -196,14 +206,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           });
                         }
                       },
-                      // FOR TESTING: Long press an alarm to simulate it ringing!
                       onLongPress: () {
-                         Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => AlarmRingingScreen(alarm: alarms[index]),
-                          ),
-                        );
+                        _triggerAlarm(alarms[index], isTest: true);
                       },
                       child: AlarmCard(
                         alarm: alarms[index],
@@ -228,7 +232,6 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
-      // The Floating Action Button for adding new alarms
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
           final newAlarm = await Navigator.push<AlarmModel>(
@@ -246,7 +249,6 @@ class _HomeScreenState extends State<HomeScreen> {
         shape: const CircleBorder(),
         child: const Icon(Icons.add, color: Colors.white, size: 32),
       ),
-      // Bottom Navigation Bar keeping only the un-crossed sections
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: const Color(0xFF1C1C1E),
         selectedItemColor: Colors.white,

@@ -37,6 +37,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
       isOneTime = widget.alarm!.isOneTime;
       activeDays = List.from(widget.alarm!.activeDays);
       selectedSoundPath = widget.alarm!.soundPath;
+      _volume = widget.alarm!.volume;
       selectedMission = widget.alarm!.mission;
     } else {
       selectedTime = TimeOfDay.now();
@@ -405,6 +406,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                     "Discipline equals freedom",
                   ],
                   soundPath: selectedSoundPath,
+                  volume: _volume,
                   mission: selectedMission,
                 );
                 Navigator.pop(context, newAlarm);

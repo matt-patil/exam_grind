@@ -3,14 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:just_audio/just_audio.dart';
 import '../models/alarm_model.dart';
+import '../services/native_alarm_service.dart';
 import 'math_challenge_screen.dart';
 import 'typing_challenge_screen.dart';
-import 'typing_mission_screen.dart';
 import 'shake_challenge_screen.dart';
 
 class AlarmRingingScreen extends StatefulWidget {
   final AlarmModel alarm;
-  const AlarmRingingScreen({super.key, required this.alarm});
+  final bool isTest;
+  const AlarmRingingScreen({super.key, required this.alarm, this.isTest = false});
 
   @override
   State<AlarmRingingScreen> createState() => _AlarmRingingScreenState();
@@ -24,13 +25,16 @@ class _AlarmRingingScreenState extends State<AlarmRingingScreen> {
   void initState() {
     super.initState();
     _audioPlayer = AudioPlayer();
-    _playAlarmSound();
+    if (widget.isTest) {
+      _playAlarmSound();
+    }
     _timeStream = Stream.periodic(const Duration(seconds: 1), (_) => DateTime.now());
   }
 
   Future<void> _playAlarmSound() async {
     try {
       await _audioPlayer.setAsset('assets/${widget.alarm.soundPath}');
+      await _audioPlayer.setVolume(widget.alarm.volume);
       await _audioPlayer.setLoopMode(LoopMode.one);
       await _audioPlayer.play();
     } catch (e) {
@@ -45,8 +49,13 @@ class _AlarmRingingScreenState extends State<AlarmRingingScreen> {
   }
 
   void _startMission() async {
-    // Pause alarm during mission
-    await _audioPlayer.pause();
+    // Always stop the Flutter player preview
+    await _audioPlayer.stop();
+
+    // For non-test alarms, Mute native audio but keep service alive (Volume Lock stays on)
+    if (!widget.isTest) {
+      await NativeAlarmService.muteAlarm();
+    }
 
     if (!mounted) return;
 
@@ -59,13 +68,20 @@ class _AlarmRingingScreenState extends State<AlarmRingingScreen> {
         isActiveMission: true,
       );
     } else if (mission['type'] == 'Typing') {
-      missionScreen = TypingMissionScreen(
+      missionScreen = TypingChallengeScreen(
         initialConfig: mission,
+        isActiveMission: true,
+      );
+    } else if (mission['type'] == 'Shake') {
+      missionScreen = ShakeChallengeScreen(
+        initialConfig: mission,
+        isActiveMission: true,
       );
     } else {
-      missionScreen = ShakeChallengeScreen(
-        // initialConfig: mission,
-        // isActiveMission: true,
+      // Fallback
+      missionScreen = MathChallengeScreen(
+        initialConfig: mission,
+        isActiveMission: true,
       );
     }
 
@@ -75,25 +91,34 @@ class _AlarmRingingScreenState extends State<AlarmRingingScreen> {
     );
 
     if (success == true) {
-      // Mission completed successfully, dismiss alarm
+      // Mission completed successfully, kill the native service and dismiss
+      if (!widget.isTest) {
+        await NativeAlarmService.stopAlarm();
+      }
       if (mounted) {
         Navigator.pop(context); // Back to Home
       }
     } else {
-      // Mission failed or timer ran out, resume alarm
-      await _audioPlayer.play();
+      // Mission failed/cancelled: Unmute native audio or restart test sound
+      if (widget.isTest) {
+        _playAlarmSound();
+      } else {
+        await NativeAlarmService.unmuteAlarm();
+      }
     }
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: const Color(0xFF0F0F11),
-      body: SafeArea(
-        child: StreamBuilder<DateTime>(
-          stream: _timeStream,
-          initialData: DateTime.now(),
-          builder: (context, snapshot) {
+    return PopScope(
+      canPop: false,
+      child: Scaffold(
+        backgroundColor: const Color(0xFF0F0F11),
+        body: SafeArea(
+          child: StreamBuilder<DateTime>(
+            stream: _timeStream,
+            initialData: DateTime.now(),
+            builder: (context, snapshot) {
             final now = snapshot.data!;
             final timeStr = DateFormat('hh:mm').format(now);
             final amPm = DateFormat('a').format(now);
@@ -188,6 +213,7 @@ class _AlarmRingingScreenState extends State<AlarmRingingScreen> {
           },
         ),
       ),
-    );
-  }
+    ),
+  );
+}
 }
