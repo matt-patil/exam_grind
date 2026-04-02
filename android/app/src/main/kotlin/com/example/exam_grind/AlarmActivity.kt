@@ -5,6 +5,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.view.KeyEvent
 import android.view.WindowManager
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
@@ -19,6 +20,14 @@ class AlarmActivity : FlutterActivity() {
         super.onCreate(savedInstanceState)
         setupAlarmDisplay()
         updateInitialAlarm(intent)
+    }
+
+    override fun dispatchKeyEvent(event: KeyEvent?): Boolean {
+        if (event?.keyCode == KeyEvent.KEYCODE_VOLUME_DOWN || event?.keyCode == KeyEvent.KEYCODE_VOLUME_UP) {
+            // Block volume buttons while alarm is ringing
+            return true
+        }
+        return super.dispatchKeyEvent(event)
     }
 
     override fun onNewIntent(intent: Intent) {

@@ -12,7 +12,9 @@ import android.media.AudioFocusRequest
 import android.media.AudioManager
 import android.media.MediaPlayer
 import android.os.Build
+import android.os.Handler
 import android.os.IBinder
+import android.os.Looper
 import android.os.PowerManager
 import android.util.Log
 import androidx.core.app.NotificationCompat
@@ -25,6 +27,8 @@ class AlarmService : Service() {
     private var currentAlarmId: String = ""
     private var currentSoundPath: String = ""
     private var currentVolume: Double = 0.8
+    private val handler = Handler(Looper.getMainLooper())
+    private var volumeLockRunnable: Runnable? = null
 
     companion object {
         const val ACTION_STOP_AUDIO = "com.example.exam_grind.STOP_AUDIO"
@@ -39,11 +43,13 @@ class AlarmService : Service() {
         
         if (action == ACTION_STOP_AUDIO) {
             mediaPlayer?.pause()
+            stopVolumeLock()
             return START_STICKY
         }
         
         if (action == ACTION_START_AUDIO) {
             mediaPlayer?.start()
+            startVolumeLock()
             return START_STICKY
         }
 
@@ -67,6 +73,7 @@ class AlarmService : Service() {
         
         requestAudioFocus()
         createNotificationChannel()
+        startVolumeLock()
 
         // Launch AlarmActivity to show fullscreen alarm UI
         val fullScreenIntent = Intent(this, AlarmActivity::class.java).apply {
@@ -107,6 +114,28 @@ class AlarmService : Service() {
         }
 
         return START_STICKY
+    }
+
+    private fun startVolumeLock() {
+        stopVolumeLock()
+        volumeLockRunnable = object : Runnable {
+            override fun run() {
+                try {
+                    val maxVolume = audioManager?.getStreamMaxVolume(AudioManager.STREAM_ALARM) ?: 7
+                    val targetVolume = (maxVolume * currentVolume).toInt()
+                    audioManager?.setStreamVolume(AudioManager.STREAM_ALARM, targetVolume, 0)
+                } catch (e: Exception) {
+                    Log.e(TAG, "Error locking volume", e)
+                }
+                handler.postDelayed(this, 1000) // Every 1 second
+            }
+        }
+        handler.post(volumeLockRunnable!!)
+    }
+
+    private fun stopVolumeLock() {
+        volumeLockRunnable?.let { handler.removeCallbacks(it) }
+        volumeLockRunnable = null
     }
 
     private fun requestAudioFocus() {
@@ -216,6 +245,7 @@ class AlarmService : Service() {
 
     override fun onDestroy() {
         Log.d(TAG, "Destroying AlarmService")
+        stopVolumeLock()
         mediaPlayer?.stop()
         mediaPlayer?.release()
         mediaPlayer = null
