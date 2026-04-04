@@ -1,0 +1,252 @@
+[
+  {
+    "question": "In the van der Waals equation $\\left(P + \\frac{a}{V^2}\\right)(V - b) = RT$, what is the dimensional formula of the constant $a$?",
+    "options": ["$[M^{1} L^{5} T^{-2}]$", "$[M^{1} L^{2} T^{-2}]$", "$[M^{1} L^{-1} T^{-2}]$", "$[M^{1} L^{3} T^{-2}]$"],
+    "answer": "$[M^{1} L^{5} T^{-2}]$"
+  },
+  {
+    "question": "In the van der Waals equation $\\left(P + \\frac{a}{V^2}\\right)(V - b) = RT$, what is the dimensional formula of the constant $b$?",
+    "options": ["$[M^{0} L^{3} T^{0}]$", "$[M^{1} L^{3} T^{0}]$", "$[M^{0} L^{2} T^{0}]$", "$[M^{0} L^{1} T^{0}]$"],
+    "answer": "$[M^{0} L^{3} T^{0}]$"
+  },
+  {
+    "question": "In the van der Waals equation $\\left(P + \\frac{a}{V^2}\\right)(V - b) = RT$, what is the dimensional formula of the product $ab$?",
+    "options": ["$[M^{1} L^{8} T^{-2}]$", "$[M^{1} L^{5} T^{-2}]$", "$[M^{1} L^{6} T^{-2}]$", "$[M^{0} L^{8} T^{0}]$"],
+    "answer": "$[M^{1} L^{8} T^{-2}]$"
+  },
+  {
+    "question": "In the equation $P = \\frac{a - t^2}{bx}$, where $P$ is pressure, $x$ is distance, and $t$ is time, what is the dimensional formula of $a$?",
+    "options": ["$[M^{0} L^{0} T^{2}]$", "$[M^{0} L^{1} T^{-2}]$", "$[M^{1} L^{0} T^{-2}]$", "$[M^{0} L^{0} T^{1}]$"],
+    "answer": "$[M^{0} L^{0} T^{2}]$"
+  },
+  {
+    "question": "In the equation $P = \\frac{a - t^2}{bx}$, where $P$ is pressure, $x$ is distance, and $t$ is time, what is the dimensional formula of $b$?",
+    "options": ["$[M^{-1} L^{0} T^{4}]$", "$[M^{1} L^{1} T^{-2}]$", "$[M^{-1} L^{1} T^{2}]$", "$[M^{-1} L^{0} T^{2}]$"],
+    "answer": "$[M^{-1} L^{0} T^{4}]$"
+  },
+  {
+    "question": "In the equation $P = \\frac{a - t^2}{bx}$, where $P$ is pressure, $x$ is distance, and $t$ is time, what is the dimensional formula of $a/b$?",
+    "options": ["$[M^{1} L^{0} T^{-2}]$", "$[M^{1} L^{1} T^{-2}]$", "$[M^{1} L^{2} T^{-2}]$", "$[M^{1} L^{-1} T^{-2}]$"],
+    "answer": "$[M^{1} L^{0} T^{-2}]$"
+  },
+  {
+    "question": "If the velocity of a particle is given by $v = At + \\frac{B}{t+C}$, what is the dimensional formula of $A$?",
+    "options": ["$[M^{0} L^{1} T^{-2}]$", "$[M^{0} L^{1} T^{-1}]$", "$[M^{0} L^{2} T^{-2}]$", "$[M^{0} L^{1} T^{0}]$"],
+    "answer": "$[M^{0} L^{1} T^{-2}]$"
+  },
+  {
+    "question": "If the velocity of a particle is given by $v = At + \\frac{B}{t+C}$, what is the dimensional formula of $B$?",
+    "options": ["$[M^{0} L^{1} T^{0}]$", "$[M^{0} L^{1} T^{-1}]$", "$[M^{0} L^{2} T^{0}]$", "$[M^{0} L^{0} T^{1}]$"],
+    "answer": "$[M^{0} L^{1} T^{0}]$"
+  },
+  {
+    "question": "If the velocity of a particle is given by $v = At + \\frac{B}{t+C}$, what is the dimensional formula of $C$?",
+    "options": ["$[M^{0} L^{0} T^{1}]$", "$[M^{0} L^{1} T^{0}]$", "$[M^{0} L^{0} T^{-1}]$", "$[M^{1} L^{0} T^{0}]$"],
+    "answer": "$[M^{0} L^{0} T^{1}]$"
+  },
+  {
+    "question": "What is the dimensional formula of the permittivity of free space ($\\epsilon_0$)?",
+    "options": ["$[M^{-1} L^{-3} T^{4} A^{2}]$", "$[M^{1} L^{3} T^{-4} A^{-2}]$", "$[M^{-1} L^{-2} T^{3} A^{2}]$", "$[M^{1} L^{2} T^{-2} A^{-2}]$"],
+    "answer": "$[M^{-1} L^{-3} T^{4} A^{2}]$"
+  },
+  {
+    "question": "What is the dimensional formula of the permeability of free space ($\\mu_0$)?",
+    "options": ["$[M^{1} L^{1} T^{-2} A^{-2}]$", "$[M^{-1} L^{-1} T^{2} A^{2}]$", "$[M^{1} L^{2} T^{-2} A^{-2}]$", "$[M^{1} L^{1} T^{-1} A^{-1}]$"],
+    "answer": "$[M^{1} L^{1} T^{-2} A^{-2}]$"
+  },
+  {
+    "question": "The quantity $\\frac{1}{\\sqrt{\\mu_0 \\epsilon_0}}$ has the same dimensions as:",
+    "options": ["Velocity", "Acceleration", "Force", "Energy"],
+    "answer": "Velocity"
+  },
+  {
+    "question": "If $E$ is the electric field and $B$ is the magnetic field, what is the dimensional formula of $E/B$?",
+    "options": ["$[M^{0} L^{1} T^{-1}]$", "$[M^{0} L^{2} T^{-2}]$", "$[M^{1} L^{1} T^{-2}]$", "$[M^{0} L^{0} T^{0}]$"],
+    "answer": "$[M^{0} L^{1} T^{-1}]$"
+  },
+  {
+    "question": "In an AC circuit, what is the dimensional formula of $CR$ (Capacitance $\\times$ Resistance)?",
+    "options": ["$[M^{0} L^{0} T^{1}]$", "$[M^{0} L^{0} T^{-1}]$", "$[M^{0} L^{1} T^{0}]$", "$[M^{0} L^{0} T^{0}]$"],
+    "answer": "$[M^{0} L^{0} T^{1}]$"
+  },
+  {
+    "question": "In an electrical circuit, what is the dimensional formula of $L/R$ (Inductance / Resistance)?",
+    "options": ["$[M^{0} L^{0} T^{1}]$", "$[M^{0} L^{0} T^{-1}]$", "$[M^{1} L^{2} T^{-2}]$", "$[M^{0} L^{0} T^{0}]$"],
+    "answer": "$[M^{0} L^{0} T^{1}]$"
+  },
+  {
+    "question": "What is the dimensional formula of $\\sqrt{LC}$ where $L$ is inductance and $C$ is capacitance?",
+    "options": ["$[M^{0} L^{0} T^{1}]$", "$[M^{0} L^{0} T^{-1}]$", "$[M^{0} L^{0} T^{2}]$", "$[M^{0} L^{1} T^{-1}]$"],
+    "answer": "$[M^{0} L^{0} T^{1}]$"
+  },
+  {
+    "question": "The quantity $\\frac{1}{2} \\epsilon_0 E^2$ (energy density of electric field) has the same dimensions as:",
+    "options": ["Pressure", "Force", "Power", "Momentum"],
+    "answer": "Pressure"
+  },
+  {
+    "question": "The magnetic energy density $\\frac{B^2}{2\\mu_0}$ has the dimensional formula:",
+    "options": ["$[M^{1} L^{-1} T^{-2}]$", "$[M^{1} L^{1} T^{-2}]$", "$[M^{1} L^{2} T^{-2}]$", "$[M^{1} L^{-2} T^{-2}]$"],
+    "answer": "$[M^{1} L^{-1} T^{-2}]$"
+  },
+  {
+    "question": "What is the dimensional formula of thermal conductivity ($K$)?",
+    "options": ["$[M^{1} L^{1} T^{-3} K^{-1}]$", "$[M^{1} L^{2} T^{-2} K^{-1}]$", "$[M^{1} L^{1} T^{-2} K^{-1}]$", "$[M^{1} L^{2} T^{-3} K^{-1}]$"],
+    "answer": "$[M^{1} L^{1} T^{-3} K^{-1}]$"
+  },
+  {
+    "question": "What is the dimensional formula of Stefan-Boltzmann's constant ($\\sigma$)?",
+    "options": ["$[M^{1} L^{0} T^{-3} K^{-4}]$", "$[M^{1} L^{2} T^{-3} K^{-4}]$", "$[M^{1} L^{0} T^{-2} K^{-4}]$", "$[M^{1} L^{1} T^{-3} K^{-4}]$"],
+    "answer": "$[M^{1} L^{0} T^{-3} K^{-4}]$"
+  },
+  {
+    "question": "What is the dimensional formula of the universal gas constant ($R$)?",
+    "options": ["$[M^{1} L^{2} T^{-2} K^{-1} \\mathrm{mol}^{-1}]$", "$[M^{1} L^{2} T^{-2} K^{1} \\mathrm{mol}^{-1}]$", "$[M^{1} L^{1} T^{-2} K^{-1} \\mathrm{mol}^{-1}]$", "$[M^{0} L^{2} T^{-2} K^{-1} \\mathrm{mol}^{-1}]$"],
+    "answer": "$[M^{1} L^{2} T^{-2} K^{-1} \\mathrm{mol}^{-1}]$"
+  },
+  {
+    "question": "What is the dimensional formula of the coefficient of thermal expansion ($\\alpha$)?",
+    "options": ["$[M^{0} L^{0} T^{0} K^{-1}]$", "$[M^{0} L^{1} T^{0} K^{-1}]$", "$[M^{0} L^{0} T^{1} K^{-1}]$", "$[M^{1} L^{0} T^{0} K^{-1}]$"],
+    "answer": "$[M^{0} L^{0} T^{0} K^{-1}]$"
+  },
+  {
+    "question": "What is the dimensional formula of the Solar Constant (energy received per unit area per unit time)?",
+    "options": ["$[M^{1} L^{0} T^{-3}]$", "$[M^{1} L^{2} T^{-3}]$", "$[M^{1} L^{-1} T^{-2}]$", "$[M^{1} L^{0} T^{-2}]$"],
+    "answer": "$[M^{1} L^{0} T^{-3}]$"
+  },
+  {
+    "question": "What is the dimensional formula of the mechanical equivalent of heat ($J$)?",
+    "options": ["$[M^{0} L^{0} T^{0}]$", "$[M^{1} L^{2} T^{-2}]$", "$[M^{1} L^{1} T^{-2}]$", "$[M^{0} L^{2} T^{-2}]$"],
+    "answer": "$[M^{0} L^{0} T^{0}]$"
+  },
+  {
+    "question": "What is the dimensional formula of magnetic flux ($\\Phi$)?",
+    "options": ["$[M^{1} L^{2} T^{-2} A^{-1}]$", "$[M^{1} L^{1} T^{-2} A^{-1}]$", "$[M^{1} L^{2} T^{-1} A^{-1}]$", "$[M^{1} L^{0} T^{-2} A^{-1}]$"],
+    "answer": "$[M^{1} L^{2} T^{-2} A^{-1}]$"
+  },
+  {
+    "question": "What is the dimensional formula of electric flux ($\\Phi_E$)?",
+    "options": ["$[M^{1} L^{3} T^{-3} A^{-1}]$", "$[M^{1} L^{2} T^{-3} A^{-1}]$", "$[M^{1} L^{3} T^{-2} A^{-1}]$", "$[M^{1} L^{2} T^{-2} A^{-1}]$"],
+    "answer": "$[M^{1} L^{3} T^{-3} A^{-1}]$"
+  },
+  {
+    "question": "What is the dimensional formula of magnetic dipole moment ($M$)?",
+    "options": ["$[M^{0} L^{2} T^{0} A^{1}]$", "$[M^{0} L^{1} T^{0} A^{1}]$", "$[M^{1} L^{2} T^{0} A^{1}]$", "$[M^{0} L^{2} T^{-1} A^{1}]$"],
+    "answer": "$[M^{0} L^{2} T^{0} A^{1}]$"
+  },
+  {
+    "question": "If Force ($F$), Velocity ($v$), and Time ($T$) are chosen as fundamental quantities, what is the dimensional formula of Mass?",
+    "options": ["$[F^{1} v^{-1} T^{1}]$", "$[F^{1} v^{1} T^{-1}]$", "$[F^{1} v^{-2} T^{1}]$", "$[F^{1} v^{2} T^{1}]$"],
+    "answer": "$[F^{1} v^{-1} T^{1}]$"
+  },
+  {
+    "question": "If Energy ($E$), Velocity ($v$), and Time ($T$) are chosen as fundamental quantities, what is the dimensional formula of Surface Tension?",
+    "options": ["$[E^{1} v^{-2} T^{-2}]$", "$[E^{1} v^{-1} T^{-2}]$", "$[E^{1} v^{-2} T^{-1}]$", "$[E^{1} v^{2} T^{2}]$"],
+    "answer": "$[E^{1} v^{-2} T^{-2}]$"
+  },
+  {
+    "question": "If Force ($F$), Velocity ($v$), and Time ($T$) are chosen as fundamental quantities, what is the dimensional formula of Work?",
+    "options": ["$[F^{1} v^{1} T^{1}]$", "$[F^{1} v^{1} T^{-1}]$", "$[F^{1} v^{2} T^{1}]$", "$[F^{1} v^{-1} T^{1}]$"],
+    "answer": "$[F^{1} v^{1} T^{1}]$"
+  },
+  {
+    "question": "What is the ratio of the dimensions of Planck's constant ($h$) to the moment of inertia ($I$)?",
+    "options": ["Frequency", "Velocity", "Angular momentum", "Time"],
+    "answer": "Frequency"
+  },
+  {
+    "question": "What is the ratio of the dimensions of angular momentum to linear momentum?",
+    "options": ["Length", "Velocity", "Mass", "Time"],
+    "answer": "Length"
+  },
+  {
+    "question": "The fine-structure constant is given by $\\alpha = \\frac{e^2}{4\\pi\\epsilon_0 \\hbar c}$. What is its dimensional formula?",
+    "options": ["$[M^{0} L^{0} T^{0}]$", "$[M^{1} L^{1} T^{-1}]$", "$[M^{0} L^{1} T^{-1}]$", "$[M^{0} L^{0} T^{1}]$"],
+    "answer": "$[M^{0} L^{0} T^{0}]$"
+  },
+  {
+    "question": "The number of particles crossing a unit area perpendicular to the x-axis per unit time is $N = -D \\frac{n_2 - n_1}{x_2 - x_1}$, where $n$ is particles per unit volume. What is the dimensional formula of the diffusion constant $D$?",
+    "options": ["$[M^{0} L^{2} T^{-1}]$", "$[M^{0} L^{1} T^{-1}]$", "$[M^{0} L^{3} T^{-1}]$", "$[M^{0} L^{2} T^{-2}]$"],
+    "answer": "$[M^{0} L^{2} T^{-1}]$"
+  },
+  {
+    "question": "Reynolds number ($Re$) is a dimensionless quantity determining the nature of fluid flow. If $Re = \\frac{\\rho v d}{\\eta}$, what is the dimension of the coefficient of viscosity $\\eta$?",
+    "options": ["$[M^{1} L^{-1} T^{-1}]$", "$[M^{1} L^{1} T^{-1}]$", "$[M^{1} L^{-2} T^{-1}]$", "$[M^{1} L^{-1} T^{-2}]$"],
+    "answer": "$[M^{1} L^{-1} T^{-1}]$"
+  },
+  {
+    "question": "A physical quantity $X$ is given by $X = \\frac{A^2 B^3}{C^{1/2}}$. If the percentage errors of measurement in $A, B$, and $C$ are 1%, 2%, and 4% respectively, what is the maximum percentage error in $X$?",
+    "options": ["$10\\%$", "$12\\%$", "$8\\%$", "$16\\%$"],
+    "answer": "$10\\%$"
+  },
+  {
+    "question": "If the error in the measurement of the momentum of a particle is $+2\\%$, what will be the approximate error in its kinetic energy?",
+    "options": ["$4\\%$", "$2\\%$", "$8\\%$", "$1\\%$"],
+    "answer": "$4\\%$"
+  },
+  {
+    "question": "If the percentage error in the measurement of the radius of a sphere is $1.5\\%$, what is the percentage error in the measurement of its volume?",
+    "options": ["$4.5\\%$", "$3.0\\%$", "$1.5\\%$", "$6.0\\%$"],
+    "answer": "$4.5\\%$"
+  },
+  {
+    "question": "The length and breadth of a rectangular sheet are $10.0 \\pm 0.1$ cm and $5.0 \\pm 0.1$ cm respectively. What is the percentage error in its area?",
+    "options": ["$3\\%$", "$2\\%$", "$1\\%$", "$0.2\\%$"],
+    "answer": "$3\\%$"
+  },
+  {
+    "question": "The time period of a simple pendulum is $T = 2\\pi\\sqrt{\\frac{l}{g}}$. If the error in measuring length $l$ is $1\\%$ and the error in measuring time period $T$ is $2\\%$, what is the percentage error in the calculated value of $g$?",
+    "options": ["$5\\%$", "$3\\%$", "$4\\%$", "$6\\%$"],
+    "answer": "$5\\%$"
+  },
+  {
+    "question": "How many significant figures are there in the measured value $0.002500$ kg?",
+    "options": ["4", "6", "2", "5"],
+    "answer": "4"
+  },
+  {
+    "question": "How many significant figures are present in the number $2.00 \\times 10^5$?",
+    "options": ["3", "1", "6", "8"],
+    "answer": "3"
+  },
+  {
+    "question": "Round off the value $15.75$ to three significant figures.",
+    "options": ["$15.8$", "$15.7$", "$15.0$", "$16.0$"],
+    "answer": "$15.8$"
+  },
+  {
+    "question": "Round off the value $15.65$ to three significant figures.",
+    "options": ["$15.6$", "$15.7$", "$15.5$", "$16.0$"],
+    "answer": "$15.6$"
+  },
+  {
+    "question": "The density of a material in the CGS system is $4 \\mathrm{\\ g/cm^3}$. In a system of units in which the unit of length is $10 \\mathrm{\\ cm}$ and unit of mass is $100 \\mathrm{\\ g}$, what is the numerical value of the density?",
+    "options": ["40", "0.04", "400", "4"],
+    "answer": "40"
+  },
+  {
+    "question": "If the unit of force is $1 \\mathrm{\\ kN}$, the unit of length is $1 \\mathrm{\\ km}$, and the unit of time is $1 \\mathrm{\\ s}$, what will be the unit of mass in this new system?",
+    "options": ["$1000 \\mathrm{\\ kg}$", "$1 \\mathrm{\\ kg}$", "$100 \\mathrm{\\ kg}$", "$10000 \\mathrm{\\ kg}$"],
+    "answer": "$1000 \\mathrm{\\ kg}$"
+  },
+  {
+    "question": "A physical quantity is measured and its value is found to be $nu$ where $n$ is the numerical value and $u$ is the unit. Which of the following relations is true?",
+    "options": ["$n \\propto 1/u$", "$n \\propto u$", "$n \\propto u^2$", "$n \\propto \\sqrt{u}$"],
+    "answer": "$n \\propto 1/u$"
+  },
+  {
+    "question": "The displacement of a progressive wave is represented by $y = A \\sin(\\omega t - kx)$. What is the dimensional formula of $\\omega/k$?",
+    "options": ["$[M^{0} L^{1} T^{-1}]$", "$[M^{0} L^{0} T^{0}]$", "$[M^{0} L^{1} T^{0}]$", "$[M^{0} L^{2} T^{-2}]$"],
+    "answer": "$[M^{0} L^{1} T^{-1}]$"
+  },
+  {
+    "question": "In the equation of state of an ideal gas $PV = nRT$, what is the dimensional formula of $PV$?",
+    "options": ["$[M^{1} L^{2} T^{-2}]$", "$[M^{1} L^{1} T^{-2}]$", "$[M^{1} L^{-1} T^{-2}]$", "$[M^{1} L^{3} T^{-2}]$"],
+    "answer": "$[M^{1} L^{2} T^{-2}]$"
+  },
+  {
+    "question": "The velocity $v$ of water waves depends on the wavelength $\\lambda$, density of water $\\rho$, and acceleration due to gravity $g$. Deduce the relation using dimensions.",
+    "options": ["$v^2 \\propto g\\lambda$", "$v \\propto g\\lambda$", "$v^2 \\propto g/\\lambda$", "$v \\propto g^2\\lambda$"],
+    "answer": "$v^2 \\propto g\\lambda$"
+  }
+]

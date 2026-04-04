@@ -1,0 +1,302 @@
+[
+  {
+    "question": "What is the value of Avogadro's number ($N_A$)?",
+    "options": ["$6.022 \\times 10^{22}$", "$6.022 \\times 10^{23}$", "$6.022 \\times 10^{24}$", "$6.022 \\times 10^{20}$"],
+    "answer": "$6.022 \\times 10^{23}$"
+  },
+  {
+    "question": "What is the SI unit for the amount of a substance?",
+    "options": ["Gram", "Kilogram", "Mole", "Liter"],
+    "answer": "Mole"
+  },
+  {
+    "question": "One mole of carbon-12 atoms has exactly what mass?",
+    "options": ["$12 \\mathrm{\\ amu}$", "$12 \\mathrm{\\ g}$", "$1 \\mathrm{\\ g}$", "$6.022 \\mathrm{\\ g}$"],
+    "answer": "$12 \\mathrm{\\ g}$"
+  },
+  {
+    "question": "What is the molar mass of water ($H_2O$)?",
+    "options": ["$16 \\mathrm{\\ g/mol}$", "$18 \\mathrm{\\ g/mol}$", "$20 \\mathrm{\\ g/mol}$", "$22 \\mathrm{\\ g/mol}$"],
+    "answer": "$18 \\mathrm{\\ g/mol}$"
+  },
+  {
+    "question": "What is the molar mass of carbon dioxide ($CO_2$)?",
+    "options": ["$28 \\mathrm{\\ g/mol}$", "$32 \\mathrm{\\ g/mol}$", "$44 \\mathrm{\\ g/mol}$", "$14 \\mathrm{\\ g/mol}$"],
+    "answer": "$44 \\mathrm{\\ g/mol}$"
+  },
+  {
+    "question": "How many atoms are present in 1 mole of sodium ($Na$)?",
+    "options": ["$1 \\times 10^{23}$", "$6.022 \\times 10^{23}$", "$3.011 \\times 10^{23}$", "$12.044 \\times 10^{23}$"],
+    "answer": "$6.022 \\times 10^{23}$"
+  },
+  {
+    "question": "What is the volume occupied by 1 mole of an ideal gas at Standard Temperature and Pressure (STP)?",
+    "options": ["$22.4 \\mathrm{\\ L}$", "$24.2 \\mathrm{\\ L}$", "$11.2 \\mathrm{\\ L}$", "$2.24 \\mathrm{\\ L}$"],
+    "answer": "$22.4 \\mathrm{\\ L}$"
+  },
+  {
+    "question": "What is the atomic mass of oxygen?",
+    "options": ["$8 \\mathrm{\\ amu}$", "$16 \\mathrm{\\ amu}$", "$32 \\mathrm{\\ amu}$", "$12 \\mathrm{\\ amu}$"],
+    "answer": "$16 \\mathrm{\\ amu}$"
+  },
+  {
+    "question": "How many moles are present in $36 \\mathrm{\\ g}$ of water ($H_2O$)?",
+    "options": ["$1 \\mathrm{\\ mol}$", "$2 \\mathrm{\\ mol}$", "$0.5 \\mathrm{\\ mol}$", "$3 \\mathrm{\\ mol}$"],
+    "answer": "$2 \\mathrm{\\ mol}$"
+  },
+  {
+    "question": "What is the mass of $0.5 \\mathrm{\\ moles}$ of $CO_2$?",
+    "options": ["$22 \\mathrm{\\ g}$", "$44 \\mathrm{\\ g}$", "$11 \\mathrm{\\ g}$", "$88 \\mathrm{\\ g}$"],
+    "answer": "$22 \\mathrm{\\ g}$"
+  },
+  {
+    "question": "How many molecules are in 1 mole of oxygen gas ($O_2$)?",
+    "options": ["$N_A$", "$2 N_A$", "$0.5 N_A$", "$3 N_A$"],
+    "answer": "$N_A$"
+  },
+  {
+    "question": "What is the molar mass of ammonia ($NH_3$)?",
+    "options": ["$15 \\mathrm{\\ g/mol}$", "$16 \\mathrm{\\ g/mol}$", "$17 \\mathrm{\\ g/mol}$", "$18 \\mathrm{\\ g/mol}$"],
+    "answer": "$17 \\mathrm{\\ g/mol}$"
+  },
+  {
+    "question": "How many moles of $H_2$ gas are present in $11.2 \\mathrm{\\ L}$ at STP?",
+    "options": ["$0.25 \\mathrm{\\ mol}$", "$0.5 \\mathrm{\\ mol}$", "$1.0 \\mathrm{\\ mol}$", "$2.0 \\mathrm{\\ mol}$"],
+    "answer": "$0.5 \\mathrm{\\ mol}$"
+  },
+  {
+    "question": "What is the molar mass of sulfuric acid ($H_2SO_4$)?",
+    "options": ["$49 \\mathrm{\\ g/mol}$", "$82 \\mathrm{\\ g/mol}$", "$98 \\mathrm{\\ g/mol}$", "$100 \\mathrm{\\ g/mol}$"],
+    "answer": "$98 \\mathrm{\\ g/mol}$"
+  },
+  {
+    "question": "One atomic mass unit ($1 \\mathrm{\\ amu}$) is equal to approximately how many grams?",
+    "options": ["$1.66 \\times 10^{-24} \\mathrm{\\ g}$", "$1.66 \\times 10^{-27} \\mathrm{\\ g}$", "$6.022 \\times 10^{-23} \\mathrm{\\ g}$", "$9.11 \\times 10^{-28} \\mathrm{\\ g}$"],
+    "answer": "$1.66 \\times 10^{-24} \\mathrm{\\ g}$"
+  },
+  {
+    "question": "What is the empirical formula of benzene ($C_6H_6$)?",
+    "options": ["$C_2H_2$", "$C_3H_3$", "$CH$", "$C_6H_6$"],
+    "answer": "$CH$"
+  },
+  {
+    "question": "What is the mass of 2 moles of Helium ($He$) gas?",
+    "options": ["$2 \\mathrm{\\ g}$", "$4 \\mathrm{\\ g}$", "$8 \\mathrm{\\ g}$", "$16 \\mathrm{\\ g}$"],
+    "answer": "$8 \\mathrm{\\ g}$"
+  },
+  {
+    "question": "Which of the following contains the maximum number of molecules?",
+    "options": ["$2 \\mathrm{\\ g}$ of $H_2$", "$16 \\mathrm{\\ g}$ of $O_2$", "$44 \\mathrm{\\ g}$ of $CO_2$", "$14 \\mathrm{\\ g}$ of $N_2$"],
+    "answer": "$2 \\mathrm{\\ g}$ of $H_2$"
+  },
+  {
+    "question": "What is the molar mass of glucose ($C_6H_{12}O_6$)?",
+    "options": ["$90 \\mathrm{\\ g/mol}$", "$180 \\mathrm{\\ g/mol}$", "$342 \\mathrm{\\ g/mol}$", "$360 \\mathrm{\\ g/mol}$"],
+    "answer": "$180 \\mathrm{\\ g/mol}$"
+  },
+  {
+    "question": "How many moles are present in $8 \\mathrm{\\ g}$ of methane ($CH_4$)?",
+    "options": ["$0.25 \\mathrm{\\ mol}$", "$0.5 \\mathrm{\\ mol}$", "$1.0 \\mathrm{\\ mol}$", "$2.0 \\mathrm{\\ mol}$"],
+    "answer": "$0.5 \\mathrm{\\ mol}$"
+  },
+  {
+    "question": "What is the mass of $1.5 \\mathrm{\\ moles}$ of water ($H_2O$)?",
+    "options": ["$18 \\mathrm{\\ g}$", "$27 \\mathrm{\\ g}$", "$36 \\mathrm{\\ g}$", "$9 \\mathrm{\\ g}$"],
+    "answer": "$27 \\mathrm{\\ g}$"
+  },
+  {
+    "question": "What is the molar mass of calcium carbonate ($CaCO_3$)?",
+    "options": ["$80 \\mathrm{\\ g/mol}$", "$90 \\mathrm{\\ g/mol}$", "$100 \\mathrm{\\ g/mol}$", "$110 \\mathrm{\\ g/mol}$"],
+    "answer": "$100 \\mathrm{\\ g/mol}$"
+  },
+  {
+    "question": "What is the molar mass of sodium hydroxide ($NaOH$)?",
+    "options": ["$30 \\mathrm{\\ g/mol}$", "$40 \\mathrm{\\ g/mol}$", "$50 \\mathrm{\\ g/mol}$", "$60 \\mathrm{\\ g/mol}$"],
+    "answer": "$40 \\mathrm{\\ g/mol}$"
+  },
+  {
+    "question": "How many moles of oxygen atoms are present in 1 mole of $CO_2$?",
+    "options": ["$1 \\mathrm{\\ mol}$", "$2 \\mathrm{\\ mol}$", "$3 \\mathrm{\\ mol}$", "$4 \\mathrm{\\ mol}$"],
+    "answer": "$2 \\mathrm{\\ mol}$"
+  },
+  {
+    "question": "What is the empirical formula of hydrogen peroxide ($H_2O_2$)?",
+    "options": ["$H_2O$", "$HO_2$", "$HO$", "$H_2O_2$"],
+    "answer": "$HO$"
+  },
+  {
+    "question": "What is the empirical formula of glucose ($C_6H_{12}O_6$)?",
+    "options": ["$C_2H_4O_2$", "$CH_2O$", "$CHO$", "$C_6H_{12}O_6$"],
+    "answer": "$CH_2O$"
+  },
+  {
+    "question": "How many atoms are in $12 \\mathrm{\\ g}$ of Carbon-12?",
+    "options": ["$6.022 \\times 10^{22}$", "$6.022 \\times 10^{23}$", "$12 \\times 10^{23}$", "$1 \\times 10^{23}$"],
+    "answer": "$6.022 \\times 10^{23}$"
+  },
+  {
+    "question": "What is the number of moles in $44.8 \\mathrm{\\ L}$ of an ideal gas at STP?",
+    "options": ["$1 \\mathrm{\\ mol}$", "$2 \\mathrm{\\ mol}$", "$0.5 \\mathrm{\\ mol}$", "$4 \\mathrm{\\ mol}$"],
+    "answer": "$2 \\mathrm{\\ mol}$"
+  },
+  {
+    "question": "What is the volume of $0.25 \\mathrm{\\ moles}$ of gas at STP?",
+    "options": ["$5.6 \\mathrm{\\ L}$", "$11.2 \\mathrm{\\ L}$", "$22.4 \\mathrm{\\ L}$", "$2.24 \\mathrm{\\ L}$"],
+    "answer": "$5.6 \\mathrm{\\ L}$"
+  },
+  {
+    "question": "What is the mass of $0.1 \\mathrm{\\ moles}$ of $CaCO_3$?",
+    "options": ["$1 \\mathrm{\\ g}$", "$10 \\mathrm{\\ g}$", "$100 \\mathrm{\\ g}$", "$0.1 \\mathrm{\\ g}$"],
+    "answer": "$10 \\mathrm{\\ g}$"
+  },
+  {
+    "question": "How many moles are in $3.011 \\times 10^{23}$ molecules of $H_2$?",
+    "options": ["$0.25 \\mathrm{\\ mol}$", "$0.5 \\mathrm{\\ mol}$", "$1.0 \\mathrm{\\ mol}$", "$2.0 \\mathrm{\\ mol}$"],
+    "answer": "$0.5 \\mathrm{\\ mol}$"
+  },
+  {
+    "question": "What is the molar mass of sodium chloride ($NaCl$)?",
+    "options": ["$58.5 \\mathrm{\\ g/mol}$", "$40 \\mathrm{\\ g/mol}$", "$36.5 \\mathrm{\\ g/mol}$", "$74.5 \\mathrm{\\ g/mol}$"],
+    "answer": "$58.5 \\mathrm{\\ g/mol}$"
+  },
+  {
+    "question": "How many atoms of oxygen are there in 1 mole of $O_2$?",
+    "options": ["$N_A$", "$2 N_A$", "$16 N_A$", "$32 N_A$"],
+    "answer": "$2 N_A$"
+  },
+  {
+    "question": "What is the mass of 3 moles of Carbon atoms?",
+    "options": ["$12 \\mathrm{\\ g}$", "$24 \\mathrm{\\ g}$", "$36 \\mathrm{\\ g}$", "$48 \\mathrm{\\ g}$"],
+    "answer": "$36 \\mathrm{\\ g}$"
+  },
+  {
+    "question": "What is the molar mass of hydrochloric acid ($HCl$)?",
+    "options": ["$35.5 \\mathrm{\\ g/mol}$", "$36.5 \\mathrm{\\ g/mol}$", "$37.5 \\mathrm{\\ g/mol}$", "$38.5 \\mathrm{\\ g/mol}$"],
+    "answer": "$36.5 \\mathrm{\\ g/mol}$"
+  },
+  {
+    "question": "What is the molar mass of nitric acid ($HNO_3$)?",
+    "options": ["$61 \\mathrm{\\ g/mol}$", "$62 \\mathrm{\\ g/mol}$", "$63 \\mathrm{\\ g/mol}$", "$64 \\mathrm{\\ g/mol}$"],
+    "answer": "$63 \\mathrm{\\ g/mol}$"
+  },
+  {
+    "question": "How many moles of Hydrogen atoms are in 1 mole of ammonia ($NH_3$)?",
+    "options": ["$1 \\mathrm{\\ mol}$", "$2 \\mathrm{\\ mol}$", "$3 \\mathrm{\\ mol}$", "$4 \\mathrm{\\ mol}$"],
+    "answer": "$3 \\mathrm{\\ mol}$"
+  },
+  {
+    "question": "What is the atomicity of ozone ($O_3$)?",
+    "options": ["1", "2", "3", "4"],
+    "answer": "3"
+  },
+  {
+    "question": "What is the atomicity of phosphorus molecule ($P_4$)?",
+    "options": ["1", "2", "3", "4"],
+    "answer": "4"
+  },
+  {
+    "question": "What is the atomicity of sulfur molecule ($S_8$)?",
+    "options": ["2", "4", "6", "8"],
+    "answer": "8"
+  },
+  {
+    "question": "What is the gram molecular mass of Oxygen ($O_2$)?",
+    "options": ["$8 \\mathrm{\\ g}$", "$16 \\mathrm{\\ g}$", "$32 \\mathrm{\\ g}$", "$64 \\mathrm{\\ g}$"],
+    "answer": "$32 \\mathrm{\\ g}$"
+  },
+  {
+    "question": "What is the gram atomic mass of Oxygen?",
+    "options": ["$8 \\mathrm{\\ g}$", "$16 \\mathrm{\\ g}$", "$32 \\mathrm{\\ g}$", "$64 \\mathrm{\\ g}$"],
+    "answer": "$16 \\mathrm{\\ g}$"
+  },
+  {
+    "question": "How many moles are in $100 \\mathrm{\\ g}$ of $CaCO_3$?",
+    "options": ["$0.1 \\mathrm{\\ mol}$", "$0.5 \\mathrm{\\ mol}$", "$1.0 \\mathrm{\\ mol}$", "$10.0 \\mathrm{\\ mol}$"],
+    "answer": "$1.0 \\mathrm{\\ mol}$"
+  },
+  {
+    "question": "What is the mass of one molecule of water?",
+    "options": ["$18 \\mathrm{\\ g}$", "$18 / N_A \\mathrm{\\ g}$", "$1 \\mathrm{\\ g}$", "$1 / N_A \\mathrm{\\ g}$"],
+    "answer": "$18 / N_A \\mathrm{\\ g}$"
+  },
+  {
+    "question": "In what simple whole number ratio are the atoms of Hydrogen and Oxygen present in water?",
+    "options": ["$1:1$", "$1:2$", "$2:1$", "$2:2$"],
+    "answer": "$2:1$"
+  },
+  {
+    "question": "What is the approximate percentage of Hydrogen in water by mass?",
+    "options": ["$11.1\\%$", "$22.2\\%$", "$33.3\\%$", "$88.9\\%$"],
+    "answer": "$11.1\\%$"
+  },
+  {
+    "question": "What is the approximate percentage of Oxygen in water by mass?",
+    "options": ["$11.1\\%$", "$50.0\\%$", "$88.9\\%$", "$99.9\\%$"],
+    "answer": "$88.9\\%$"
+  },
+  {
+    "question": "What is the total number of ions produced by dissolving 1 mole of $NaCl$ in water?",
+    "options": ["$N_A$", "$2 N_A$", "$3 N_A$", "$0.5 N_A$"],
+    "answer": "$2 N_A$"
+  },
+  {
+    "question": "How many moles are there in $90 \\mathrm{\\ g}$ of water?",
+    "options": ["$2 \\mathrm{\\ mol}$", "$3 \\mathrm{\\ mol}$", "$4 \\mathrm{\\ mol}$", "$5 \\mathrm{\\ mol}$"],
+    "answer": "$5 \\mathrm{\\ mol}$"
+  },
+  {
+    "question": "What is the molar mass of sodium carbonate ($Na_2CO_3$)?",
+    "options": ["$83 \\mathrm{\\ g/mol}$", "$106 \\mathrm{\\ g/mol}$", "$116 \\mathrm{\\ g/mol}$", "$126 \\mathrm{\\ g/mol}$"],
+    "answer": "$106 \\mathrm{\\ g/mol}$"
+  },
+  {
+    "question": "How many molecules are in $0.5 \\mathrm{\\ moles}$ of nitrogen gas ($N_2$)?",
+    "options": ["$3.011 \\times 10^{23}$", "$6.022 \\times 10^{23}$", "$1.505 \\times 10^{23}$", "$12.044 \\times 10^{23}$"],
+    "answer": "$3.011 \\times 10^{23}$"
+  },
+  {
+    "question": "If the atomic mass of Nitrogen is 14, what is the mass of $0.5 \\mathrm{\\ moles}$ of $N_2$ gas?",
+    "options": ["$7 \\mathrm{\\ g}$", "$14 \\mathrm{\\ g}$", "$21 \\mathrm{\\ g}$", "$28 \\mathrm{\\ g}$"],
+    "answer": "$14 \\mathrm{\\ g}$"
+  },
+  {
+    "question": "What is the number of moles of electrons in 1 mole of Hydrogen gas ($H_2$)?",
+    "options": ["$1 \\mathrm{\\ mol}$", "$2 \\mathrm{\\ mol}$", "$3 \\mathrm{\\ mol}$", "$4 \\mathrm{\\ mol}$"],
+    "answer": "$2 \\mathrm{\\ mol}$"
+  },
+  {
+    "question": "Which formula represents the actual number of atoms of each element in a molecule?",
+    "options": ["Empirical formula", "Molecular formula", "Structural formula", "Chemical formula"],
+    "answer": "Molecular formula"
+  },
+  {
+    "question": "The molecular formula is always a simple integer multiple of the:",
+    "options": ["Structural formula", "Molar formula", "Empirical formula", "Atomic mass"],
+    "answer": "Empirical formula"
+  },
+  {
+    "question": "If a compound has an empirical formula of $CH_2$ and a molar mass of $28 \\mathrm{\\ g/mol}$, what is its molecular formula?",
+    "options": ["$CH_2$", "$C_2H_4$", "$C_3H_6$", "$C_4H_8$"],
+    "answer": "$C_2H_4$"
+  },
+  {
+    "question": "Which of the following contains the same number of atoms as $12 \\mathrm{\\ g}$ of Carbon-12?",
+    "options": ["$16 \\mathrm{\\ g}$ of $O_2$", "$24 \\mathrm{\\ g}$ of $Mg$", "$14 \\mathrm{\\ g}$ of $N_2$", "$1 \\mathrm{\\ g}$ of $He$"],
+    "answer": "$24 \\mathrm{\\ g}$ of $Mg$"
+  },
+  {
+    "question": "What is the mass of 1 mole of an element equal to?",
+    "options": ["Its atomic number in grams", "Its mass number in amu", "Its gram atomic mass", "Its atomic volume"],
+    "answer": "Its gram atomic mass"
+  },
+  {
+    "question": "How many moles of carbon atoms are in 1 mole of ethane ($C_2H_6$)?",
+    "options": ["$1 \\mathrm{\\ mol}$", "$2 \\mathrm{\\ mol}$", "$6 \\mathrm{\\ mol}$", "$8 \\mathrm{\\ mol}$"],
+    "answer": "$2 \\mathrm{\\ mol}$"
+  },
+  {
+    "question": "What is the molar mass of Potassium Chloride ($KCl$)? (Given K=39, Cl=35.5)",
+    "options": ["$74.5 \\mathrm{\\ g/mol}$", "$58.5 \\mathrm{\\ g/mol}$", "$70.5 \\mathrm{\\ g/mol}$", "$84.5 \\mathrm{\\ g/mol}$"],
+    "answer": "$74.5 \\mathrm{\\ g/mol}$"
+  }
+]

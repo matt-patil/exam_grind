@@ -238,7 +238,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                 color: const Color(0xFF1C1C1E),
                 borderRadius: BorderRadius.circular(16),
                 border: Border.all(
-                  color: Theme.of(context).colorScheme.primary.withOpacity(0.3),
+                  color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.3),
                   width: 2,
                 ),
               ),
@@ -246,7 +246,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                 ? Center(
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
+                        color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.2),
                         shape: BoxShape.circle,
                       ),
                       padding: const EdgeInsets.all(16),
@@ -264,7 +264,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                         Container(
                           padding: const EdgeInsets.all(12),
                           decoration: BoxDecoration(
-                            color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
+                            color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.2),
                             borderRadius: BorderRadius.circular(12),
                           ),
                           child: Icon(

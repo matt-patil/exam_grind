@@ -39,6 +39,7 @@ dependencies:
   shared_preferences: ^2.5.4
   permission_handler: ^11.3.1
   sensors_plus: ^5.0.1
+  flutter_math_fork: ^0.7.1
 
 dev_dependencies:
   flutter_test:
@@ -60,6 +61,7 @@ flutter:
   assets:
     - assets/sounds/
     - assets/quotes.json
+    - assets/MCQ datasets/JEE/Math/
 
   # To add assets to your application, add an assets section, like this:
   # assets:

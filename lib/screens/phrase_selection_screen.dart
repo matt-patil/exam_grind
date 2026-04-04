@@ -115,7 +115,7 @@ class _PhraseSelectionScreenState extends State<PhraseSelectionScreen> with Sing
             margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: isSelected ? const Color(0xFFFF5261).withOpacity(0.1) : const Color(0xFF1E1E1E),
+              color: isSelected ? const Color(0xFFFF5261).withValues(alpha: 0.1) : const Color(0xFF1E1E1E),
               borderRadius: BorderRadius.circular(12),
               border: Border.all(
                 color: isSelected ? const Color(0xFFFF5261) : Colors.transparent,

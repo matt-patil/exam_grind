@@ -7,6 +7,7 @@ import '../services/native_alarm_service.dart';
 import 'math_challenge_screen.dart';
 import 'typing_challenge_screen.dart';
 import 'shake_challenge_screen.dart';
+import 'mcq_challenge_screen.dart';
 
 class AlarmRingingScreen extends StatefulWidget {
   final AlarmModel alarm;
@@ -74,6 +75,11 @@ class _AlarmRingingScreenState extends State<AlarmRingingScreen> {
       );
     } else if (mission['type'] == 'Shake') {
       missionScreen = ShakeChallengeScreen(
+        initialConfig: mission,
+        isActiveMission: true,
+      );
+    } else if (mission['type'] == 'MCQ') {
+      missionScreen = MCQChallengeScreen(
         initialConfig: mission,
         isActiveMission: true,
       );

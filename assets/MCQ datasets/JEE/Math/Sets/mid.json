@@ -1,0 +1,252 @@
+[
+  {
+    "question": "If two finite sets $A$ and $B$ have $m$ and $n$ elements respectively, and the total number of subsets of $A$ is 56 more than the total number of subsets of $B$, then what are the values of $m$ and $n$?",
+    "options": ["$m = 7, n = 6$", "$m = 6, n = 3$", "$m = 5, n = 1$", "$m = 8, n = 7$"],
+    "answer": "$m = 6, n = 3$"
+  },
+  {
+    "question": "In a town of 10,000 families, it was found that 40% families buy newspaper A, 20% buy newspaper B, and 10% buy newspaper C. 5% buy A and B, 3% buy B and C, and 4% buy A and C. If 2% buy all three, find the number of families which buy none of the newspapers A, B, and C.",
+    "options": ["4000", "3300", "4200", "3100"],
+    "answer": "4000"
+  },
+  {
+    "question": "If $n(U) = 700$, $n(A) = 200$, $n(B) = 300$, and $n(A \\cap B) = 100$, find the value of $n(A' \\cap B')$.",
+    "options": ["300", "400", "200", "100"],
+    "answer": "300"
+  },
+  {
+    "question": "If $n(A - B) = 14 + x$, $n(B - A) = 3x$, and $n(A \\cap B) = x$. Given that $n(A) = n(B)$, find the value of $x$.",
+    "options": ["4", "5", "6", "7"],
+    "answer": "7"
+  },
+  {
+    "question": "In a survey of 400 students in a school, 100 were listed as taking apple juice, 150 as taking orange juice, and 75 were listed as taking both apple and orange juice. Find how many students were taking neither apple juice nor orange juice.",
+    "options": ["225", "175", "150", "200"],
+    "answer": "225"
+  },
+  {
+    "question": "Let $A$ and $B$ have 3 and 6 elements respectively. What is the minimum number of elements in $A \\cup B$?",
+    "options": ["3", "6", "9", "0"],
+    "answer": "6"
+  },
+  {
+    "question": "Let $A$ and $B$ have 3 and 6 elements respectively. What is the maximum number of elements in $A \\cup B$?",
+    "options": ["3", "6", "9", "18"],
+    "answer": "9"
+  },
+  {
+    "question": "The number of non-empty proper subsets of a set containing $n$ elements is:",
+    "options": ["$2^n$", "$2^n - 1$", "$2^n - 2$", "$n^2 - 1$"],
+    "answer": "$2^n - 2$"
+  },
+  {
+    "question": "For any sets $A, B$, and $C$, the expression $A - (B \\cup C)$ is equal to:",
+    "options": ["$(A - B) \\cup (A - C)$", "$(A - B) \\cap (A - C)$", "$(A - B) \\cup C$", "$A - (B \\cap C)$"],
+    "answer": "$(A - B) \\cap (A - C)$"
+  },
+  {
+    "question": "For any sets $A, B$, and $C$, the expression $A - (B \\cap C)$ is equal to:",
+    "options": ["$(A - B) \\cup (A - C)$", "$(A - B) \\cap (A - C)$", "$(A - B) \\cap C$", "$A - (B \\cup C)$"],
+    "answer": "$(A - B) \\cup (A - C)$"
+  },
+  {
+    "question": "Which of the following sets is equal to $(A \\cup B) - B$?",
+    "options": ["$A$", "$A \\cap B$", "$A - B$", "$\\emptyset$"],
+    "answer": "$A - B$"
+  },
+  {
+    "question": "For any two sets $A$ and $B$, $A \\cap (A \\cup B)'$ is equal to:",
+    "options": ["$A$", "$B$", "$\\emptyset$", "$A'$"],
+    "answer": "$\\emptyset$"
+  },
+  {
+    "question": "For any two sets $A$ and $B$, the expression $(A - B) \\cup (A \\cap B)$ simplifies to:",
+    "options": ["$A$", "$B$", "$A \\cup B$", "$\\emptyset$"],
+    "answer": "$A$"
+  },
+  {
+    "question": "If $X$ and $Y$ are subsets of the universal set $U$, then $X \\cap (X \\cup Y)'$ is equal to:",
+    "options": ["$X$", "$Y$", "$\\emptyset$", "$X'$"],
+    "answer": "$\\emptyset$"
+  },
+  {
+    "question": "The symmetric difference $A \\Delta B$ can be expressed as:",
+    "options": ["$(A \\cup B) \\cap (A \\cap B)$", "$(A \\cup B) - (A \\cap B)$", "$(A - B) \\cap (B - A)$", "$(A \\cap B) - (A \\cup B)$"],
+    "answer": "$(A \\cup B) - (A \\cap B)$"
+  },
+  {
+    "question": "Let $A = \\{x \\in \\mathbb{R} : x^2 - 5x + 6 = 0\\}$ and $B = \\{x \\in \\mathbb{R} : x^2 - 7x + 12 = 0\\}$. Find $A \\cup B$.",
+    "options": ["$\\{2, 3\\}$", "$\\{3, 4\\}$", "$\\{2, 4\\}$", "$\\{2, 3, 4\\}$"],
+    "answer": "$\\{2, 3, 4\\}$"
+  },
+  {
+    "question": "Let $A = \\{x \\in \\mathbb{R} : |x| < 2\\}$ and $B = \\{x \\in \\mathbb{R} : |x - 1| \\geq 1\\}$. Find the set $A \\cap B$.",
+    "options": ["$[-2, 0]$", "$(-2, 0]$", "$(-2, 2)$", "$[2, \\infty)$"],
+    "answer": "$(-2, 0]$"
+  },
+  {
+    "question": "Let $A = \\{(x, y) : y = e^x\\}$ and $B = \\{(x, y) : y = x\\}$. Then $A \\cap B$ is:",
+    "options": ["A singleton set", "An empty set", "An infinite set", "Cannot be determined"],
+    "answer": "An empty set"
+  },
+  {
+    "question": "If $A = \\{x : x \\text{ is a multiple of 4}\\}$ and $B = \\{x : x \\text{ is a multiple of 6}\\}$, then $A \\cap B$ consists of all multiples of:",
+    "options": ["24", "12", "2", "10"],
+    "answer": "12"
+  },
+  {
+    "question": "If $X = \\{4^n - 3n - 1 : n \\in \\mathbb{N}\\}$ and $Y = \\{9(n - 1) : n \\in \\mathbb{N}\\}$, then $X \\cup Y$ is equal to:",
+    "options": ["$X$", "$Y$", "$\\mathbb{N}$", "$\\emptyset$"],
+    "answer": "$Y$"
+  },
+  {
+    "question": "If $A = \\{x \\in \\mathbb{R} : x^2 = 1\\}$ and $B = \\{x \\in \\mathbb{R} : x^4 = 1\\}$, then the symmetric difference $A \\Delta B$ is:",
+    "options": ["$\\{-1, 1\\}$", "$\\{-i, i\\}$", "$\\emptyset$", "$\\{-1, 1, -i, i\\}$"],
+    "answer": "$\\emptyset$"
+  },
+  {
+    "question": "The number of elements in the set $P(P(P(\\emptyset)))$ is:",
+    "options": ["1", "2", "4", "8"],
+    "answer": "4"
+  },
+  {
+    "question": "In a survey of 60 people, 25 read newspaper H, 26 read T, 26 read I, 9 read both H and I, 11 read both H and T, 8 read both T and I, and 3 read all three. The number of people who read exactly one newspaper is:",
+    "options": ["30", "52", "22", "40"],
+    "answer": "30"
+  },
+  {
+    "question": "In a class of 100 students, 55 like Mathematics and 67 like Physics. If $x$ students like both the subjects, what is the valid range for $x$?",
+    "options": ["$0 \\leq x \\leq 55$", "$22 \\leq x \\leq 55$", "$22 \\leq x \\leq 67$", "$0 \\leq x \\leq 100$"],
+    "answer": "$22 \\leq x \\leq 55$"
+  },
+  {
+    "question": "For any three sets $A, B$, and $C$, $A \\cap (B \\Delta C)$ is equal to:",
+    "options": ["$(A \\cap B) \\Delta C$", "$(A \\cap B) \\Delta (A \\cap C)$", "$A \\Delta (B \\cap C)$", "$(A \\cup B) \\Delta (A \\cup C)$"],
+    "answer": "$(A \\cap B) \\Delta (A \\cap C)$"
+  },
+  {
+    "question": "Let $A = \\{1, 2, 3, 4\\}$ and $B = \\{2, 4, 6\\}$. The number of subsets $C$ of $A \\cup B$ such that $C \\cap A = \\{2, 4\\}$ is:",
+    "options": ["2", "4", "8", "16"],
+    "answer": "2"
+  },
+  {
+    "question": "If sets $A$ and $B$ have 2 elements and 4 elements respectively, what is the number of subsets of $A \\times B$ having 3 or more elements?",
+    "options": ["256", "220", "219", "211"],
+    "answer": "219"
+  },
+  {
+    "question": "Two sets $A$ and $B$ have $a$ and $b$ elements respectively. If the total number of subsets of $A$ is 112 more than the total number of subsets of $B$, then the value of $a \\times b$ is:",
+    "options": ["24", "28", "21", "35"],
+    "answer": "28"
+  },
+  {
+    "question": "For any two sets $A$ and $B$, $A - (A - B)$ is equal to:",
+    "options": ["$A$", "$B$", "$A \\cup B$", "$A \\cap B$"],
+    "answer": "$A \\cap B$"
+  },
+  {
+    "question": "If $n(A \\cap B) = 5$, $n(A \\cup B) = 35$, and $n(A) = 13$, find $n(B)$.",
+    "options": ["22", "27", "17", "30"],
+    "answer": "27"
+  },
+  {
+    "question": "For any three sets $A, B, C$, the cartesian product operation distributes over union. So $A \\times (B \\cup C)$ equals:",
+    "options": ["$(A \\times B) \\cap (A \\times C)$", "$(A \\cup B) \\times (A \\cup C)$", "$(A \\times B) \\cup (A \\times C)$", "$A \\cup (B \\times C)$"],
+    "answer": "$(A \\times B) \\cup (A \\times C)$"
+  },
+  {
+    "question": "Which of the following is a true statement regarding the symmetric difference operator?",
+    "options": ["It is commutative but not associative", "It is associative but not commutative", "It is neither commutative nor associative", "It is both commutative and associative"],
+    "answer": "It is both commutative and associative"
+  },
+  {
+    "question": "The shaded region corresponding to $(A \\cup B) \\cap C'$ in a Venn diagram represents the area which is:",
+    "options": ["In A and B but not in C", "In A or B but not in C", "In C but not in A or B", "In all three sets"],
+    "answer": "In A or B but not in C"
+  },
+  {
+    "question": "If $A = \\{x \\in \\mathbb{R} : x^2 + x + 1 = 0\\}$, then $A$ is:",
+    "options": ["A singleton set", "An infinite set", "An empty set", "A set with two real elements"],
+    "answer": "An empty set"
+  },
+  {
+    "question": "If $X = \\{8^n - 7n - 1 : n \\in \\mathbb{N}\\}$ and $Y = \\{49(n - 1) : n \\in \\mathbb{N}\\}$, then which of the following is true?",
+    "options": ["$X \\subset Y$", "$Y \\subset X$", "$X = Y$", "$X \\cap Y = \\emptyset$"],
+    "answer": "$X \\subset Y$"
+  },
+  {
+    "question": "If $A \\subset B$, then which of the following is always true?",
+    "options": ["$A' \\subset B'$", "$B' \\subset A'$", "$A \\cap B = \\emptyset$", "$A - B = B$"],
+    "answer": "$B' \\subset A'$"
+  },
+  {
+    "question": "For any two sets $A$ and $B$, $A \\cup B = A \\cap B$ if and only if:",
+    "options": ["$A \\subset B$", "$B \\subset A$", "$A = B$", "$A = \\emptyset$ or $B = \\emptyset$"],
+    "answer": "$A = B$"
+  },
+  {
+    "question": "A set contains $n$ elements. The number of subsets of the set which contain exactly $m$ elements is:",
+    "options": ["$n^m$", "$m^n$", "$\\binom{n}{m}$", "$\\binom{n}{n-m}$"],
+    "answer": "$\\binom{n}{m}$"
+  },
+  {
+    "question": "If $U = \\{x \\in \\mathbb{N} : x \\leq 10\\}$, $A = \\{x : x \\text{ is prime}\\}$, and $B = \\{x : x \\text{ is even}\\}$, find $A \\cap B$.",
+    "options": ["$\\emptyset$", "$\\{2\\}$", "$\\{2, 4, 6, 8, 10\\}$", "$\\{2, 3, 5, 7\\}$"],
+    "answer": "$\\{2\\}$"
+  },
+  {
+    "question": "If $A$ and $B$ are two disjoint sets, then $n(A \\cup B)$ is equal to:",
+    "options": ["$n(A) \\times n(B)$", "$n(A) + n(B) - n(A \\cap B)$", "$n(A) + n(B)$", "$n(A) - n(B)$"],
+    "answer": "$n(A) + n(B)$"
+  },
+  {
+    "question": "Let $A$ be a set with 5 elements. What is the number of relations from $A$ to $A$?",
+    "options": ["$2^5$", "$2^{10}$", "$2^{25}$", "$5^2$"],
+    "answer": "$2^{25}$"
+  },
+  {
+    "question": "If $n(A) = 3$ and $n(B) = 4$, then the number of subsets of $A \\times B$ is:",
+    "options": ["$2^{12}$", "$12^2$", "$2^7$", "$7^2$"],
+    "answer": "$2^{12}$"
+  },
+  {
+    "question": "In a group of 50 people, 30 speak Hindi, 25 speak English, and 10 speak neither. How many people speak both languages?",
+    "options": ["15", "5", "10", "20"],
+    "answer": "15"
+  },
+  {
+    "question": "If $A = \\{1, 2, 3\\}$, $B = \\{3, 4\\}$, and $C = \\{4, 5, 6\\}$, find $(A \\times B) \\cap (B \\times C)$.",
+    "options": ["$\\{(3, 4)\\}$", "$\\{(4, 3)\\}$", "$\\emptyset$", "$\\{(3, 3), (4, 4)\\}$"],
+    "answer": "$\\{(3, 4)\\}$"
+  },
+  {
+    "question": "Let $U$ be the universal set of all triangles in a plane. If $A$ is the set of all triangles with at least one angle different from $60^\\circ$, what is $A'$?",
+    "options": ["The set of all isosceles triangles", "The set of all scalene triangles", "The set of all equilateral triangles", "The set of all right-angled triangles"],
+    "answer": "The set of all equilateral triangles"
+  },
+  {
+    "question": "If $A \\cup B = U$, then what does the set $A' \\cap B'$ evaluate to?",
+    "options": ["$U$", "$A$", "$B$", "$\\emptyset$"],
+    "answer": "$\\emptyset$"
+  },
+  {
+    "question": "Consider the interval $A = [-2, 5)$ and $B = (1, 8]$. The intersection $A \\cap B$ is:",
+    "options": ["$(-2, 8]$", "$[1, 5]$", "$(1, 5)$", "$[1, 5)$"],
+    "answer": "$(1, 5)$"
+  },
+  {
+    "question": "Consider the interval $A = [-2, 5)$ and $B = (1, 8]$. The union $A \\cup B$ is:",
+    "options": ["$(-2, 8]$", "$[-2, 8]$", "$[-2, 8)$", "$(1, 5)$"],
+    "answer": "$[-2, 8]$"
+  },
+  {
+    "question": "A set $S$ has a power set containing 1024 elements. How many elements are present in the set $S$?",
+    "options": ["8", "10", "12", "16"],
+    "answer": "10"
+  },
+  {
+    "question": "Which of the following conditions implies that $A \\cap B = A$?",
+    "options": ["$A \\subset B$", "$B \\subset A$", "$A = B'$", "$A \\cap B = \\emptyset$"],
+    "answer": "$A \\subset B$"
+  }
+]

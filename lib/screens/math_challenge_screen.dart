@@ -33,14 +33,12 @@ class _MathChallengeScreenState extends State<MathChallengeScreen> {
   Timer? _timer;
   double _timerProgress = 1.0;
   final int _totalSeconds = 30;
-  late int _secondsRemaining;
 
   @override
   void initState() {
     super.initState();
     _difficulty = widget.initialConfig?['difficulty']?.toDouble() ?? 0.0;
     _problemCount = widget.initialConfig?['problemCount'] ?? 3;
-    _secondsRemaining = _totalSeconds;
     _generateProblem();
 
     if (widget.isActiveMission) {
@@ -56,7 +54,6 @@ class _MathChallengeScreenState extends State<MathChallengeScreen> {
 
   void _startTimer() {
     _timer?.cancel();
-    _secondsRemaining = _totalSeconds;
     _timerProgress = 1.0;
 
     _timer = Timer.periodic(const Duration(milliseconds: 100), (timer) {
