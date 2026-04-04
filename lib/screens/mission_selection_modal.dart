@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'math_challenge_screen.dart';
 import 'typing_challenge_screen.dart';
 import 'shake_challenge_screen.dart';
+import 'mcq_mission_screen.dart';
 
 class MissionSelectionModal extends StatelessWidget {
   final Map<String, dynamic>? initialConfig;
@@ -99,6 +100,26 @@ class MissionSelectionModal extends StatelessWidget {
                     MaterialPageRoute(
                       builder: (context) => ShakeChallengeScreen(
                         initialConfig: initialConfig?['type'] == 'Shake' ? initialConfig : null,
+                      ),
+                    ),
+                  );
+                  if (context.mounted && result != null) {
+                    Navigator.pop(context, result);
+                  }
+                },
+              ),
+              const SizedBox(height: 16),
+
+              _MissionCard(
+                title: 'MCQ',
+                icon: Icons.quiz,
+                color: const Color(0xFFBB86FC),
+                onTap: () async {
+                  final result = await Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => MCQMissionScreen(
+                        initialConfig: initialConfig?['type'] == 'MCQ' ? initialConfig : null,
                       ),
                     ),
                   );
