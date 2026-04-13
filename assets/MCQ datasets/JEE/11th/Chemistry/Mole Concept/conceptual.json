@@ -1,0 +1,472 @@
+[
+  {
+    "question": "Which statement best defines the mole?",
+    "options": [
+      "The mass of a substance in grams",
+      "The amount of substance containing Avogadro's number of entities",
+      "The number of atoms present in one gram of any element",
+      "The volume occupied by a gas at any condition"
+    ],
+    "answer": "The amount of substance containing Avogadro's number of entities"
+  },
+  {
+    "question": "What is the value of Avogadro's constant?",
+    "options": [
+      "$6.022 \\times 10^{23} \\ \\mathrm{mol^{-1}}$",
+      "$3.011 \\times 10^{23} \\ \\mathrm{mol^{-1}}$",
+      "$6.022 \\times 10^{22} \\ \\mathrm{mol^{-1}}$",
+      "$1.602 \\times 10^{-19} \\ \\mathrm{mol^{-1}}$"
+    ],
+    "answer": "$6.022 \\times 10^{23} \\ \\mathrm{mol^{-1}}$"
+  },
+  {
+    "question": "Which law states that a compound always contains the same elements in the same proportion by mass?",
+    "options": [
+      "Law of conservation of mass",
+      "Law of definite proportions",
+      "Law of multiple proportions",
+      "Gay-Lussac's law of gaseous volumes"
+    ],
+    "answer": "Law of definite proportions"
+  },
+  {
+    "question": "Which law says that when two elements form more than one compound, the masses of one element that combine with a fixed mass of the other are in a simple ratio?",
+    "options": [
+      "Law of conservation of mass",
+      "Law of definite proportions",
+      "Law of multiple proportions",
+      "Avogadro's law"
+    ],
+    "answer": "Law of multiple proportions"
+  },
+  {
+    "question": "Which law states that mass is neither created nor destroyed in a chemical reaction?",
+    "options": [
+      "Law of conservation of mass",
+      "Law of reciprocal proportions",
+      "Law of constant composition",
+      "Law of gaseous volumes"
+    ],
+    "answer": "Law of conservation of mass"
+  },
+  {
+    "question": "Which of the following is the correct expression for number of moles?",
+    "options": [
+      "$n = \\dfrac{m}{M}$",
+      "$n = \\dfrac{M}{m}$",
+      "$n = m \\times M$",
+      "$n = \\dfrac{m}{N_A}$"
+    ],
+    "answer": "$n = \\dfrac{m}{M}$"
+  },
+  {
+    "question": "Which of the following represents molar mass?",
+    "options": [
+      "Mass of one atom",
+      "Mass of one mole of a substance",
+      "Mass of one molecule only",
+      "Mass of one litre of gas"
+    ],
+    "answer": "Mass of one mole of a substance"
+  },
+  {
+    "question": "Which statement about relative atomic mass is correct?",
+    "options": [
+      "It is measured in grams",
+      "It is the mass of an atom compared with $\\dfrac{1}{12}$ of the mass of a carbon-12 atom",
+      "It is the number of atoms in a molecule",
+      "It is always equal to the atomic number"
+    ],
+    "answer": "It is the mass of an atom compared with $\\dfrac{1}{12}$ of the mass of a carbon-12 atom"
+  },
+  {
+    "question": "What does one mole of carbon-12 contain?",
+    "options": [
+      "12 atoms",
+      "$6.022 \\times 10^{23}$ atoms",
+      "One gram of carbon",
+      "12 grams of carbon"
+    ],
+    "answer": "$6.022 \\times 10^{23}$ atoms"
+  },
+  {
+    "question": "Which formula correctly relates number of particles and moles?",
+    "options": [
+      "$N = nN_A$",
+      "$N = \\dfrac{n}{N_A}$",
+      "$N = N_A - n$",
+      "$N = \\dfrac{N_A}{n}$"
+    ],
+    "answer": "$N = nN_A$"
+  },
+  {
+    "question": "Which of the following is a correct statement about empirical formula?",
+    "options": [
+      "It gives the exact number of atoms in a molecule",
+      "It gives the simplest whole-number ratio of atoms present in a compound",
+      "It always has the same formula as molecular formula",
+      "It can be written only for ionic compounds"
+    ],
+    "answer": "It gives the simplest whole-number ratio of atoms present in a compound"
+  },
+  {
+    "question": "Which formula is used to obtain molecular formula from empirical formula?",
+    "options": [
+      "Molecular formula = Empirical formula \\times whole number factor",
+      "Molecular formula = Empirical formula + whole number factor",
+      "Molecular formula = Empirical formula - whole number factor",
+      "Molecular formula = Empirical formula \\div whole number factor"
+    ],
+    "answer": "Molecular formula = Empirical formula \\times whole number factor"
+  },
+  {
+    "question": "What is the unit of amount of substance in SI?",
+    "options": [
+      "gram",
+      "mole",
+      "litre",
+      "kilogram"
+    ],
+    "answer": "mole"
+  },
+  {
+    "question": "Which of the following is true for atoms and molecules in one mole?",
+    "options": [
+      "They always have the same mass",
+      "They contain the same number of entities",
+      "They always occupy the same volume",
+      "They have the same density"
+    ],
+    "answer": "They contain the same number of entities"
+  },
+  {
+    "question": "Which of the following is the correct formula for percentage by mass of an element in a compound?",
+    "options": [
+      "$\\dfrac{\\text{mass of element in 1 mole of compound}}{\\text{molar mass of compound}} \\times 100$",
+      "$\\dfrac{\\text{molar mass of compound}}{\\text{mass of element}} \\times 100$",
+      "$\\dfrac{\\text{number of atoms}}{\\text{molar mass}} \\times 100$",
+      "$\\dfrac{\\text{mass of compound}}{\\text{mass of element}} \\times 100$"
+    ],
+    "answer": "$\\dfrac{\\text{mass of element in 1 mole of compound}}{\\text{molar mass of compound}} \\times 100$"
+  },
+  {
+    "question": "Which of the following is an intensive property?",
+    "options": [
+      "Mass",
+      "Volume",
+      "Density",
+      "Number of moles"
+    ],
+    "answer": "Density"
+  },
+  {
+    "question": "Which of the following is an extensive property?",
+    "options": [
+      "Density",
+      "Temperature",
+      "Mass",
+      "Concentration"
+    ],
+    "answer": "Mass"
+  },
+  {
+    "question": "Which statement best describes atomic mass unit (u)?",
+    "options": [
+      "It is equal to the mass of one hydrogen atom exactly",
+      "It is $\\dfrac{1}{12}$ of the mass of one carbon-12 atom",
+      "It is the mass of one mole of atoms",
+      "It is the mass of one electron"
+    ],
+    "answer": "It is $\\dfrac{1}{12}$ of the mass of one carbon-12 atom"
+  },
+  {
+    "question": "Which of the following is the correct formula for number of atoms in a sample?",
+    "options": [
+      "$\\text{Number of atoms} = \\text{moles} \\times N_A$",
+      "$\\text{Number of atoms} = \\text{moles} \\div N_A$",
+      "$\\text{Number of atoms} = \\text{moles} - N_A$",
+      "$\\text{Number of atoms} = \\text{moles} + N_A$"
+    ],
+    "answer": "$\\text{Number of atoms} = \\text{moles} \\times N_A$"
+  },
+  {
+    "question": "Which one is a correct relation for molar volume of an ideal gas at STP in older school convention?",
+    "options": [
+      "$22.4 \\ \\mathrm{L \\ mol^{-1}}$",
+      "$2.24 \\ \\mathrm{L \\ mol^{-1}}$",
+      "$224 \\ \\mathrm{L \\ mol^{-1}}$",
+      "$1.12 \\ \\mathrm{L \\ mol^{-1}}$"
+    ],
+    "answer": "$22.4 \\ \\mathrm{L \\ mol^{-1}}$"
+  },
+  {
+    "question": "Which of the following best describes molecular mass?",
+    "options": [
+      "Mass of one molecule relative to $\\dfrac{1}{12}$ of carbon-12",
+      "Mass of one mole of molecules in grams",
+      "Mass of one atom only",
+      "Mass of one litre of gas"
+    ],
+    "answer": "Mass of one molecule relative to $\\dfrac{1}{12}$ of carbon-12"
+  },
+  {
+    "question": "What is the correct formula for mass percentage of oxygen in a compound?",
+    "options": [
+      "$\\dfrac{\\text{mass of oxygen in 1 mole of compound}}{\\text{molar mass of compound}} \\times 100$",
+      "$\\dfrac{\\text{molar mass of oxygen}}{\\text{mass of compound}} \\times 100$",
+      "$\\dfrac{\\text{mass of compound}}{\\text{mass of oxygen}} \\times 100$",
+      "$\\dfrac{\\text{number of oxygen atoms}}{\\text{molar mass}} \\times 100$"
+    ],
+    "answer": "$\\dfrac{\\text{mass of oxygen in 1 mole of compound}}{\\text{molar mass of compound}} \\times 100$"
+  },
+  {
+    "question": "Which of the following compounds has the same empirical and molecular formula?",
+    "options": [
+      "$\\mathrm{C_6H_{12}O_6}$",
+      "$\\mathrm{H_2O}$",
+      "$\\mathrm{C_2H_4}$",
+      "$\\mathrm{N_2H_4}$"
+    ],
+    "answer": "$\\mathrm{H_2O}$"
+  },
+  {
+    "question": "Which statement is correct for a pure substance?",
+    "options": [
+      "Its composition can vary from sample to sample",
+      "It has a fixed composition",
+      "It always contains only one atom type",
+      "It cannot exist as a compound"
+    ],
+    "answer": "It has a fixed composition"
+  },
+  {
+    "question": "Which of the following is the correct symbol for Avogadro's number?",
+    "options": [
+      "$N_A$",
+      "$A_r$",
+      "$M_r$",
+      "$n$"
+    ],
+    "answer": "$N_A$"
+  },
+  {
+    "question": "Which of the following is a correct statement about grams and moles?",
+    "options": [
+      "Gram is the unit of amount of substance",
+      "Mole is the unit of mass",
+      "Molar mass connects grams with moles",
+      "Grams and moles are identical quantities"
+    ],
+    "answer": "Molar mass connects grams with moles"
+  },
+  {
+    "question": "Which formula correctly gives the number of formula units in an ionic compound?",
+    "options": [
+      "$N = nN_A$",
+      "$N = \\dfrac{n}{N_A}$",
+      "$N = n + N_A$",
+      "$N = N_A - n$"
+    ],
+    "answer": "$N = nN_A$"
+  },
+  {
+    "question": "Which of the following is used to express the composition of a compound in the simplest ratio?",
+    "options": [
+      "Molecular formula",
+      "Structural formula",
+      "Empirical formula",
+      "Condensed formula"
+    ],
+    "answer": "Empirical formula"
+  },
+  {
+    "question": "Which of the following best describes the term 'stoichiometry'?",
+    "options": [
+      "Study of atomic structure only",
+      "Quantitative relationship among reactants and products",
+      "Study of chemical bonding only",
+      "Study of solution concentration only"
+    ],
+    "answer": "Quantitative relationship among reactants and products"
+  },
+  {
+    "question": "Which of the following is the correct formula for molar mass in terms of mass and moles?",
+    "options": [
+      "$M = \\dfrac{m}{n}$",
+      "$M = m \\times n$",
+      "$M = \\dfrac{n}{m}$",
+      "$M = m + n$"
+    ],
+    "answer": "$M = \\dfrac{m}{n}$"
+  },
+  {
+    "question": "Which statement about isotopes is correct?",
+    "options": [
+      "They have different atomic numbers and same mass number",
+      "They have same atomic number and different mass numbers",
+      "They have different numbers of electrons only",
+      "They are always different elements"
+    ],
+    "answer": "They have same atomic number and different mass numbers"
+  },
+  {
+    "question": "Which of the following is the best reason for using mole in chemistry?",
+    "options": [
+      "It helps in measuring temperature",
+      "It connects microscopic particles with measurable amounts",
+      "It replaces the need for formulas",
+      "It is used only for gases"
+    ],
+    "answer": "It connects microscopic particles with measurable amounts"
+  },
+  {
+    "question": "Which of the following is the correct expression for mass of one mole of a substance?",
+    "options": [
+      "Atomic mass in grams",
+      "Molar mass",
+      "Number of particles",
+      "Volume at STP"
+    ],
+    "answer": "Molar mass"
+  },
+  {
+    "question": "Which formula correctly represents the number of molecules in a given amount of substance?",
+    "options": [
+      "$\\text{Number of molecules} = nN_A$",
+      "$\\text{Number of molecules} = \\dfrac{n}{N_A}$",
+      "$\\text{Number of molecules} = N_A - n$",
+      "$\\text{Number of molecules} = n + N_A$"
+    ],
+    "answer": "$\\text{Number of molecules} = nN_A$"
+  },
+  {
+    "question": "Which of the following is true about relative molecular mass?",
+    "options": [
+      "It has unit grams",
+      "It is a ratio, so it is dimensionless",
+      "It is always equal to molar mass",
+      "It is measured in litres"
+    ],
+    "answer": "It is a ratio, so it is dimensionless"
+  },
+  {
+    "question": "Which of the following best describes the percentage composition of a compound?",
+    "options": [
+      "Percentage of each element by mass in the compound",
+      "Percentage of atoms by number in the compound",
+      "Percentage of molecules by volume",
+      "Percentage of moles by temperature"
+    ],
+    "answer": "Percentage of each element by mass in the compound"
+  },
+  {
+    "question": "Which of the following is the correct formula for empirical formula mass?",
+    "options": [
+      "Sum of atomic masses present in the empirical formula",
+      "Mass of one molecule in grams",
+      "Mass of one mole only",
+      "Mass of one atom divided by two"
+    ],
+    "answer": "Sum of atomic masses present in the empirical formula"
+  },
+  {
+    "question": "Which statement about a limiting reactant is correct?",
+    "options": [
+      "It is always present in excess",
+      "It is the reactant that gets completely consumed first",
+      "It has the highest molar mass",
+      "It is the reactant with the largest coefficient"
+    ],
+    "answer": "It is the reactant that gets completely consumed first"
+  },
+  {
+    "question": "Which of the following is NOT a postulate or useful idea in the mole concept?",
+    "options": [
+      "Large number of particles can be counted by weighing",
+      "One mole contains $N_A$ entities",
+      "Particles in one mole always have identical isotopes",
+      "Mole links mass and number of entities"
+    ],
+    "answer": "Particles in one mole always have identical isotopes"
+  },
+  {
+    "question": "Which of the following is correct for one mole of any element?",
+    "options": [
+      "It contains the same number of atoms",
+      "It always has the same mass in grams",
+      "It always occupies the same volume as a solid",
+      "It always contains the same number of molecules"
+    ],
+    "answer": "It contains the same number of atoms"
+  },
+  {
+    "question": "Which formula is correct for converting mass into number of moles?",
+    "options": [
+      "$n = \\dfrac{m}{M}$",
+      "$n = mM$",
+      "$n = \\dfrac{M}{m}$",
+      "$n = m + M$"
+    ],
+    "answer": "$n = \\dfrac{m}{M}$"
+  },
+  {
+    "question": "Which formula is correct for converting number of moles into mass?",
+    "options": [
+      "$m = nM$",
+      "$m = \\dfrac{n}{M}$",
+      "$m = \\dfrac{M}{n}$",
+      "$m = n + M$"
+    ],
+    "answer": "$m = nM$"
+  },
+  {
+    "question": "Which of the following is the correct definition of molecular formula?",
+    "options": [
+      "The simplest whole-number ratio of atoms",
+      "The actual number of atoms of each element in a molecule",
+      "The arrangement of atoms in space",
+      "The charge on an ion"
+    ],
+    "answer": "The actual number of atoms of each element in a molecule"
+  },
+  {
+    "question": "Which of the following is a correct distinction between atom and molecule?",
+    "options": [
+      "An atom is always a compound, while a molecule is always an element",
+      "A molecule can contain one or more atoms bonded together",
+      "An atom always contains multiple elements",
+      "A molecule cannot exist independently"
+    ],
+    "answer": "A molecule can contain one or more atoms bonded together"
+  },
+  {
+    "question": "Which of the following best matches the formula $n = \\dfrac{N}{N_A}$?",
+    "options": [
+      "Number of entities from number of moles",
+      "Number of moles from number of entities",
+      "Mass from moles",
+      "Volume from temperature"
+    ],
+    "answer": "Number of moles from number of entities"
+  },
+  {
+    "question": "Which of the following is a correct statement about ionic compounds?",
+    "options": [
+      "They exist as discrete molecules only",
+      "Their formula represents the simplest ratio of ions",
+      "They cannot be written with formulas",
+      "Their molecular formula is always different from empirical formula"
+    ],
+    "answer": "Their formula represents the simplest ratio of ions"
+  },
+  {
+    "question": "Which of the following is the correct formula for the number of atoms in one molecule multiplied by number of molecules?",
+    "options": [
+      "Total atoms = atoms per molecule \\times number of molecules",
+      "Total atoms = atoms per molecule + number of molecules",
+      "Total atoms = atoms per molecule - number of molecules",
+      "Total atoms = atoms per molecule \\div number of molecules"
+    ],
+    "answer": "Total atoms = atoms per molecule \\times number of molecules"
+  }
+]

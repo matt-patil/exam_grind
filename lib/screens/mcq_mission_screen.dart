@@ -15,32 +15,19 @@ class MCQMissionScreen extends StatefulWidget {
 
 class _MCQMissionScreenState extends State<MCQMissionScreen> {
   String? _selectedExam; // 'JEE' or 'NEET'
+  String? _selectedClass; // '11th' or '12th'
   final List<String> _selectedSubjects = [];
-  // Structure: { Subject: { ChapterName: Difficulty } }
-  final Map<String, Map<String, String>> _selectedChapters = {};
+  // Structure: { Subject: [ChapterNames] }
+  final Map<String, List<String>> _selectedChapters = {};
   late int _mcqCount;
 
   final List<String> _jeeSubjects = ['Maths', 'Physics', 'Chemistry', 'Random'];
   final List<String> _neetSubjects = ['Biology', 'Physics', 'Chemistry', 'Random'];
 
   final Map<String, List<String>> _chapterLists = {
-    'Physics': [
-      'Units and Measurements',
-      'Kinematics',
-      'Laws of Motion',
-      'Work, Energy and Power'
-    ],
-    'Chemistry': [
-      'Some Basic Concepts of Chemistry',
-      'Structure of Atom',
-      'Classification of Elements and Periodicity in Properties',
-      'Chemical Bonding and Molecular Structure'
-    ],
-    'Maths': [
-      'Basic Concepts of Maths',
-      'Trigonometry',
-      'Sets'
-    ],
+    'Physics': ['Units and Dimensions'],
+    'Chemistry': ['Mole Concept'],
+    'Maths': ['Set Theory'],
     'Biology': [
       'The Living World',
       'Biological Classification',
@@ -53,21 +40,18 @@ class _MCQMissionScreenState extends State<MCQMissionScreen> {
   void initState() {
     super.initState();
     _selectedExam = widget.initialConfig?['exam'];
+    _selectedClass = widget.initialConfig?['class'];
     if (widget.initialConfig?['subjects'] != null) {
       _selectedSubjects.addAll(List<String>.from(widget.initialConfig?['subjects']));
     }
     if (widget.initialConfig?['chapters'] != null) {
-      final chaptersMap = widget.initialConfig?['chapters'] as Map;
-      chaptersMap.forEach((sub, configs) {
-        if (configs is Map) {
-          _selectedChapters[sub.toString()] = Map<String, String>.from(configs);
-        } else if (configs is List) {
-          // Backward compatibility for old list-based format
-          final Map<String, String> newMap = {};
-          for (var chap in configs) {
-            newMap[chap.toString()] = 'Easy';
-          }
-          _selectedChapters[sub.toString()] = newMap;
+      final chaptersData = widget.initialConfig?['chapters'] as Map;
+      chaptersData.forEach((sub, data) {
+        if (data is List) {
+          _selectedChapters[sub.toString()] = List<String>.from(data);
+        } else if (data is Map) {
+          // Compatibility for the removed difficulty-map format
+          _selectedChapters[sub.toString()] = List<String>.from(data.keys);
         }
       });
     }
@@ -87,7 +71,7 @@ class _MCQMissionScreenState extends State<MCQMissionScreen> {
         } else {
           _selectedSubjects.remove('Random');
           _selectedSubjects.add(subject);
-          _selectedChapters[subject] = {}; // Initialize empty map
+          _selectedChapters[subject] = []; // Initialize empty list
         }
       }
     });
@@ -115,7 +99,6 @@ class _MCQMissionScreenState extends State<MCQMissionScreen> {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  // Modal Handle
                   Container(
                     width: 40,
                     height: 4,
@@ -141,63 +124,32 @@ class _MCQMissionScreenState extends State<MCQMissionScreen> {
                       itemCount: chapters.length,
                       itemBuilder: (context, index) {
                         final chapter = chapters[index];
-                        final isSelected = _selectedChapters[subject]?.containsKey(chapter) ?? false;
-                        final difficulty = _selectedChapters[subject]?[chapter] ?? 'Easy';
+                        final isSelected = _selectedChapters[subject]?.contains(chapter) ?? false;
 
-                        return Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                          child: Row(
-                            children: [
-                              Checkbox(
-                                value: isSelected,
-                                activeColor: const Color(0xFFBB86FC),
-                                checkColor: const Color(0xFF0F0F11),
-                                onChanged: (bool? value) {
-                                  setState(() {
-                                    if (value == true) {
-                                      _selectedChapters[subject]?[chapter] = 'Easy';
-                                    } else {
-                                      _selectedChapters[subject]?.remove(chapter);
-                                    }
-                                  });
-                                  setModalState(() {});
-                                },
-                              ),
-                              Expanded(
-                                child: Text(
-                                  chapter,
-                                  style: TextStyle(
-                                    color: isSelected ? Colors.white : Colors.grey,
-                                    fontSize: 15,
-                                  ),
-                                ),
-                              ),
-                              if (isSelected)
-                                CupertinoSlidingSegmentedControl<String>(
-                                  groupValue: difficulty,
-                                  backgroundColor: const Color(0xFF2C2C2E),
-                                  thumbColor: const Color(0xFFBB86FC),
-                                  children: const {
-                                    'Easy': Padding(
-                                      padding: EdgeInsets.symmetric(horizontal: 8),
-                                      child: Text('Easy', style: TextStyle(fontSize: 12, color: Colors.white)),
-                                    ),
-                                    'Mid': Padding(
-                                      padding: EdgeInsets.symmetric(horizontal: 8),
-                                      child: Text('Mid', style: TextStyle(fontSize: 12, color: Colors.white)),
-                                    ),
-                                  },
-                                  onValueChanged: (String? value) {
-                                    if (value != null) {
-                                      setState(() {
-                                        _selectedChapters[subject]?[chapter] = value;
-                                      });
-                                      setModalState(() {});
-                                    }
-                                  },
-                                ),
-                            ],
+                        return CheckboxListTile(
+                          title: Text(
+                            chapter,
+                            style: TextStyle(
+                              color: isSelected ? Colors.white : Colors.grey,
+                              fontSize: 15,
+                            ),
                           ),
+                          value: isSelected,
+                          activeColor: const Color(0xFFBB86FC),
+                          checkColor: const Color(0xFF0F0F11),
+                          onChanged: (bool? value) {
+                            setState(() {
+                              if (value == true) {
+                                if (!_selectedChapters[subject]!.contains(chapter)) {
+                                  _selectedChapters[subject]?.add(chapter);
+                                }
+                              } else {
+                                _selectedChapters[subject]?.remove(chapter);
+                              }
+                            });
+                            setModalState(() {});
+                          },
+                          controlAffinity: ListTileControlAffinity.leading,
                         );
                       },
                     ),
@@ -284,8 +236,29 @@ class _MCQMissionScreenState extends State<MCQMissionScreen> {
               ),
               const SizedBox(height: 30),
 
-              // Subject Selection (if exam is selected)
+              // Class Selection (if exam is selected)
               if (_selectedExam != null) ...[
+                const Text(
+                  'Select Class',
+                  style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(height: 16),
+                Row(
+                  children: [
+                    Expanded(
+                      child: _buildClassButton('11th'),
+                    ),
+                    const SizedBox(width: 16),
+                    Expanded(
+                      child: _buildClassButton('12th'),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 30),
+              ],
+
+              // Subject Selection (only if exam is selected AND class is 11th)
+              if (_selectedExam != null && _selectedClass == '11th') ...[
                 Text(
                   'Select Subjects for $_selectedExam',
                   style: const TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
@@ -302,10 +275,10 @@ class _MCQMissionScreenState extends State<MCQMissionScreen> {
                 const SizedBox(height: 30),
               ],
 
-              // Chapter Selection for each selected subject
-              if (_selectedSubjects.isNotEmpty && !_selectedSubjects.contains('Random')) ...[
+              // Chapter Selection (only if class is 11th)
+              if (_selectedClass == '11th' && _selectedSubjects.isNotEmpty && !_selectedSubjects.contains('Random')) ...[
                 const Text(
-                  'Select Chapters & Difficulty',
+                  'Select Chapters',
                   style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 16),
@@ -313,66 +286,67 @@ class _MCQMissionScreenState extends State<MCQMissionScreen> {
                 const SizedBox(height: 30),
               ],
 
-              // MCQ Count Section
-              Container(
-                padding: const EdgeInsets.all(24),
-                decoration: BoxDecoration(
-                  color: const Color(0xFF1E1E1E),
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                child: Column(
-                  children: [
-                    const Text(
-                      'Number of Questions',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16,
+              // MCQ Count Section (Always visible once exam and class are selected)
+              if (_selectedExam != null && _selectedClass != null)
+                Container(
+                  padding: const EdgeInsets.all(24),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFF1E1E1E),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Column(
+                    children: [
+                      const Text(
+                        'Number of Questions',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                        ),
                       ),
-                    ),
-                    const SizedBox(height: 16),
-                    SizedBox(
-                      height: 120,
-                      child: CupertinoTheme(
-                        data: const CupertinoThemeData(
-                          textTheme: CupertinoTextThemeData(
-                            pickerTextStyle: TextStyle(
-                              color: Colors.white,
-                              fontSize: 24,
+                      const SizedBox(height: 16),
+                      SizedBox(
+                        height: 120,
+                        child: CupertinoTheme(
+                          data: const CupertinoThemeData(
+                            textTheme: CupertinoTextThemeData(
+                              pickerTextStyle: TextStyle(
+                                color: Colors.white,
+                                fontSize: 24,
+                              ),
                             ),
                           ),
-                        ),
-                        child: CupertinoPicker(
-                          scrollController: FixedExtentScrollController(
-                            initialItem: _mcqCount - 1,
-                          ),
-                          itemExtent: 40,
-                          onSelectedItemChanged: (int index) {
-                            setState(() {
-                              _mcqCount = index + 1;
-                            });
-                          },
-                          children: List<Widget>.generate(
-                            20,
-                            (int index) => Center(
-                              child: Text(
-                                '${index + 1}',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 24,
-                                  fontWeight: _mcqCount == index + 1
-                                      ? FontWeight.bold
-                                      : FontWeight.normal,
+                          child: CupertinoPicker(
+                            scrollController: FixedExtentScrollController(
+                              initialItem: _mcqCount - 1,
+                            ),
+                            itemExtent: 40,
+                            onSelectedItemChanged: (int index) {
+                              setState(() {
+                                _mcqCount = index + 1;
+                              });
+                            },
+                            children: List<Widget>.generate(
+                              20,
+                              (int index) => Center(
+                                child: Text(
+                                  '${index + 1}',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 24,
+                                    fontWeight: _mcqCount == index + 1
+                                        ? FontWeight.bold
+                                        : FontWeight.normal,
+                                  ),
                                 ),
                               ),
                             ),
                           ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
-              ),
               const SizedBox(height: 40),
 
               // Save Button
@@ -384,6 +358,7 @@ class _MCQMissionScreenState extends State<MCQMissionScreen> {
                           Navigator.pop(context, {
                             'type': 'MCQ',
                             'exam': _selectedExam,
+                            'class': _selectedClass,
                             'subjects': _selectedSubjects,
                             'chapters': _selectedChapters,
                             'mcqCount': _mcqCount,
@@ -419,15 +394,21 @@ class _MCQMissionScreenState extends State<MCQMissionScreen> {
   }
 
   bool _canSave() {
-    if (_selectedExam == null || _selectedSubjects.isEmpty) return false;
-    if (_selectedSubjects.contains('Random')) return true;
+    if (_selectedExam == null || _selectedClass == null) return false;
     
-    for (var subject in _selectedSubjects) {
-      if (_selectedChapters[subject] == null || _selectedChapters[subject]!.isEmpty) {
-        return false;
+    if (_selectedClass == '11th') {
+      if (_selectedSubjects.isEmpty) return false;
+      if (_selectedSubjects.contains('Random')) return true;
+      
+      for (var subject in _selectedSubjects) {
+        if (_selectedChapters[subject] == null || _selectedChapters[subject]!.isEmpty) {
+          return false;
+        }
       }
+      return true;
+    } else {
+      return true;
     }
-    return true;
   }
 
   Widget _buildExamButton(String exam) {
@@ -436,6 +417,7 @@ class _MCQMissionScreenState extends State<MCQMissionScreen> {
       onTap: () {
         setState(() {
           _selectedExam = exam;
+          _selectedClass = null;
           _selectedSubjects.clear();
           _selectedChapters.clear();
         });
@@ -453,6 +435,41 @@ class _MCQMissionScreenState extends State<MCQMissionScreen> {
         alignment: Alignment.center,
         child: Text(
           exam,
+          style: TextStyle(
+            color: isSelected ? const Color(0xFF0F0F11) : Colors.white,
+            fontWeight: FontWeight.bold,
+            fontSize: 16,
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildClassButton(String className) {
+    bool isSelected = _selectedClass == className;
+    return GestureDetector(
+      onTap: () {
+        setState(() {
+          _selectedClass = className;
+          if (className == '12th') {
+            _selectedSubjects.clear();
+            _selectedChapters.clear();
+          }
+        });
+      },
+      child: Container(
+        padding: const EdgeInsets.symmetric(vertical: 16),
+        decoration: BoxDecoration(
+          color: isSelected ? const Color(0xFF03DAC6) : const Color(0xFF1E1E1E),
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(
+            color: isSelected ? const Color(0xFF03DAC6) : Colors.grey[800]!,
+            width: 2,
+          ),
+        ),
+        alignment: Alignment.center,
+        child: Text(
+          className,
           style: TextStyle(
             color: isSelected ? const Color(0xFF0F0F11) : Colors.white,
             fontWeight: FontWeight.bold,
