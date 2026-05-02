@@ -125,101 +125,103 @@ class _AlarmRingingScreenState extends State<AlarmRingingScreen> {
             stream: _timeStream,
             initialData: DateTime.now(),
             builder: (context, snapshot) {
-            final now = snapshot.data!;
-            final timeStr = DateFormat('hh:mm').format(now);
-            final amPm = DateFormat('a').format(now);
-            final dateStr = DateFormat('EEE, MMM d').format(now);
+              final now = snapshot.data!;
+              final timeStr = DateFormat('hh:mm').format(now);
+              final amPm = DateFormat('a').format(now);
+              final dateStr = DateFormat('EEE, MMM d').format(now);
 
-            return Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 60),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  // Date and Time Heading
-                  Column(
+              return SafeArea(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
-                        dateStr,
-                        style: const TextStyle(
-                          color: Colors.grey,
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
-                      const SizedBox(height: 8),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.baseline,
-                        textBaseline: TextBaseline.alphabetic,
+                      // Date and Time Heading
+                      Column(
                         children: [
                           Text(
-                            timeStr,
+                            dateStr,
                             style: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 80,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          const SizedBox(width: 8),
-                          Text(
-                            amPm,
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 24,
+                              color: Colors.grey,
+                              fontSize: 20,
                               fontWeight: FontWeight.w500,
                             ),
                           ),
+                          const SizedBox(height: 8),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.baseline,
+                            textBaseline: TextBaseline.alphabetic,
+                            children: [
+                              Text(
+                                timeStr,
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 80,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              const SizedBox(width: 8),
+                              Text(
+                                amPm,
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                            ],
+                          ),
+                          if (widget.alarm.name.isNotEmpty) ...[
+                            const SizedBox(height: 20),
+                            Text(
+                              widget.alarm.name,
+                              style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 24,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ],
                         ],
                       ),
-                      if (widget.alarm.name.isNotEmpty) ...[
-                        const SizedBox(height: 20),
-                        Text(
-                          widget.alarm.name,
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 24,
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                      ],
-                    ],
-                  ),
 
-                  // Start Mission Button
-                  Column(
-                    children: [
-                      ElevatedButton(
-                        onPressed: _startMission,
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.white,
-                          foregroundColor: Colors.black,
-                          minimumSize: const Size(double.infinity, 60),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(30),
+                      // Start Mission Button
+                      Column(
+                        children: [
+                          ElevatedButton(
+                            onPressed: _startMission,
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.white,
+                              foregroundColor: Colors.black,
+                              minimumSize: const Size(double.infinity, 60),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(30),
+                              ),
+                            ),
+                            child: const Text(
+                              'Start Mission',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ),
-                        ),
-                        child: const Text(
-                          'Start Mission',
-                          style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
+                          const SizedBox(height: 20),
+                          const Text(
+                            'Dismiss after mission',
+                            style: TextStyle(color: Colors.grey, fontSize: 14),
                           ),
-                        ),
-                      ),
-                      const SizedBox(height: 20),
-                      const Text(
-                        'Dismiss after mission',
-                        style: TextStyle(color: Colors.grey, fontSize: 14),
+                        ],
                       ),
                     ],
                   ),
-                ],
-              ),
-            );
-          },
+                ),
+              );
+            },
+          ),
         ),
       ),
-    ),
-  );
-}
+    );
+  }
 }

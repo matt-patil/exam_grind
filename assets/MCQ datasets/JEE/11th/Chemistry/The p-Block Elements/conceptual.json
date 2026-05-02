@@ -1,0 +1,342 @@
+[
+  {
+    "question": "Which of the following elements has the maximum tendency for catenation?",
+    "options": ["$C$", "$Si$", "$Ge$", "$Sn$"],
+    "answer": "$C$"
+  },
+  {
+    "question": "The correct order of atomic radii for Group 13 elements is:",
+    "options": [
+      "$B < Al < Ga < In < Tl$",
+      "$B < Ga < Al < In < Tl$",
+      "$B < Al < In < Ga < Tl$",
+      "$B < Ga < Al < Tl < In$"
+    ],
+    "answer": "$B < Ga < Al < In < Tl$"
+  },
+  {
+    "question": "Which oxide of group 14 is most basic in nature?",
+    "options": ["$CO_2$", "$SiO_2$", "$GeO_2$", "$PbO_2$"],
+    "answer": "$PbO_2$"
+  },
+  {
+    "question": "In diborane ($B_2H_6$), the number of 3-center-2-electron bonds is:",
+    "options": ["2", "4", "6", "0"],
+    "answer": "2"
+  },
+  {
+    "question": "Which of the following is known as inorganic benzene?",
+    "options": ["Borazine", "Boron nitride", "Diborane", "Phosphazene"],
+    "answer": "Borazine"
+  },
+  {
+    "question": "The hybridization of Boron in $BF_3$ is:",
+    "options": ["$sp$", "$sp^2$", "$sp^3$", "$dsp^2$"],
+    "answer": "$sp^2$"
+  },
+  {
+    "question": "Which of the following group 14 elements is a metalloid?",
+    "options": ["$C$", "$Si$", "$Pb$", "$Sn$"],
+    "answer": "$Si$"
+  },
+  {
+    "question": "What is the shape of the $SiO_4^{4-}$ unit in silicates?",
+    "options": ["Linear", "Square planar", "Tetrahedral", "Octahedral"],
+    "answer": "Tetrahedral"
+  },
+  {
+    "question": "The inert pair effect is most prominent in which element of group 13?",
+    "options": ["$B$", "$Al$", "$Ga$", "$Tl$"],
+    "answer": "$Tl$"
+  },
+  {
+    "question": "Which allotrope of Carbon is the most thermodynamically stable?",
+    "options": ["Diamond", "Graphite", "Fullerene", "Coke"],
+    "answer": "Graphite"
+  },
+  {
+    "question": "What is the reason for the unusually low ionization enthalpy of $Ga$ compared to $Al$?",
+    "options": ["Inert pair effect", "Poor shielding by $d$-electrons", "Smaller atomic size", "High electronegativity"],
+    "answer": "Poor shielding by $d$-electrons"
+  },
+  {
+    "question": "Boric acid ($H_3BO_3$) is a Lewis acid because it:",
+    "options": [
+      "Releases $H^+$ ions",
+      "Accepts $OH^-$ from water",
+      "Contains replaceable hydrogen",
+      "Donates a pair of electrons"
+    ],
+    "answer": "Accepts $OH^-$ from water"
+  },
+  {
+    "question": "Which of the following is used as a moderator in nuclear reactors?",
+    "options": ["Graphite", "Diamond", "Fullerene", "Coal"],
+    "answer": "Graphite"
+  },
+  {
+    "question": "Which gas is produced when $CaC_2$ reacts with water?",
+    "options": ["$CH_4$", "$C_2H_2$", "$C_2H_4$", "$CO_2$"],
+    "answer": "$C_2H_2$"
+  },
+  {
+    "question": "In graphite, the Carbon atoms are in which hybridization state?",
+    "options": ["$sp$", "$sp^2$", "$sp^3$", "$dsp^2$"],
+    "answer": "$sp^2$"
+  },
+  {
+    "question": "The formula of Borax is:",
+    "options": [
+      "$Na_2B_4O_7 \\cdot 10H_2O$",
+      "$NaBO_2$",
+      "$Na_2B_2O_4$",
+      "$H_3BO_3$"
+    ],
+    "answer": "$Na_2B_4O_7 \\cdot 10H_2O$"
+  },
+  {
+    "question": "Which of the following halides of Boron is the strongest Lewis acid?",
+    "options": ["$BF_3$", "$BCl_3$", "$BBr_3$", "$BI_3$"],
+    "answer": "$BI_3$"
+  },
+  {
+    "question": "Which element of group 14 does not form a dioxide?",
+    "options": ["$C$", "$Si$", "$Ge$", "None of these"],
+    "answer": "None of these"
+  },
+  {
+    "question": "Dry ice is solid:",
+    "options": ["$H_2O$", "$CO_2$", "$CO$", "$SO_2$"],
+    "answer": "$CO_2$"
+  },
+  {
+    "question": "Fullerenes are prepared by heating graphite in an electric arc in the presence of:",
+    "options": ["Oxygen", "Helium", "Nitrogen", "Chlorine"],
+    "answer": "Helium"
+  },
+  {
+    "question": "Which of the following is the most stable oxidation state of Thallium?",
+    "options": ["$+1$", "$+3$", "$+2$", "$+4$"],
+    "answer": "$+1$"
+  },
+  {
+    "question": "The name of the process used to manufacture Aluminum is:",
+    "options": ["Haber process", "Hall-Heroult process", "Contact process", "Solvay process"],
+    "answer": "Hall-Heroult process"
+  },
+  {
+    "question": "Which of the following is a monomer of Silicones?",
+    "options": ["$R_2SiCl_2$", "$SiCl_4$", "$SiO_2$", "$R_4Si$"],
+    "answer": "$R_2SiCl_2$"
+  },
+  {
+    "question": "Zeolites are widely used as catalysts in:",
+    "options": ["Petrochemical industries", "Sugar industry", "Textile industry", "Food industry"],
+    "answer": "Petrochemical industries"
+  },
+  {
+    "question": "What is the oxidation state of Carbon in $CO$?",
+    "options": ["$+2$", "$+4$", "$0$", "$-2$"],
+    "answer": "$+2$"
+  },
+  {
+    "question": "The tailing of mercury is due to the formation of:",
+    "options": ["$Hg_2O$", "$HgO$", "$Hg(NO_3)_2$", "$HgCl_2$"],
+    "answer": "$Hg_2O$"
+  },
+  {
+    "question": "Which of the following acts as a reducing agent in group 14 halides?",
+    "options": ["$SnCl_2$", "$SnCl_4$", "$PbCl_4$", "$CCl_4$"],
+    "answer": "$SnCl_2$"
+  },
+  {
+    "question": "In Diamond, each carbon atom is bonded to how many other carbon atoms?",
+    "options": ["2", "3", "4", "6"],
+    "answer": "4"
+  },
+  {
+    "question": "The lubricant properties of graphite are due to:",
+    "options": [
+      "Strong covalent bonds",
+      "Van der Waals forces between layers",
+      "Metallic bonding",
+      "Hydrogen bonding"
+    ],
+    "answer": "Van der Waals forces between layers"
+  },
+  {
+    "question": "Water gas is a mixture of:",
+    "options": [
+      "$CO$ and $H_2$",
+      "$CO$ and $N_2$",
+      "$CO_2$ and $H_2$",
+      "$CH_4$ and $O_2$"
+    ],
+    "answer": "$CO$ and $H_2$"
+  },
+  {
+    "question": "Which element forms the most stable $+2$ oxidation state among Group 14 elements?",
+    "options": ["$Si$", "$Ge$", "$Sn$", "$Pb$"],
+    "answer": "$Pb$"
+  },
+  {
+    "question": "Quartz is a crystalline form of:",
+    "options": ["$SiO_2$", "$Si$", "$Na_2SiO_3$", "$SiC$"],
+    "answer": "$SiO_2$"
+  },
+  {
+    "question": "The basic building unit of all silicates is:",
+    "options": ["$SiO_4^{4-}$", "$SiO_2$", "$Si_2O_7^{6-}$", "$SiC$"],
+    "answer": "$SiO_4^{4-}$"
+  },
+  {
+    "question": "Which of the following is used to remove $CO$ from air in gas masks?",
+    "options": ["Activated charcoal", "Hopcalite", "Silica gel", "Anhydrous $CaCl_2$"],
+    "answer": "Hopcalite"
+  },
+  {
+    "question": "The poisonous nature of Carbon Monoxide ($CO$) is due to its ability to form a complex with:",
+    "options": ["Hemoglobin", "Chlorophyll", "Vitamin $B_{12}$", "Insulin"],
+    "answer": "Hemoglobin"
+  },
+  {
+    "question": "Which of the following does not exist?",
+    "options": ["$SiCl_6^{2-}$", "$[SiF_6]^{2-}$", "$[GeCl_6]^{2-}$", "$[CCl_6]^{2-}$"],
+    "answer": "$[CCl_6]^{2-}$"
+  },
+  {
+    "question": "In the Borax bead test, which compound is responsible for the color?",
+    "options": ["Metaborates", "Orthoborates", "Tetraborates", "Boron oxide"],
+    "answer": "Metaborates"
+  },
+  {
+    "question": "Which of the following is a non-reducing sugar among group 14 related compounds? (Context: Carbohydrates often treated with basics)",
+    "options": ["Sucrose", "Glucose", "Fructose", "Maltose"],
+    "answer": "Sucrose"
+  },
+  {
+    "question": "The hybridization of Carbon in $CO_2$ is:",
+    "options": ["$sp$", "$sp^2$", "$sp^3$", "$dsp^2$"],
+    "answer": "$sp$"
+  },
+  {
+    "question": "Which gas is used in the manufacture of soft drinks?",
+    "options": ["$CO$", "$CO_2$", "$N_2$", "$H_2$"],
+    "answer": "$CO_2$"
+  },
+  {
+    "question": "In diborane, the two bridging hydrogen atoms are:",
+    "options": [
+      "In the same plane as the boron atoms",
+      "Perpendicular to the plane of boron atoms",
+      "At $45^\\circ$ to the boron plane",
+      "Parallel to the boron-boron axis"
+    ],
+    "answer": "Perpendicular to the plane of boron atoms"
+  },
+  {
+    "question": "Which of the following is called 'Carborundum'?",
+    "options": ["$SiC$", "$SiO_2$", "$Al_2O_3$", "$B_4C$"],
+    "answer": "$SiC$"
+  },
+  {
+    "question": "The Lewis acidity of $BCl_3$ is less than $BBr_3$ due to:",
+    "options": ["$p\\pi-p\\pi$ back bonding", "Inductive effect", "Steric hindrance", "Inert pair effect"],
+    "answer": "$p\\pi-p\\pi$ back bonding"
+  },
+  {
+    "question": "Which group 13 element has the lowest melting point?",
+    "options": ["$B$", "$Al$", "$Ga$", "$In$"],
+    "answer": "$Ga$"
+  },
+  {
+    "question": "Orthoboric acid on heating to $373K$ gives:",
+    "options": ["Metaboric acid", "Tetraboric acid", "Boron oxide", "Borax"],
+    "answer": "Metaboric acid"
+  },
+  {
+    "question": "The number of pentagons and hexagons in $C_{60}$ fullerene are respectively:",
+    "options": ["12, 20", "20, 12", "12, 12", "20, 20"],
+    "answer": "12, 20"
+  },
+  {
+    "question": "Which of the following is a linear polymer of silicones?",
+    "options": ["Cross-linked silicones", "Silicone rubbers", "Silicone oils", "None of these"],
+    "answer": "Silicone oils"
+  },
+  {
+    "question": "The reason for the stability of $Pb^{2+}$ over $Pb^{4+}$ is:",
+    "options": ["Shielding effect", "Inert pair effect", "Lattice energy", "Ionization enthalpy"],
+    "answer": "Inert pair effect"
+  },
+  {
+    "question": "Which of the following is an amphoteric oxide?",
+    "options": ["$Al_2O_3$", "$B_2O_3$", "$Tl_2O_3$", "$In_2O_3$"],
+    "answer": "$Al_2O_3$"
+  },
+  {
+    "question": "The structure of $AlCl_3$ in the vapor phase is:",
+    "options": ["Monomeric", "Dimeric", "Trimeric", "Polymeric"],
+    "answer": "Dimeric"
+  },
+  {
+    "question": "Which of the following is used in the treatment of cancer?",
+    "options": ["$C_{60}$", "Boron neutron capture therapy", "Silica gel", "Graphite"],
+    "answer": "Boron neutron capture therapy"
+  },
+  {
+    "question": "In the reaction $B_2H_6 + 2NH_3 \\rightarrow [BH_2(NH_3)_2]^+ [BH_4]^-$, the Boron atom in $[BH_4]^-$ is:",
+    "options": ["$sp^2$ hybridized", "$sp^3$ hybridized", "$sp$ hybridized", "Unhybridized"],
+    "answer": "$sp^3$ hybridized"
+  },
+  {
+    "question": "Which silicate is used in making fire-proof clothing?",
+    "options": ["Asbestos", "Mica", "Talc", "Zeolite"],
+    "answer": "Asbestos"
+  },
+  {
+    "question": "The coordination number of Aluminum in anhydrous $AlCl_3$ is:",
+    "options": ["3", "4", "6", "5"],
+    "answer": "6"
+  },
+  {
+    "question": "Producer gas is a mixture of:",
+    "options": ["$CO + N_2$", "$CO + H_2$", "$CO_2 + N_2$", "$CH_4 + H_2$"],
+    "answer": "$CO + N_2$"
+  },
+  {
+    "question": "Which element of group 13 is used as a dopant for making $p$-type semiconductors?",
+    "options": ["$B$", "$Al$", "$Ga$", "All of these"],
+    "answer": "All of these"
+  },
+  {
+    "question": "The tendency to form $p\\pi-p\\pi$ multiple bonds in group 14 follows the order:",
+    "options": [
+      "$C >> Si > Ge > Sn$",
+      "$C < Si < Ge < Sn$",
+      "$C \\approx Si \\approx Ge \\approx Sn$",
+      "$C > Ge > Si > Sn$"
+    ],
+    "answer": "$C >> Si > Ge > Sn$"
+  },
+  {
+    "question": "In $SiO_2$, each oxygen atom is shared between how many tetrahedra?",
+    "options": ["1", "2", "3", "4"],
+    "answer": "2"
+  },
+  {
+    "question": "The oxidation state of Boron in $B_2H_6$ is formally considered as:",
+    "options": ["$+3$", "$-3$", "$+2$", "$-2$"],
+    "answer": "$+3$"
+  },
+  {
+    "question": "Which of the following is a characteristic of Silicones?",
+    "options": [
+      "Water repellent",
+      "High thermal stability",
+      "Electrical insulators",
+      "All of the above"
+    ],
+    "answer": "All of the above"
+  }
+]

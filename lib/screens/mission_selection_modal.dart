@@ -19,117 +19,119 @@ class MissionSelectionModal extends StatelessWidget {
             topRight: Radius.circular(24),
           ),
         ),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              // Close handle
-              Center(
-                child: Container(
-                  width: 40,
-                  height: 4,
-                  decoration: BoxDecoration(
-                    color: Colors.grey[700],
-                    borderRadius: BorderRadius.circular(2),
+        child: SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                // Close handle
+                Center(
+                  child: Container(
+                    width: 40,
+                    height: 4,
+                    decoration: BoxDecoration(
+                      color: Colors.grey[700],
+                      borderRadius: BorderRadius.circular(2),
+                    ),
                   ),
                 ),
-              ),
-              const SizedBox(height: 24),
+                const SizedBox(height: 24),
 
-              // Title
-              const Text(
-                'Select a Mission',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
+                // Title
+                const Text(
+                  'Select a Mission',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-              ),
-              const SizedBox(height: 24),
+                const SizedBox(height: 24),
 
-              // Mission Cards
-              _MissionCard(
-                title: 'Math',
-                icon: Icons.calculate,
-                color: const Color(0xFF5B6FFF),
-                onTap: () async {
-                  final result = await Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => MathChallengeScreen(
-                        initialConfig: initialConfig?['type'] == 'Math' ? initialConfig : null,
+                // Mission Cards
+                _MissionCard(
+                  title: 'Math',
+                  icon: Icons.calculate,
+                  color: const Color(0xFF5B6FFF),
+                  onTap: () async {
+                    final result = await Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => MathChallengeScreen(
+                          initialConfig: initialConfig?['type'] == 'Math' ? initialConfig : null,
+                        ),
                       ),
-                    ),
-                  );
-                  if (context.mounted && result != null) {
-                    Navigator.pop(context, result);
-                  }
-                },
-              ),
-              const SizedBox(height: 16),
+                    );
+                    if (context.mounted && result != null) {
+                      Navigator.pop(context, result);
+                    }
+                  },
+                ),
+                const SizedBox(height: 16),
 
-              _MissionCard(
-                title: 'Typing',
-                icon: Icons.keyboard,
-                color: const Color(0xFFFF5261),
-                onTap: () async {
-                  final result = await Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => TypingChallengeScreen(
-                        initialConfig: initialConfig?['type'] == 'Typing' ? initialConfig : null,
+                _MissionCard(
+                  title: 'Typing',
+                  icon: Icons.keyboard,
+                  color: const Color(0xFFFF5261),
+                  onTap: () async {
+                    final result = await Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => TypingChallengeScreen(
+                          initialConfig: initialConfig?['type'] == 'Typing' ? initialConfig : null,
+                        ),
                       ),
-                    ),
-                  );
-                  if (context.mounted && result != null) {
-                    Navigator.pop(context, result);
-                  }
-                },
-              ),
-              const SizedBox(height: 16),
+                    );
+                    if (context.mounted && result != null) {
+                      Navigator.pop(context, result);
+                    }
+                  },
+                ),
+                const SizedBox(height: 16),
 
-              _MissionCard(
-                title: 'Shake',
-                icon: Icons.vibration,
-                color: const Color(0xFF00D084),
-                onTap: () async {
-                  final result = await Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => ShakeChallengeScreen(
-                        initialConfig: initialConfig?['type'] == 'Shake' ? initialConfig : null,
+                _MissionCard(
+                  title: 'Shake',
+                  icon: Icons.vibration,
+                  color: const Color(0xFF00D084),
+                  onTap: () async {
+                    final result = await Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ShakeChallengeScreen(
+                          initialConfig: initialConfig?['type'] == 'Shake' ? initialConfig : null,
+                        ),
                       ),
-                    ),
-                  );
-                  if (context.mounted && result != null) {
-                    Navigator.pop(context, result);
-                  }
-                },
-              ),
-              const SizedBox(height: 16),
+                    );
+                    if (context.mounted && result != null) {
+                      Navigator.pop(context, result);
+                    }
+                  },
+                ),
+                const SizedBox(height: 16),
 
-              _MissionCard(
-                title: 'MCQ',
-                icon: Icons.quiz,
-                color: const Color(0xFFBB86FC),
-                onTap: () async {
-                  final result = await Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => MCQMissionScreen(
-                        initialConfig: initialConfig?['type'] == 'MCQ' ? initialConfig : null,
+                _MissionCard(
+                  title: 'MCQ',
+                  icon: Icons.quiz,
+                  color: const Color(0xFFBB86FC),
+                  onTap: () async {
+                    final result = await Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => MCQMissionScreen(
+                          initialConfig: initialConfig?['type'] == 'MCQ' ? initialConfig : null,
+                        ),
                       ),
-                    ),
-                  );
-                  if (context.mounted && result != null) {
-                    Navigator.pop(context, result);
-                  }
-                },
-              ),
-              const SizedBox(height: 24),
-            ],
+                    );
+                    if (context.mounted && result != null) {
+                      Navigator.pop(context, result);
+                    }
+                  },
+                ),
+                const SizedBox(height: 24),
+              ],
+            ),
           ),
         ),
       ),

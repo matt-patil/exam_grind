@@ -1,0 +1,252 @@
+[
+  {
+    "question": "The set of all possible outcomes of a random experiment is called:",
+    "options": ["Event", "Sample Space", "Outcome", "Trial"],
+    "answer": "Sample Space"
+  },
+  {
+    "question": "If an event $A$ is certain to occur, then $P(A)$ is:",
+    "options": ["0", "0.5", "1", "Infinity"],
+    "answer": "1"
+  },
+  {
+    "question": "The probability of an impossible event is:",
+    "options": ["1", "0", "0.5", "-1"],
+    "answer": "0"
+  },
+  {
+    "question": "For any event $A$, the value of $P(A)$ lies in the interval:",
+    "options": ["$(0, 1)$", "$[0, 1]$", "$(-1, 1)$", "$[0, \\infty)$"],
+    "answer": "$[0, 1]$"
+  },
+  {
+    "question": "If $P(A) = 0.3$, then $P(A')$ (probability of not A) is:",
+    "options": ["0.3", "0.7", "0", "1"],
+    "answer": "0.7"
+  },
+  {
+    "question": "Two events $A$ and $B$ are mutually exclusive if:",
+    "options": ["$A \\cap B = \\phi$", "$A \\cup B = S$", "$A \\subset B$", "$A = B$"],
+    "answer": "$A \\cap B = \\phi$"
+  },
+  {
+    "question": "If $A$ and $B$ are mutually exclusive events, then $P(A \\cup B)$ is:",
+    "options": ["$P(A) + P(B)$", "$P(A) \\times P(B)$", "$P(A) + P(B) - P(A \\cap B)$", "1"],
+    "answer": "$P(A) + P(B)$"
+  },
+  {
+    "question": "The sum of probabilities of all elementary events of an experiment is:",
+    "options": ["0", "0.5", "1", "Depends on experiment"],
+    "answer": "1"
+  },
+  {
+    "question": "If $A$ and $B$ are any two events, then $P(A \\cup B)$ is:",
+    "options": ["$P(A) + P(B)$", "$P(A) + P(B) - P(A \\cap B)$", "$P(A) - P(B)$", "$P(A) \\times P(B)$"],
+    "answer": "$P(A) + P(B) - P(A \\cap B)$"
+  },
+  {
+    "question": "A coin is tossed twice. The number of elements in the sample space is:",
+    "options": ["2", "4", "6", "8"],
+    "answer": "4"
+  },
+  {
+    "question": "The probability of getting a head in a single toss of a fair coin is:",
+    "options": ["0", "1", "1/2", "1/4"],
+    "answer": "1/2"
+  },
+  {
+    "question": "In a throw of a die, the probability of getting an even number is:",
+    "options": ["1/6", "1/3", "1/2", "2/3"],
+    "answer": "1/2"
+  },
+  {
+    "question": "If $E$ and $F$ are exhaustive events in sample space $S$, then:",
+    "options": ["$E \\cap F = \\phi$", "$E \\cup F = S$", "$E \\subset F$", "$E = F$"],
+    "answer": "$E \\cup F = S$"
+  },
+  {
+    "question": "The probability of getting a sum of 7 when two dice are thrown is:",
+    "options": ["1/6", "1/12", "1/36", "5/36"],
+    "answer": "1/6"
+  },
+  {
+    "question": "If $P(A) = 0.4, P(B) = 0.5$ and $A, B$ are mutually exclusive, then $P(A \\cup B)$ is:",
+    "options": ["0.9", "0.1", "0.2", "1"],
+    "answer": "0.9"
+  },
+  {
+    "question": "The probability of drawing a red card from a deck of 52 cards is:",
+    "options": ["1/4", "1/2", "1/13", "1/26"],
+    "answer": "1/2"
+  },
+  {
+    "question": "The probability of drawing a King from a deck of 52 cards is:",
+    "options": ["1/52", "1/13", "4/13", "1/26"],
+    "answer": "1/13"
+  },
+  {
+    "question": "Two events $A$ and $B$ are independent if:",
+    "options": ["$P(A \\cap B) = P(A) + P(B)$", "$P(A \\cap B) = P(A) \\times P(B)$", "$P(A \\cup B) = 1$", "$A \\cap B = \\phi$"],
+    "answer": "$P(A \\cap B) = P(A) \\times P(B)$"
+  },
+  {
+    "question": "A card is drawn at random from a pack of 52 cards. The probability that it is an Ace or a Spade is:",
+    "options": ["17/52", "16/52", "13/52", "4/52"],
+    "answer": "16/52"
+  },
+  {
+    "question": "The probability of a leap year having 53 Sundays is:",
+    "options": ["1/7", "2/7", "3/7", "0"],
+    "answer": "2/7"
+  },
+  {
+    "question": "If $P(A) = 1/3, P(B) = 1/4$ and $P(A \\cap B) = 1/6$, then $P(A \\cup B)$ is:",
+    "options": ["5/12", "7/12", "1/2", "1/4"],
+    "answer": "5/12"
+  },
+  {
+    "question": "The probability of getting at least one head in three tosses of a coin is:",
+    "options": ["1/8", "3/8", "7/8", "1/2"],
+    "answer": "7/8"
+  },
+  {
+    "question": "If $S = \\{1, 2, 3, 4, 5, 6\\}$ and $E = \\{2, 4, 6\\}$, then $E'$ is:",
+    "options": ["$\\{1, 3, 5\\}$", "$\\{2, 4, 6\\}$", "$\\{1, 2, 3, 4, 5, 6\\}$", "$\\phi$"],
+    "answer": "$\\{1, 3, 5\\}$"
+  },
+  {
+    "question": "Odds in favor of an event $A$ are $3:4$. The probability of $A$ is:",
+    "options": ["3/4", "4/3", "3/7", "4/7"],
+    "answer": "3/7"
+  },
+  {
+    "question": "Odds against an event $E$ are $5:2$. The probability of $E$ is:",
+    "options": ["5/2", "2/5", "5/7", "2/7"],
+    "answer": "2/7"
+  },
+  {
+    "question": "If $P(A) = 0.5, P(B) = 0.3, P(A \\cap B) = 0.2$, then $P(A \\cap B')$ is:",
+    "options": ["0.3", "0.1", "0.7", "0.5"],
+    "answer": "0.3"
+  },
+  {
+    "question": "Which of the following cannot be the probability of an event?",
+    "options": ["2/3", "-1.5", "15%", "0.7"],
+    "answer": "-1.5"
+  },
+  {
+    "question": "If $A$ and $B$ are mutually exclusive, then $P(A' \\cap B')$ is:",
+    "options": ["$1 - P(A \\cup B)$", "$1 - P(A) - P(B)$", "Both are correct", "None is correct"],
+    "answer": "Both are correct"
+  },
+  {
+    "question": "The probability of getting a number greater than 4 in a single throw of a die is:",
+    "options": ["1/3", "1/2", "2/3", "1/6"],
+    "answer": "1/3"
+  },
+  {
+    "question": "In a simultaneous throw of two dice, what is the probability of getting a doublet?",
+    "options": ["1/6", "1/12", "1/36", "1/2"],
+    "answer": "1/6"
+  },
+  {
+    "question": "If $P(A \\cup B) = P(A \\cap B)$, then:",
+    "options": ["$P(A) = P(B)$", "$A$ and $B$ are independent", "$A$ and $B$ are mutually exclusive", "$P(A) + P(B) = 1$"],
+    "answer": "$P(A) = P(B)$"
+  },
+  {
+    "question": "Three coins are tossed. The probability of getting exactly two heads is:",
+    "options": ["1/8", "3/8", "1/2", "7/8"],
+    "answer": "3/8"
+  },
+  {
+    "question": "A box contains 5 red and 4 blue balls. One ball is drawn. The probability that it is red is:",
+    "options": ["5/9", "4/9", "1/2", "1/9"],
+    "answer": "5/9"
+  },
+  {
+    "question": "If $P(A) = 0.6$ and $P(B) = 0.2$, then $P(A \\cup B)$ can be at most:",
+    "options": ["0.8", "0.6", "0.2", "1.0"],
+    "answer": "0.8"
+  },
+  {
+    "question": "Probability of drawing a Face card (J, Q, K) from a deck of 52 is:",
+    "options": ["3/13", "1/13", "4/13", "12/52"],
+    "answer": "3/13"
+  },
+  {
+    "question": "If $A \\subset B$, then which is true?",
+    "options": ["$P(A) \\leq P(B)$", "$P(A) \\geq P(B)$", "$P(A) = P(B)$", "$P(A) + P(B) = 1$"],
+    "answer": "$P(A) \\leq P(B)$"
+  },
+  {
+    "question": "The probability that a non-leap year has 53 Sundays is:",
+    "options": ["1/7", "2/7", "0", "1/365"],
+    "answer": "1/7"
+  },
+  {
+    "question": "If $A, B, C$ are three mutually exclusive and exhaustive events, then $P(A) + P(B) + P(C)$ is:",
+    "options": ["0", "0.5", "1", "Cannot say"],
+    "answer": "1"
+  },
+  {
+    "question": "The word 'AND' in probability usually corresponds to:",
+    "options": ["Union", "Intersection", "Complement", "Subset"],
+    "answer": "Intersection"
+  },
+  {
+    "question": "The word 'OR' in probability usually corresponds to:",
+    "options": ["Union", "Intersection", "Complement", "Disjoint"],
+    "answer": "Union"
+  },
+  {
+    "question": "If $P(A) = 0, A$ is called a/an:",
+    "options": ["Certain event", "Impossible event", "Elementary event", "Random event"],
+    "answer": "Impossible event"
+  },
+  {
+    "question": "Two coins are tossed. The probability of getting no head is:",
+    "options": ["1/4", "1/2", "3/4", "0"],
+    "answer": "1/4"
+  },
+  {
+    "question": "A die is thrown twice. Total number of outcomes is:",
+    "options": ["6", "12", "36", "24"],
+    "answer": "36"
+  },
+  {
+    "question": "If $P(A) = 0.8$, then $P(A')$ is:",
+    "options": ["0.2", "0.8", "0", "1"],
+    "answer": "0.2"
+  },
+  {
+    "question": "The probability of getting a sum of 13 in a throw of two dice is:",
+    "options": ["0", "1/36", "1/12", "1"],
+    "answer": "0"
+  },
+  {
+    "question": "Probability of an event $E$ is $n/m$. Then probability of not $E$ is:",
+    "options": ["$1 - n/m$", "$n/m - 1$", "$m/n$", "$(m-n)/m$"],
+    "answer": "$(m-n)/m$"
+  },
+  {
+    "question": "If $A$ and $B$ are mutually exclusive, $P(A \\cap B)$ is:",
+    "options": ["0", "1", "$P(A)P(B)$", "$P(A) + P(B)$"],
+    "answer": "0"
+  },
+  {
+    "question": "A card is drawn from a well shuffled deck of 52 cards. The probability that it is a Queen of club or King of heart is:",
+    "options": ["1/52", "2/52", "1/26", "Both 2/52 and 1/26 are correct"],
+    "answer": "Both 2/52 and 1/26 are correct"
+  },
+  {
+    "question": "If $P(A) = 0.7$ and $P(B) = 0.4$ and $A, B$ are NOT mutually exclusive, then $P(A \\cap B)$ must be at least:",
+    "options": ["0.1", "0.3", "0", "0.7"],
+    "answer": "0.1"
+  },
+  {
+    "question": "Probability of a sure event is:",
+    "options": ["1", "0", "0.5", "Infinite"],
+    "answer": "1"
+  }
+]

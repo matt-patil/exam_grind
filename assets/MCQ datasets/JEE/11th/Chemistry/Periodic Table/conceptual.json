@@ -1,0 +1,302 @@
+[
+  {
+    "question": "The horizontal rows in the modern periodic table are called:",
+    "options": ["Groups", "Periods", "Series", "Families"],
+    "answer": "Periods"
+  },
+  {
+    "question": "The vertical columns in the modern periodic table are called:",
+    "options": ["Periods", "Groups", "Rows", "Classes"],
+    "answer": "Groups"
+  },
+  {
+    "question": "According to the modern periodic law, the properties of elements are periodic functions of their:",
+    "options": ["Atomic weights", "Atomic numbers", "Atomic volumes", "Density"],
+    "answer": "Atomic numbers"
+  },
+  {
+    "question": "Which of the following elements has the highest electronegativity?",
+    "options": ["Oxygen", "Chlorine", "Fluorine", "Nitrogen"],
+    "answer": "Fluorine"
+  },
+  {
+    "question": "Elements in the same group have the same:",
+    "options": ["Atomic number", "Number of valence electrons", "Atomic mass", "Number of shells"],
+    "answer": "Number of valence electrons"
+  },
+  {
+    "question": "The first ionization enthalpy across a period generally:",
+    "options": ["Increases", "Decreases", "Remains constant", "First increases then decreases"],
+    "answer": "Increases"
+  },
+  {
+    "question": "The atomic radius generally decreases across a period due to:",
+    "options": ["Decrease in nuclear charge", "Increase in nuclear charge", "Addition of new shells", "Decrease in number of electrons"],
+    "answer": "Increase in nuclear charge"
+  },
+  {
+    "question": "Which block of elements contains only metals?",
+    "options": ["$s$-block", "$p$-block", "$d$-block", "Both $s$ and $d$-blocks (mostly)"],
+    "answer": "Both $s$ and $d$-blocks (mostly)"
+  },
+  {
+    "question": "The general electronic configuration of $d$-block elements is:",
+    "options": ["$(n-1)d^{1-10} ns^{1-2}$", "$nd^{1-10} ns^2$", "$(n-1)d^{10} ns^2$", "$(n-1)d^{1-5} ns^1$"],
+    "answer": "$(n-1)d^{1-10} ns^{1-2}$"
+  },
+  {
+    "question": "Which element has the highest electron gain enthalpy (most negative)?",
+    "options": ["Fluorine", "Chlorine", "Bromine", "Iodine"],
+    "answer": "Chlorine"
+  },
+  {
+    "question": "The elements of group 17 are known as:",
+    "options": ["Alkali metals", "Alkaline earth metals", "Halogens", "Noble gases"],
+    "answer": "Halogens"
+  },
+  {
+    "question": "Which of the following is a metalloid?",
+    "options": ["Sodium", "Sulphur", "Silicon", "Aluminium"],
+    "answer": "Silicon"
+  },
+  {
+    "question": "The long form of the periodic table was developed by:",
+    "options": ["Mendeleev", "Lothar Meyer", "Niels Bohr", "Dobereiner"],
+    "answer": "Niels Bohr"
+  },
+  {
+    "question": "The most metallic element in the periodic table is:",
+    "options": ["Fluorine", "Cesium", "Lithium", "Helium"],
+    "answer": "Cesium"
+  },
+  {
+    "question": "In a period, the noble gases have the largest:",
+    "options": ["Ionization enthalpy", "Electron gain enthalpy", "Atomic radius (van der Waals)", "Electronegativity"],
+    "answer": "Atomic radius (van der Waals)"
+  },
+  {
+    "question": "Transition elements are found in which block?",
+    "options": ["$s$-block", "$p$-block", "$d$-block", "$f$-block"],
+    "answer": "$d$-block"
+  },
+  {
+    "question": "Inner transition elements belong to:",
+    "options": ["$d$-block", "$f$-block", "$p$-block", "$s$-block"],
+    "answer": "$f$-block"
+  },
+  {
+    "question": "The valence shell electronic configuration of halogens is:",
+    "options": ["$ns^2 np^5$", "$ns^2 np^6$", "$ns^2 np^4$", "$ns^1 np^6$"],
+    "answer": "$ns^2 np^5$"
+  },
+  {
+    "question": "The diagonal relationship exists between:",
+    "options": ["$Li$ and $Mg$", "$Be$ and $Al$", "$B$ and $Si$", "All of these"],
+    "answer": "All of these"
+  },
+  {
+    "question": "Which of the following has the smallest size?",
+    "options": ["$Na^+$", "$Mg^{2+}$", "$Al^{3+}$", "$F^-$"],
+    "answer": "$Al^{3+}$"
+  },
+  {
+    "question": "Electronegativity is measured on which scale?",
+    "options": ["Pauling scale", "Mohs scale", "Richter scale", "Celsius scale"],
+    "answer": "Pauling scale"
+  },
+  {
+    "question": "The elements after Uranium are called:",
+    "options": ["Lanthanoids", "Actinoids", "Transuranic elements", "Rare earth elements"],
+    "answer": "Transuranic elements"
+  },
+  {
+    "question": "Which of the following is an amphoteric oxide?",
+    "options": ["$Na_2O$", "$SO_2$", "$Al_2O_3$", "$CaO$"],
+    "answer": "$Al_2O_3$"
+  },
+  {
+    "question": "The property which remains same in a group is:",
+    "options": ["Valence electrons", "Atomic size", "Ionization energy", "Electronegativity"],
+    "answer": "Valence electrons"
+  },
+  {
+    "question": "In the periodic table, the basic character of oxides down a group:",
+    "options": ["Increases", "Decreases", "Remains same", "First decreases then increases"],
+    "answer": "Increases"
+  },
+  {
+    "question": "The shielding effect is maximum in:",
+    "options": ["$s$-orbitals", "$p$-orbitals", "$d$-orbitals", "$f$-orbitals"],
+    "answer": "$s$-orbitals"
+  },
+  {
+    "question": "Which of the following is a noble gas?",
+    "options": ["Nitrogen", "Oxygen", "Argon", "Hydrogen"],
+    "answer": "Argon"
+  },
+  {
+    "question": "The number of elements in the 4th period is:",
+    "options": ["8", "18", "32", "10"],
+    "answer": "18"
+  },
+  {
+    "question": "Lanthanoid contraction is responsible for the similar atomic radii of:",
+    "options": ["$Zr$ and $Hf$", "$Ti$ and $Zr$", "$V$ and $Nb$", "$Nb$ and $Ta$"],
+    "answer": "$Zr$ and $Hf$"
+  },
+  {
+    "question": "The liquid metal at room temperature is:",
+    "options": ["Sodium", "Mercury", "Gallium", "Cesium"],
+    "answer": "Mercury"
+  },
+  {
+    "question": "The non-metal which is liquid at room temperature is:",
+    "options": ["Chlorine", "Bromine", "Iodine", "Fluorine"],
+    "answer": "Bromine"
+  },
+  {
+    "question": "Mendeleev left gaps in his periodic table for elements like:",
+    "options": ["Helium", "Gallium", "Sodium", "Carbon"],
+    "answer": "Gallium"
+  },
+  {
+    "question": "The IUPAC name for element with atomic number 110 is:",
+    "options": ["Ununnilium", "Unununnium", "Ununbium", "Ununquadium"],
+    "answer": "Ununnilium"
+  },
+  {
+    "question": "Which of the following groups contains alkaline earth metals?",
+    "options": ["Group 1", "Group 2", "Group 13", "Group 14"],
+    "answer": "Group 2"
+  },
+  {
+    "question": "Representative elements belong to:",
+    "options": ["$s$ and $p$ blocks", "$d$ and $f$ blocks", "$s$ and $d$ blocks", "$p$ and $d$ blocks"],
+    "answer": "$s$ and $p$ blocks"
+  },
+  {
+    "question": "The element with electronic configuration $[Xe] 4f^{14} 5d^1 6s^2$ is:",
+    "options": ["Lanthanum", "Lutetium", "Cerium", "Gadolinium"],
+    "answer": "Lutetium"
+  },
+  {
+    "question": "Cations are always:",
+    "options": ["Larger than their parent atoms", "Smaller than their parent atoms", "Equal in size to parent atoms", "None of these"],
+    "answer": "Smaller than their parent atoms"
+  },
+  {
+    "question": "Anions are always:",
+    "options": ["Smaller than their parent atoms", "Larger than their parent atoms", "Equal in size to parent atoms", "None of these"],
+    "answer": "Larger than their parent atoms"
+  },
+  {
+    "question": "The energy released when an electron is added to a neutral gaseous atom is:",
+    "options": ["Ionization enthalpy", "Electron gain enthalpy", "Lattice energy", "Hydration energy"],
+    "answer": "Electron gain enthalpy"
+  },
+  {
+    "question": "The second ionization enthalpy is always ______ than the first ionization enthalpy.",
+    "options": ["Less", "Greater", "Equal", "Half"],
+    "answer": "Greater"
+  },
+  {
+    "question": "In which group do we find Chalcogens?",
+    "options": ["Group 15", "Group 16", "Group 17", "Group 14"],
+    "answer": "Group 16"
+  },
+  {
+    "question": "Which element is placed in Group 1 but is not an alkali metal?",
+    "options": ["Lithium", "Hydrogen", "Helium", "Sodium"],
+    "answer": "Hydrogen"
+  },
+  {
+    "question": "Actinoids follow the element:",
+    "options": ["Lanthanum", "Actinium", "Radium", "Thorium"],
+    "answer": "Actinium"
+  },
+  {
+    "question": "Which period is the shortest in the periodic table?",
+    "options": ["1st", "2nd", "3rd", "7th"],
+    "answer": "1st"
+  },
+  {
+    "question": "The most non-metallic element is:",
+    "options": ["Carbon", "Fluorine", "Oxygen", "Nitrogen"],
+    "answer": "Fluorine"
+  },
+  {
+    "question": "The screening effect of $d$-electrons is ______ than that of $p$-electrons.",
+    "options": ["More", "Less", "Equal", "Double"],
+    "answer": "Less"
+  },
+  {
+    "question": "Which of the following is a transition element?",
+    "options": ["$Zn$", "$Cd$", "$Hg$", "$Fe$"],
+    "answer": "$Fe$"
+  },
+  {
+    "question": "The metallic character down a group:",
+    "options": ["Increases", "Decreases", "Stays same", "First increases then decreases"],
+    "answer": "Increases"
+  },
+  {
+    "question": "The tendencies to lose electrons is called:",
+    "options": ["Electropositivity", "Electronegativity", "Electron affinity", "Ionization"],
+    "answer": "Electropositivity"
+  },
+  {
+    "question": "Which of the following has the highest first ionization enthalpy?",
+    "options": ["$Li$", "$Be$", "$B$", "$C$"],
+    "answer": "$Be$"
+  },
+  {
+    "question": "Effective nuclear charge ($Z_{eff}$) across a period:",
+    "options": ["Decreases", "Increases", "Remains constant", "Changes randomly"],
+    "answer": "Increases"
+  },
+  {
+    "question": "The correct order of atomic radii is:",
+    "options": ["$Li > Be > B > C$", "$C > B > Be > Li$", "$Li < Be < B < C$", "$Be > Li > B > C$"],
+    "answer": "$Li > Be > B > C$"
+  },
+  {
+    "question": "The general electronic configuration of p-block elements is:",
+    "options": ["$ns^2 np^{1-6}$", "$ns^2 np^{0-6}$", "$ns^1 np^{1-6}$", "$ns^2 np^1$"],
+    "answer": "$ns^2 np^{1-6}$"
+  },
+  {
+    "question": "Eka-aluminium predicted by Mendeleev is:",
+    "options": ["Germanium", "Gallium", "Scandium", "Indium"],
+    "answer": "Gallium"
+  },
+  {
+    "question": "Which of the following is a coinage metal?",
+    "options": ["$Na$", "$Cu$", "$Mg$", "$Al$"],
+    "answer": "$Cu$"
+  },
+  {
+    "question": "The electronic configuration $[Ar] 3d^{10} 4s^2 4p^3$ belongs to which group?",
+    "options": ["13", "14", "15", "16"],
+    "answer": "15"
+  },
+  {
+    "question": "Elements with atomic numbers 58 to 71 are called:",
+    "options": ["Lanthanoids", "Actinoids", "Halogens", "Alkali metals"],
+    "answer": "Lanthanoids"
+  },
+  {
+    "question": "The maximum electronegativity in the periodic table is of:",
+    "options": ["Oxygen", "Fluorine", "Nitrogen", "Chlorine"],
+    "answer": "Fluorine"
+  },
+  {
+    "question": "Non-metals are generally located on the:",
+    "options": ["Left side", "Right side", "Bottom", "Middle"],
+    "answer": "Right side"
+  },
+  {
+    "question": "Which of the following is not a periodic property?",
+    "options": ["Valency", "Atomic mass", "Ionization energy", "Electronegativity"],
+    "answer": "Atomic mass"
+  }
+]

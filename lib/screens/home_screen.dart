@@ -217,11 +217,13 @@ class _HomeScreenState extends State<HomeScreen> {
                             _saveAlarms();
                           });
                         },
-                        onDelete: () {
+                        onDelete: () async {
+                          final alarmId = alarms[index].id;
+                          await NativeAlarmService.cancelAlarm(alarmId);
                           setState(() {
                             alarms.removeAt(index);
-                            _saveAlarms();
                           });
+                          await _saveAlarms();
                         },
                       ),
                     );
@@ -256,7 +258,7 @@ class _HomeScreenState extends State<HomeScreen> {
         showUnselectedLabels: true,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.alarm), label: 'Alarm'),
-          BottomNavigationBarItem(icon: Icon(Icons.receipt_long), label: 'Report'),
+          BottomNavigationBarItem(icon: Icon(Icons.settings), label: 'Settings'),
         ],
       ),
     );

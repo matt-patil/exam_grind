@@ -21,13 +21,50 @@ class _MCQMissionScreenState extends State<MCQMissionScreen> {
   final Map<String, List<String>> _selectedChapters = {};
   late int _mcqCount;
 
-  final List<String> _jeeSubjects = ['Maths', 'Physics', 'Chemistry', 'Random'];
-  final List<String> _neetSubjects = ['Biology', 'Physics', 'Chemistry', 'Random'];
+  final List<String> _jeeSubjects = ['Math', 'Physics', 'Chemistry'];
+  final List<String> _neetSubjects = ['Biology', 'Physics', 'Chemistry'];
 
   final Map<String, List<String>> _chapterLists = {
-    'Physics': ['Units and Dimensions'],
-    'Chemistry': ['Mole Concept'],
-    'Maths': ['Set Theory'],
+    'Physics': [
+      'Units and Dimensions',
+      'Kinematics',
+      'Laws of Motion',
+      'Work Energy Power',
+      'Rotational Motion',
+      'Gravitation',
+      'Mechanical Properties of Fluids',
+      'Thermodynamics',
+      'Oscillations',
+      'Waves'
+    ],
+    'Chemistry': [
+      'Mole Concept',
+      'Structure of Atom',
+      'Periodic Table',
+      'Chemical Bonding and Molecular Structure',
+      'States of Matter',
+      'Thermodynamics',
+      'Equilibrium',
+      'Redox Reactions',
+      'Hydrogen',
+      'The s-Block Elements',
+      'The p-Block Elements',
+      'Organic Chemistry – Basics'
+    ],
+    'Math': [
+      'Sets',
+      'Relations and Functions',
+      'Trigonometric Functions',
+      'Quadratic Equations',
+      'Linear Inequalities',
+      'Permutations and Combinations',
+      'Binomial Theorem',
+      'Sequences and Series',
+      'Straight Lines',
+      'Limits and Derivatives',
+      'Statistics',
+      'Probability'
+    ],
     'Biology': [
       'The Living World',
       'Biological Classification',
@@ -64,15 +101,8 @@ class _MCQMissionScreenState extends State<MCQMissionScreen> {
         _selectedSubjects.remove(subject);
         _selectedChapters.remove(subject);
       } else {
-        if (subject == 'Random') {
-          _selectedSubjects.clear();
-          _selectedChapters.clear();
-          _selectedSubjects.add(subject);
-        } else {
-          _selectedSubjects.remove('Random');
-          _selectedSubjects.add(subject);
-          _selectedChapters[subject] = []; // Initialize empty list
-        }
+        _selectedSubjects.add(subject);
+        _selectedChapters[subject] = []; // Initialize empty list
       }
     });
   }
@@ -193,200 +223,213 @@ class _MCQMissionScreenState extends State<MCQMissionScreen> {
         backgroundColor: const Color(0xFF0F0F11),
         elevation: 0,
       ),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              // Mission Badge
-              Container(
-                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-                decoration: BoxDecoration(
-                  color: const Color(0xFFBB86FC),
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                child: const Text(
-                  'MCQ Challenge',
-                  style: TextStyle(
-                    color: Color(0xFF0F0F11),
-                    fontWeight: FontWeight.bold,
-                    fontSize: 14,
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                // Mission Badge
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFBB86FC),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: const Text(
+                    'MCQ Challenge',
+                    style: TextStyle(
+                      color: Color(0xFF0F0F11),
+                      fontWeight: FontWeight.bold,
+                      fontSize: 14,
+                    ),
                   ),
                 ),
-              ),
-              const SizedBox(height: 30),
+                const SizedBox(height: 30),
 
-              // Exam Selection
-              const Text(
-                'Select Exam',
-                style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
-              ),
-              const SizedBox(height: 16),
-              Row(
-                children: [
-                  Expanded(
-                    child: _buildExamButton('JEE'),
-                  ),
-                  const SizedBox(width: 16),
-                  Expanded(
-                    child: _buildExamButton('NEET'),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 30),
-
-              // Class Selection (if exam is selected)
-              if (_selectedExam != null) ...[
+                // Exam Selection
                 const Text(
-                  'Select Class',
+                  'Select Exam',
                   style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 16),
                 Row(
                   children: [
                     Expanded(
-                      child: _buildClassButton('11th'),
+                      child: _buildExamButton('JEE'),
                     ),
                     const SizedBox(width: 16),
                     Expanded(
-                      child: _buildClassButton('12th'),
+                      child: _buildExamButton('NEET'),
                     ),
                   ],
                 ),
                 const SizedBox(height: 30),
-              ],
 
-              // Subject Selection (only if exam is selected AND class is 11th)
-              if (_selectedExam != null && _selectedClass == '11th') ...[
-                Text(
-                  'Select Subjects for $_selectedExam',
-                  style: const TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
-                ),
-                const SizedBox(height: 16),
-                Wrap(
-                  spacing: 10,
-                  runSpacing: 10,
-                  alignment: WrapAlignment.center,
-                  children: (_selectedExam == 'JEE' ? _jeeSubjects : _neetSubjects).map((subject) {
-                    return _buildSubjectButton(subject);
-                  }).toList(),
-                ),
-                const SizedBox(height: 30),
-              ],
-
-              // Chapter Selection (only if class is 11th)
-              if (_selectedClass == '11th' && _selectedSubjects.isNotEmpty && !_selectedSubjects.contains('Random')) ...[
-                const Text(
-                  'Select Chapters',
-                  style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
-                ),
-                const SizedBox(height: 16),
-                ..._selectedSubjects.map((subject) => _buildChapterDropdown(subject)).toList(),
-                const SizedBox(height: 30),
-              ],
-
-              // MCQ Count Section (Always visible once exam and class are selected)
-              if (_selectedExam != null && _selectedClass != null)
-                Container(
-                  padding: const EdgeInsets.all(24),
-                  decoration: BoxDecoration(
-                    color: const Color(0xFF1E1E1E),
-                    borderRadius: BorderRadius.circular(20),
+                // Class Selection (if exam is selected)
+                if (_selectedExam != null) ...[
+                  const Text(
+                    'Select Class',
+                    style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
                   ),
-                  child: Column(
+                  const SizedBox(height: 16),
+                  Row(
                     children: [
-                      const Text(
-                        'Number of Questions',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
-                        ),
+                      Expanded(
+                        child: _buildClassButton('11th'),
                       ),
-                      const SizedBox(height: 16),
-                      SizedBox(
-                        height: 120,
-                        child: CupertinoTheme(
-                          data: const CupertinoThemeData(
-                            textTheme: CupertinoTextThemeData(
-                              pickerTextStyle: TextStyle(
-                                color: Colors.white,
-                                fontSize: 24,
+                      const SizedBox(width: 16),
+                      Expanded(
+                        child: _buildClassButton('12th'),
+                      ),
+                    ],
+                  ),
+                  if (_selectedClass == '12th') ...[
+                    const SizedBox(height: 20),
+                    const Text(
+                      'Coming Soon!',
+                      style: TextStyle(
+                        color: Color(0xFFBB86FC),
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                  const SizedBox(height: 30),
+                ],
+
+                // Subject Selection (only if exam is selected AND class is 11th)
+                if (_selectedExam != null && _selectedClass == '11th') ...[
+                  Text(
+                    'Select Subjects for $_selectedExam',
+                    style: const TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
+                  ),
+                  const SizedBox(height: 16),
+                  Wrap(
+                    spacing: 10,
+                    runSpacing: 10,
+                    alignment: WrapAlignment.center,
+                    children: (_selectedExam == 'JEE' ? _jeeSubjects : _neetSubjects).map((subject) {
+                      return _buildSubjectButton(subject);
+                    }).toList(),
+                  ),
+                  const SizedBox(height: 30),
+                ],
+
+                // Chapter Selection (only if class is 11th)
+                if (_selectedClass == '11th' && _selectedSubjects.isNotEmpty) ...[
+                  const Text(
+                    'Select Chapters',
+                    style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
+                  ),
+                  const SizedBox(height: 16),
+                  ..._selectedSubjects.map((subject) => _buildChapterDropdown(subject)).toList(),
+                  const SizedBox(height: 30),
+                ],
+
+                // MCQ Count Section (Visible only if class 11th is selected)
+                if (_selectedExam != null && _selectedClass == '11th')
+                  Container(
+                    padding: const EdgeInsets.all(24),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF1E1E1E),
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: Column(
+                      children: [
+                        const Text(
+                          'Number of Questions',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
+                        ),
+                        const SizedBox(height: 16),
+                        SizedBox(
+                          height: 120,
+                          child: CupertinoTheme(
+                            data: const CupertinoThemeData(
+                              textTheme: CupertinoTextThemeData(
+                                pickerTextStyle: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 24,
+                                ),
                               ),
                             ),
-                          ),
-                          child: CupertinoPicker(
-                            scrollController: FixedExtentScrollController(
-                              initialItem: _mcqCount - 1,
-                            ),
-                            itemExtent: 40,
-                            onSelectedItemChanged: (int index) {
-                              setState(() {
-                                _mcqCount = index + 1;
-                              });
-                            },
-                            children: List<Widget>.generate(
-                              20,
-                              (int index) => Center(
-                                child: Text(
-                                  '${index + 1}',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 24,
-                                    fontWeight: _mcqCount == index + 1
-                                        ? FontWeight.bold
-                                        : FontWeight.normal,
+                            child: CupertinoPicker(
+                              scrollController: FixedExtentScrollController(
+                                initialItem: _mcqCount - 1,
+                              ),
+                              itemExtent: 40,
+                              onSelectedItemChanged: (int index) {
+                                setState(() {
+                                  _mcqCount = index + 1;
+                                });
+                              },
+                              children: List<Widget>.generate(
+                                20,
+                                (int index) => Center(
+                                  child: Text(
+                                    '${index + 1}',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 24,
+                                      fontWeight: _mcqCount == index + 1
+                                          ? FontWeight.bold
+                                          : FontWeight.normal,
+                                    ),
                                   ),
                                 ),
                               ),
                             ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
-                ),
-              const SizedBox(height: 40),
+                const SizedBox(height: 40),
 
-              // Save Button
-              SizedBox(
-                width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: _canSave()
-                      ? () {
-                          Navigator.pop(context, {
-                            'type': 'MCQ',
-                            'exam': _selectedExam,
-                            'class': _selectedClass,
-                            'subjects': _selectedSubjects,
-                            'chapters': _selectedChapters,
-                            'mcqCount': _mcqCount,
-                          });
-                        }
-                      : null,
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    disabledBackgroundColor: Colors.grey[800],
-                    padding: const EdgeInsets.symmetric(vertical: 16),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
+                // Save Button
+                SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    onPressed: _canSave()
+                        ? () {
+                            Navigator.pop(context, {
+                              'type': 'MCQ',
+                              'exam': _selectedExam,
+                              'class': _selectedClass,
+                              'subjects': _selectedSubjects,
+                              'chapters': _selectedChapters,
+                              'mcqCount': _mcqCount,
+                            });
+                          }
+                        : null,
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.white,
+                      disabledBackgroundColor: Colors.grey[800],
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
                     ),
-                  ),
-                  child: Text(
-                    'Save',
-                    style: TextStyle(
-                      color: _canSave()
-                          ? const Color(0xFF0F0F11)
-                          : Colors.grey[500],
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
+                    child: Text(
+                      'Save',
+                      style: TextStyle(
+                        color: _canSave()
+                            ? const Color(0xFF0F0F11)
+                            : Colors.grey[500],
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),
-              ),
-              const SizedBox(height: 20),
-            ],
+                const SizedBox(height: 20),
+              ],
+            ),
           ),
         ),
       ),
@@ -395,20 +438,20 @@ class _MCQMissionScreenState extends State<MCQMissionScreen> {
 
   bool _canSave() {
     if (_selectedExam == null || _selectedClass == null) return false;
-    
+
     if (_selectedClass == '11th') {
       if (_selectedSubjects.isEmpty) return false;
-      if (_selectedSubjects.contains('Random')) return true;
-      
+
       for (var subject in _selectedSubjects) {
-        if (_selectedChapters[subject] == null || _selectedChapters[subject]!.isEmpty) {
+        if (_selectedChapters[subject] == null ||
+            _selectedChapters[subject]!.isEmpty) {
           return false;
         }
       }
       return true;
-    } else {
-      return true;
     }
+
+    return false; // Class 12th is Coming Soon
   }
 
   Widget _buildExamButton(String exam) {

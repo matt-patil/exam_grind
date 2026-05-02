@@ -61,7 +61,40 @@ flutter:
   assets:
     - assets/sounds/
     - assets/quotes.json
-    - assets/MCQ datasets/JEE/Math/
+    - assets/MCQ datasets/JEE/11th/Math/Sets/
+    - assets/MCQ datasets/JEE/11th/Math/Relations and Functions/
+    - assets/MCQ datasets/JEE/11th/Math/Trigonometric Functions/
+    - assets/MCQ datasets/JEE/11th/Math/Quadratic Equations/
+    - assets/MCQ datasets/JEE/11th/Math/Linear Inequalities/
+    - assets/MCQ datasets/JEE/11th/Math/Permutations and Combinations/
+    - assets/MCQ datasets/JEE/11th/Math/Binomial Theorem/
+    - assets/MCQ datasets/JEE/11th/Math/Sequences and Series/
+    - assets/MCQ datasets/JEE/11th/Math/Straight Lines/
+    - assets/MCQ datasets/JEE/11th/Math/Limits and Derivatives/
+    - assets/MCQ datasets/JEE/11th/Math/Statistics/
+    - assets/MCQ datasets/JEE/11th/Math/Probability/
+    - assets/MCQ datasets/JEE/11th/Physics/Units and Dimensions/
+    - assets/MCQ datasets/JEE/11th/Physics/Kinematics/
+    - assets/MCQ datasets/JEE/11th/Physics/Laws of Motion/
+    - assets/MCQ datasets/JEE/11th/Physics/Work Energy Power/
+    - assets/MCQ datasets/JEE/11th/Physics/Rotational Motion/
+    - assets/MCQ datasets/JEE/11th/Physics/Gravitation/
+    - assets/MCQ datasets/JEE/11th/Physics/Mechanical Properties of Fluids/
+    - assets/MCQ datasets/JEE/11th/Physics/Thermodynamics/
+    - assets/MCQ datasets/JEE/11th/Physics/Oscillations/
+    - assets/MCQ datasets/JEE/11th/Physics/Waves/
+    - assets/MCQ datasets/JEE/11th/Chemistry/Mole Concept/
+    - assets/MCQ datasets/JEE/11th/Chemistry/Structure of Atom/
+    - assets/MCQ datasets/JEE/11th/Chemistry/Periodic Table/
+    - assets/MCQ datasets/JEE/11th/Chemistry/Chemical Bonding and Molecular Structure/
+    - assets/MCQ datasets/JEE/11th/Chemistry/States of Matter/
+    - assets/MCQ datasets/JEE/11th/Chemistry/Thermodynamics/
+    - assets/MCQ datasets/JEE/11th/Chemistry/Equilibrium/
+    - assets/MCQ datasets/JEE/11th/Chemistry/Redox Reactions/
+    - assets/MCQ datasets/JEE/11th/Chemistry/Hydrogen/
+    - assets/MCQ datasets/JEE/11th/Chemistry/The s-Block Elements/
+    - assets/MCQ datasets/JEE/11th/Chemistry/The p-Block Elements/
+    - assets/MCQ datasets/JEE/11th/Chemistry/Organic Chemistry – Basics/
 
   # To add assets to your application, add an assets section, like this:
   # assets:

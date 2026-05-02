@@ -218,92 +218,94 @@ class _TypingChallengeScreenState extends State<TypingChallengeScreen> {
           ),
         ],
       ),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            // Example Badge
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-              decoration: BoxDecoration(
-                color: const Color(0xFFFF5261),
-                borderRadius: BorderRadius.circular(20),
-              ),
-              child: const Text(
-                'Typing Challenge',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 14,
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              // Example Badge
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                decoration: BoxDecoration(
+                  color: const Color(0xFFFF5261),
+                  borderRadius: BorderRadius.circular(20),
                 ),
-              ),
-            ),
-            const SizedBox(height: 60),
-
-            // Select Phrase Button
-            ElevatedButton.icon(
-              onPressed: () async {
-                final List<String>? result = await Navigator.push<List<String>>(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => PhraseSelectionScreen(
-                      initialSelectedPhrases: _selectedPhrases,
-                    ),
+                child: const Text(
+                  'Typing Challenge',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 14,
                   ),
-                );
-                if (result != null) {
-                  setState(() {
-                    _selectedPhrases = result;
+                ),
+              ),
+              const SizedBox(height: 60),
+
+              // Select Phrase Button
+              ElevatedButton.icon(
+                onPressed: () async {
+                  final List<String>? result = await Navigator.push<List<String>>(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => PhraseSelectionScreen(
+                        initialSelectedPhrases: _selectedPhrases,
+                      ),
+                    ),
+                  );
+                  if (result != null) {
+                    setState(() {
+                      _selectedPhrases = result;
+                    });
+                  }
+                },
+                icon: const Icon(Icons.format_quote, color: Colors.white),
+                label: const Text('Select phrases'),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xFF1E1E1E),
+                  foregroundColor: Colors.white,
+                  minimumSize: const Size(200, 60),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15),
+                    side: const BorderSide(color: Color(0xFFFF5261), width: 1),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 24),
+              Text(
+                '${_selectedPhrases.length} phrases selected',
+                style: const TextStyle(color: Colors.grey, fontSize: 16),
+              ),
+
+              const Spacer(),
+
+              // Complete Button
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pop(context, {
+                    'type': 'Typing',
+                    'phrases': _selectedPhrases,
                   });
-                }
-              },
-              icon: const Icon(Icons.format_quote, color: Colors.white),
-              label: const Text('Select phrases'),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF1E1E1E),
-                foregroundColor: Colors.white,
-                minimumSize: const Size(200, 60),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15),
-                  side: const BorderSide(color: Color(0xFFFF5261), width: 1),
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.white,
+                  minimumSize: const Size(double.infinity, 55),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                ),
+                child: const Text(
+                  'Complete',
+                  style: TextStyle(
+                    color: Color(0xFF0F0F11),
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
-            ),
-            const SizedBox(height: 24),
-            Text(
-              '${_selectedPhrases.length} phrases selected',
-              style: const TextStyle(color: Colors.grey, fontSize: 16),
-            ),
-
-            const Spacer(),
-
-            // Complete Button
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pop(context, {
-                  'type': 'Typing',
-                  'phrases': _selectedPhrases,
-                });
-              },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.white,
-                minimumSize: const Size(double.infinity, 55),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15),
-                ),
-              ),
-              child: const Text(
-                'Complete',
-                style: TextStyle(
-                  color: Color(0xFF0F0F11),
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-            const SizedBox(height: 20),
-          ],
+              const SizedBox(height: 20),
+            ],
+          ),
         ),
       ),
     );

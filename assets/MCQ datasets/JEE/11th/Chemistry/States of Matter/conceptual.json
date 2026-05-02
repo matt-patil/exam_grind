@@ -1,0 +1,602 @@
+[
+  {
+    "question": "Which of the following is the correct expression for Boyle's Law?",
+    "options": [
+      "$PV = constant$",
+      "$V/T = constant$",
+      "$P/T = constant$",
+      "$V/n = constant$"
+    ],
+    "answer": "$PV = constant$"
+  },
+  {
+    "question": "Charles's Law states that at constant pressure, the volume of a fixed mass of gas is directly proportional to its:",
+    "options": [
+      "Celsius temperature",
+      "Absolute temperature",
+      "Density",
+      "Number of moles"
+    ],
+    "answer": "Absolute temperature"
+  },
+  {
+    "question": "The value of the gas constant $R$ in SI units is approximately:",
+    "options": [
+      "$0.0821$ L atm K$^{-1}$ mol$^{-1}$",
+      "$8.314$ J K$^{-1}$ mol$^{-1}$",
+      "$1.987$ cal K$^{-1}$ mol$^{-1}$",
+      "$62.36$ L torr K$^{-1}$ mol$^{-1}$"
+    ],
+    "answer": "$8.314$ J K$^{-1}$ mol$^{-1}$"
+  },
+  {
+    "question": "Which of the following describes Avogadro's Law?",
+    "options": [
+      "$V \\propto n$",
+      "$V \\propto T$",
+      "$P \\propto T$",
+      "$V \\propto 1/P$"
+    ],
+    "answer": "$V \\propto n$"
+  },
+  {
+    "question": "The temperature at which the volume of an ideal gas becomes zero is:",
+    "options": [
+      "$0^\\circ$C",
+      "$273.15$ K",
+      "$0$ K",
+      "$-273.15^\\circ$F"
+    ],
+    "answer": "$0$ K"
+  },
+  {
+    "question": "An ideal gas is one which obeys:",
+    "options": [
+      "Boyle's Law only",
+      "Charles's Law only",
+      "Ideal gas equation under all conditions",
+      "Newton's laws of motion"
+    ],
+    "answer": "Ideal gas equation under all conditions"
+  },
+  {
+    "question": "The van der Waals equation for real gases is:",
+    "options": [
+      "$PV = nRT$",
+      "$(P + \\frac{an^2}{V^2})(V - nb) = nRT$",
+      "$(P - \\frac{an^2}{V^2})(V + nb) = nRT$",
+      "$P(V-b) = RT$"
+    ],
+    "answer": "$(P + \\frac{an^2}{V^2})(V - nb) = nRT$"
+  },
+  {
+    "question": "In the van der Waals equation, 'a' represents:",
+    "options": [
+      "Volume of molecules",
+      "Intermolecular forces of attraction",
+      "Kinetic energy",
+      "Collision frequency"
+    ],
+    "answer": "Intermolecular forces of attraction"
+  },
+  {
+    "question": "In the van der Waals equation, 'b' represents:",
+    "options": [
+      "Effective volume of molecules",
+      "Force of attraction",
+      "Pressure correction",
+      "Temperature correction"
+    ],
+    "answer": "Effective volume of molecules"
+  },
+  {
+    "question": "Real gases behave ideally at:",
+    "options": [
+      "High pressure and low temperature",
+      "Low pressure and high temperature",
+      "Low pressure and low temperature",
+      "High pressure and high temperature"
+    ],
+    "answer": "Low pressure and high temperature"
+  },
+  {
+    "question": "The compressibility factor $Z$ for an ideal gas is:",
+    "options": [
+      "0",
+      "1",
+      "$< 1$",
+      "$> 1$"
+    ],
+    "answer": "1"
+  },
+  {
+    "question": "The temperature at which a real gas obeys ideal gas law over an appreciable range of pressure is called:",
+    "options": [
+      "Critical temperature",
+      "Boyle temperature",
+      "Inversion temperature",
+      "Boiling point"
+    ],
+    "answer": "Boyle temperature"
+  },
+  {
+    "question": "Graham's law of diffusion states that the rate of diffusion is inversely proportional to the square root of its:",
+    "options": [
+      "Pressure",
+      "Temperature",
+      "Molar mass",
+      "Volume"
+    ],
+    "answer": "Molar mass"
+  },
+  {
+    "question": "Dalton's Law of partial pressures is applicable to:",
+    "options": [
+      "Reacting gases",
+      "Non-reacting gases",
+      "Liquids",
+      "Solids"
+    ],
+    "answer": "Non-reacting gases"
+  },
+  {
+    "question": "The average kinetic energy of gas molecules depends only on:",
+    "options": [
+      "Pressure",
+      "Volume",
+      "Nature of gas",
+      "Absolute temperature"
+    ],
+    "answer": "Absolute temperature"
+  },
+  {
+    "question": "The most probable velocity ($v_{mp}$), average velocity ($v_{av}$) and root mean square velocity ($v_{rms}$) are related as:",
+    "options": [
+      "$v_{rms} > v_{av} > v_{mp}$",
+      "$v_{mp} > v_{av} > v_{rms}$",
+      "$v_{av} > v_{rms} > v_{mp}$",
+      "$v_{rms} = v_{av} = v_{mp}$"
+    ],
+    "answer": "$v_{rms} > v_{av} > v_{mp}$"
+  },
+  {
+    "question": "Critical temperature ($T_c$) is the temperature:",
+    "options": [
+      "Above which a gas cannot be liquefied",
+      "Below which a gas cannot be liquefied",
+      "At which a gas solidifies",
+      "At which a gas obeys Boyle's law"
+    ],
+    "answer": "Above which a gas cannot be liquefied"
+  },
+  {
+    "question": "Surface tension of a liquid:",
+    "options": [
+      "Increases with increase in temperature",
+      "Decreases with increase in temperature",
+      "Remains constant",
+      "Is zero at boiling point"
+    ],
+    "answer": "Decreases with increase in temperature"
+  },
+  {
+    "question": "The internal resistance to flow in a liquid is called:",
+    "options": [
+      "Surface tension",
+      "Viscosity",
+      "Vapor pressure",
+      "Diffusion"
+    ],
+    "answer": "Viscosity"
+  },
+  {
+    "question": "The SI unit of viscosity coefficient ($\\eta$) is:",
+    "options": [
+      "Pascal",
+      "Poise",
+      "Newton second per square meter ($N s m^{-2}$)",
+      "Joule"
+    ],
+    "answer": "Newton second per square meter ($N s m^{-2}$)"
+  },
+  {
+    "question": "Vapor pressure of a liquid increases with:",
+    "options": [
+      "Increase in temperature",
+      "Decrease in temperature",
+      "Increase in surface area",
+      "Increase in volume of container"
+    ],
+    "answer": "Increase in temperature"
+  },
+  {
+    "question": "A liquid boils when its vapor pressure becomes equal to:",
+    "options": [
+      "Internal pressure",
+      "Atmospheric pressure",
+      "Critical pressure",
+      "Zero"
+    ],
+    "answer": "Atmospheric pressure"
+  },
+  {
+    "question": "Which of the following has the highest viscosity?",
+    "options": [
+      "Water",
+      "Ether",
+      "Glycerine",
+      "Acetone"
+    ],
+    "answer": "Glycerine"
+  },
+  {
+    "question": "The rise or fall of a liquid in a narrow tube is called:",
+    "options": [
+      "Viscosity",
+      "Capillarity",
+      "Surface tension",
+      "Diffusion"
+    ],
+    "answer": "Capillarity"
+  },
+  {
+    "question": "According to Kinetic Molecular Theory, the collisions between gas molecules are:",
+    "options": [
+      "Inelastic",
+      "Elastic",
+      "Perfectly inelastic",
+      "Random"
+    ],
+    "answer": "Elastic"
+  },
+  {
+    "question": "The ratio of $PV/nT$ for a gas is called:",
+    "options": [
+      "Ideal gas constant",
+      "Compressibility factor",
+      "Boltzmann constant",
+      "Van der Waals constant"
+    ],
+    "answer": "Ideal gas constant"
+  },
+  {
+    "question": "Which gas diffuses faster among the following?",
+    "options": [
+      "$H_2$",
+      "$He$",
+      "$CH_4$",
+      "$SO_2$"
+    ],
+    "answer": "$H_2$"
+  },
+  {
+    "question": "The unit of surface tension is:",
+    "options": [
+      "$N m$",
+      "$N m^{-1}$",
+      "$J m^{-2}$",
+      "Both $N m^{-1}$ and $J m^{-2}$"
+    ],
+    "answer": "Both $N m^{-1}$ and $J m^{-2}$"
+  },
+  {
+    "question": "At critical temperature, the surface tension of a liquid is:",
+    "options": [
+      "Maximum",
+      "Minimum",
+      "Zero",
+      "Infinite"
+    ],
+    "answer": "Zero"
+  },
+  {
+    "question": "The pressure exerted by the vapors in equilibrium with the liquid at a given temperature is called:",
+    "options": [
+      "Partial pressure",
+      "Vapor pressure",
+      "Osmotic pressure",
+      "Atmospheric pressure"
+    ],
+    "answer": "Vapor pressure"
+  },
+  {
+    "question": "Which of the following states of matter has the highest thermal expansion?",
+    "options": [
+      "Solid",
+      "Liquid",
+      "Gas",
+      "Plasma"
+    ],
+    "answer": "Gas"
+  },
+  {
+    "question": "The movement of molecules from a region of higher concentration to lower concentration is:",
+    "options": [
+      "Effusion",
+      "Diffusion",
+      "Osmosis",
+      "Viscosity"
+    ],
+    "answer": "Diffusion"
+  },
+  {
+    "question": "Standard Temperature and Pressure (STP) conditions are:",
+    "options": [
+      "$273.15$ K and $1$ bar",
+      "$298$ K and $1$ atm",
+      "$0^\\circ$C and $1$ atm",
+      "$273.15$ K and $1$ atm"
+    ],
+    "answer": "$273.15$ K and $1$ bar"
+  },
+  {
+    "question": "The volume of $1$ mole of an ideal gas at STP ($273.15$ K, $1$ bar) is:",
+    "options": [
+      "$22.4$ L",
+      "$22.7$ L",
+      "$24.4$ L",
+      "$22.0$ L"
+    ],
+    "answer": "$22.7$ L"
+  },
+  {
+    "question": "Intermolecular forces like dipole-dipole, dipole-induced dipole and dispersion forces are collectively called:",
+    "options": [
+      "Valence forces",
+      "Van der Waals forces",
+      "Ionic forces",
+      "Covalent forces"
+    ],
+    "answer": "Van der Waals forces"
+  },
+  {
+    "question": "Which of the following is responsible for the spherical shape of liquid drops?",
+    "options": [
+      "Viscosity",
+      "Surface tension",
+      "Vapor pressure",
+      "Gravity"
+    ],
+    "answer": "Surface tension"
+  },
+  {
+    "question": "Dispersion forces are also known as:",
+    "options": [
+      "Keesom forces",
+      "Debye forces",
+      "London forces",
+      "Hydrogen bonding"
+    ],
+    "answer": "London forces"
+  },
+  {
+    "question": "Hydrogen bonding is a special case of:",
+    "options": [
+      "Dipole-dipole interaction",
+      "London forces",
+      "Ion-dipole interaction",
+      "None of these"
+    ],
+    "answer": "Dipole-dipole interaction"
+  },
+  {
+    "question": "The state of matter that consists of super-heated gaseous ions and electrons is:",
+    "options": [
+      "Solid",
+      "Liquid",
+      "Gas",
+      "Plasma"
+    ],
+    "answer": "Plasma"
+  },
+  {
+    "question": "Which of the following is not a property of gases?",
+    "options": [
+      "High compressibility",
+      "Fixed volume",
+      "Low density",
+      "Homogeneous mixing"
+    ],
+    "answer": "Fixed volume"
+  },
+  {
+    "question": "A gas that is below its critical temperature is called:",
+    "options": [
+      "Ideal gas",
+      "Real gas",
+      "Vapor",
+      "Liquid"
+    ],
+    "answer": "Vapor"
+  },
+  {
+    "question": "The mean free path of a gas molecule is:",
+    "options": [
+      "The total distance traveled by a molecule",
+      "The average distance traveled between two successive collisions",
+      "The distance from the nucleus",
+      "None of these"
+    ],
+    "answer": "The average distance traveled between two successive collisions"
+  },
+  {
+    "question": "As temperature increases, the viscosity of a liquid:",
+    "options": [
+      "Increases",
+      "Decreases",
+      "Remains same",
+      "First increases then decreases"
+    ],
+    "answer": "Decreases"
+  },
+  {
+    "question": "As temperature increases, the viscosity of a gas:",
+    "options": [
+      "Increases",
+      "Decreases",
+      "Remains same",
+      "Becomes zero"
+    ],
+    "answer": "Increases"
+  },
+  {
+    "question": "The boiling point of a liquid ______ with increase in external pressure.",
+    "options": [
+      "Increases",
+      "Decreases",
+      "Remains same",
+      "Becomes zero"
+    ],
+    "answer": "Increases"
+  },
+  {
+    "question": "Which of the following gases will have the highest value of van der Waals constant 'a'?",
+    "options": [
+      "$H_2$",
+      "$He$",
+      "$NH_3$",
+      "$CH_4$"
+    ],
+    "answer": "$NH_3$"
+  },
+  {
+    "question": "The pressure of a gas is due to:",
+    "options": [
+      "Collisions between gas molecules",
+      "Collisions of gas molecules with the walls of the container",
+      "Gravitational pull",
+      "Intermolecular attractions"
+    ],
+    "answer": "Collisions of gas molecules with the walls of the container"
+  },
+  {
+    "question": "Which of the following is the Boltzmann constant ($k_B$)?",
+    "options": [
+      "$R/N_A$",
+      "$R \\cdot N_A$",
+      "$N_A/R$",
+      "$1/R$"
+    ],
+    "answer": "$R/N_A$"
+  },
+  {
+    "question": "Liquefaction of gases can be achieved by:",
+    "options": [
+      "Increasing temperature and increasing pressure",
+      "Decreasing temperature and increasing pressure",
+      "Increasing temperature and decreasing pressure",
+      "Decreasing temperature and decreasing pressure"
+    ],
+    "answer": "Decreasing temperature and increasing pressure"
+  },
+  {
+    "question": "The meniscus of mercury in a glass tube is:",
+    "options": [
+      "Concave",
+      "Convex",
+      "Flat",
+      "Cylindrical"
+    ],
+    "answer": "Convex"
+  },
+  {
+    "question": "The meniscus of water in a glass tube is:",
+    "options": [
+      "Concave",
+      "Convex",
+      "Flat",
+      "None of these"
+    ],
+    "answer": "Concave"
+  },
+  {
+    "question": "Which of the following is true for an effusion process?",
+    "options": [
+      "Gases mix with each other",
+      "Gas escapes through a small hole into vacuum",
+      "Liquid turns into gas",
+      "Solid turns into gas"
+    ],
+    "answer": "Gas escapes through a small hole into vacuum"
+  },
+  {
+    "question": "The density of a gas is directly proportional to its ______ at constant temperature.",
+    "options": [
+      "Volume",
+      "Pressure",
+      "Number of moles",
+      "Viscosity"
+    ],
+    "answer": "Pressure"
+  },
+  {
+    "question": "For a real gas, if $Z < 1$, it indicates that:",
+    "options": [
+      "Attractive forces predominate",
+      "Repulsive forces predominate",
+      "The gas is ideal",
+      "The gas is at high temperature"
+    ],
+    "answer": "Attractive forces predominate"
+  },
+  {
+    "question": "For a real gas, if $Z > 1$, it indicates that:",
+    "options": [
+      "Attractive forces predominate",
+      "Repulsive forces predominate",
+      "The gas is ideal",
+      "The gas is at low pressure"
+    ],
+    "answer": "Repulsive forces predominate"
+  },
+  {
+    "question": "The temperature at which the liquid and vapor phases become indistinguishable is:",
+    "options": [
+      "Boiling point",
+      "Freezing point",
+      "Critical temperature",
+      "Boyle temperature"
+    ],
+    "answer": "Critical temperature"
+  },
+  {
+    "question": "The molar volume of a gas is the volume occupied by:",
+    "options": [
+      "$1$ gram of gas",
+      "$1$ molecule of gas",
+      "$1$ mole of gas",
+      "$1$ litre of gas"
+    ],
+    "answer": "$1$ mole of gas"
+  },
+  {
+    "question": "Which interaction is the strongest among Van der Waals forces?",
+    "options": [
+      "London forces",
+      "Dipole-dipole forces",
+      "Dipole-induced dipole forces",
+      "All are equal"
+    ],
+    "answer": "Dipole-dipole forces"
+  },
+  {
+    "question": "Gases like $H_2$ and $He$ show $Z > 1$ even at low pressures because:",
+    "options": [
+      "They have very strong attractive forces",
+      "They have very small 'a' value",
+      "They have very large 'b' value",
+      "They are noble gases"
+    ],
+    "answer": "They have very small 'a' value"
+  },
+  {
+    "question": "The constant 'b' in van der Waals equation is ______ times the actual volume of the molecules.",
+    "options": [
+      "Two",
+      "Three",
+      "Four",
+      "Half"
+    ],
+    "answer": "Four"
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Which law of thermodynamics defines the concept of temperature?",
+    "options": ["First Law", "Second Law", "Third Law", "Zeroth Law"],
+    "answer": "Zeroth Law"
+  },
+  {
+    "question": "Internal energy of an ideal gas depends only on its:",
+    "options": ["Pressure", "Volume", "Temperature", "Density"],
+    "answer": "Temperature"
+  },
+  {
+    "question": "The First Law of Thermodynamics is a statement of the conservation of:",
+    "options": ["Mass", "Momentum", "Energy", "Entropy"],
+    "answer": "Energy"
+  },
+  {
+    "question": "In an isothermal process, which of the following remains constant?",
+    "options": ["Pressure", "Volume", "Temperature", "Entropy"],
+    "answer": "Temperature"
+  },
+  {
+    "question": "An adiabatic process is one in which:",
+    "options": ["Temperature remains constant", "Pressure remains constant", "No heat is exchanged with the surroundings", "Volume remains constant"],
+    "answer": "No heat is exchanged with the surroundings"
+  },
+  {
+    "question": "The work done in an isochoric process is:",
+    "options": ["Maximum", "Minimum", "Zero", "Positive only"],
+    "answer": "Zero"
+  },
+  {
+    "question": "Which of the following is a state function?",
+    "options": ["Work", "Heat", "Internal Energy", "Distance"],
+    "answer": "Internal Energy"
+  },
+  {
+    "question": "The efficiency of a Carnot engine depends only on:",
+    "options": ["The nature of the working substance", "The temperatures of the source and sink", "The pressure of the gas", "The volume of the cylinder"],
+    "answer": "The temperatures of the source and sink"
+  },
+  {
+    "question": "The Second Law of Thermodynamics introduces the concept of:",
+    "options": ["Internal Energy", "Temperature", "Entropy", "Enthalpy"],
+    "answer": "Entropy"
+  },
+  {
+    "question": "A cyclic process is one in which the system:",
+    "options": ["Does no work", "Returns to its initial state", "Exchanges no heat", "Has constant pressure"],
+    "answer": "Returns to its initial state"
+  },
+  {
+    "question": "In an adiabatic expansion of an ideal gas, the temperature:",
+    "options": ["Increases", "Decreases", "Remains constant", "First increases then decreases"],
+    "answer": "Decreases"
+  },
+  {
+    "question": "The molar specific heat at constant pressure ($C_p$) and constant volume ($C_v$) are related by Mayer's formula:",
+    "options": ["$C_p + C_v = R$", "$C_p - C_v = R$", "$C_p / C_v = R$", "$C_v - C_p = R$"],
+    "answer": "$C_p - C_v = R$"
+  },
+  {
+    "question": "The ratio of specific heats $\\gamma$ for a monatomic gas is:",
+    "options": ["5/3", "7/5", "4/3", "1"],
+    "answer": "5/3"
+  },
+  {
+    "question": "The efficiency of a Carnot engine is given by:",
+    "options": ["$1 - \\frac{T_2}{T_1}$", "$1 + \\frac{T_2}{T_1}$", "$\\frac{T_1}{T_2}$", "$\\frac{T_2}{T_1}$"],
+    "answer": "$1 - \\frac{T_2}{T_1}$"
+  },
+  {
+    "question": "According to the Second Law of Thermodynamics, heat cannot flow by itself from:",
+    "options": ["Hot body to cold body", "Cold body to hot body", "High pressure to low pressure", "Low density to high density"],
+    "answer": "Cold body to hot body"
+  },
+  {
+    "question": "The change in internal energy in a cyclic process is:",
+    "options": ["Positive", "Negative", "Zero", "Infinite"],
+    "answer": "Zero"
+  },
+  {
+    "question": "Which process is represented by the equation $PV^\\gamma = \\text{constant}$?",
+    "options": ["Isothermal", "Adiabatic", "Isobaric", "Isochoric"],
+    "answer": "Adiabatic"
+  },
+  {
+    "question": "The work done in an isothermal process is proportional to:",
+    "options": ["$T$", "$\\ln(V_2/V_1)$", "$P_1 V_1$", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "A refrigerator is a heat engine working in:",
+    "options": ["Forward direction", "Reverse direction", "Cyclic direction", "Adiabatic direction"],
+    "answer": "Reverse direction"
+  },
+  {
+    "question": "Entropy of the universe tends to:",
+    "options": ["Decrease", "Remain constant", "Increase", "Become zero"],
+    "answer": "Increase"
+  },
+  {
+    "question": "The Third Law of Thermodynamics states that at absolute zero, the entropy of a perfect crystal is:",
+    "options": ["Maximum", "Zero", "Constant but non-zero", "Infinite"],
+    "answer": "Zero"
+  },
+  {
+    "question": "In a free expansion of a gas in an adiabatic container, the work done is:",
+    "options": ["Maximum", "Zero", "Negative", "Dependent on pressure"],
+    "answer": "Zero"
+  },
+  {
+    "question": "For a reversible process, the change in entropy of the universe is:",
+    "options": ["Positive", "Negative", "Zero", "Infinite"],
+    "answer": "Zero"
+  },
+  {
+    "question": "The slope of an adiabatic curve on a P-V diagram is:",
+    "options": ["Same as isothermal curve", "Steeper than isothermal curve", "Less steep than isothermal curve", "Zero"],
+    "answer": "Steeper than isothermal curve"
+  },
+  {
+    "question": "Specific heat of a gas in an isothermal process is:",
+    "options": ["Zero", "Infinite", "Constant", "Negative"],
+    "answer": "Infinite"
+  },
+  {
+    "question": "Specific heat of a gas in an adiabatic process is:",
+    "options": ["Zero", "Infinite", "Constant", "Negative"],
+    "answer": "Zero"
+  },
+  {
+    "question": "The area under a P-V diagram represents:",
+    "options": ["Heat", "Work done", "Internal energy", "Entropy"],
+    "answer": "Work done"
+  },
+  {
+    "question": "Which of the following is an intensive property?",
+    "options": ["Volume", "Mass", "Temperature", "Internal Energy"],
+    "answer": "Temperature"
+  },
+  {
+    "question": "In which process is the entire heat supplied used to do work?",
+    "options": ["Isothermal", "Adiabatic", "Isochoric", "Isobaric"],
+    "answer": "Isothermal"
+  },
+  {
+    "question": "The work done by a system in expanding is:",
+    "options": ["Positive", "Negative", "Zero", "Undefined"],
+    "answer": "Positive"
+  },
+  {
+    "question": "The coefficient of performance (COP) of a refrigerator is defined as:",
+    "options": ["$Q_2 / W$", "$Q_1 / W$", "$W / Q_2$", "$Q_2 / Q_1$"],
+    "answer": "$Q_2 / W$"
+  },
+  {
+    "question": "A perfect heat engine would have an efficiency of:",
+    "options": ["50%", "100%", "75%", "0%"],
+    "answer": "100%"
+  },
+  {
+    "question": "Kelvin-Planck statement is related to:",
+    "options": ["Heat engine", "Refrigerator", "Thermometer", "Heat pump"],
+    "answer": "Heat engine"
+  },
+  {
+    "question": "Clausius statement is related to:",
+    "options": ["Heat engine", "Refrigerator", "Boiler", "Solar cell"],
+    "answer": "Refrigerator"
+  },
+  {
+    "question": "For a cyclic process, the net heat absorbed is equal to:",
+    "options": ["Zero", "Net work done", "Change in internal energy", "Final pressure"],
+    "answer": "Net work done"
+  },
+  {
+    "question": "A diatomic gas has how many degrees of freedom at room temperature?",
+    "options": ["3", "5", "6", "7"],
+    "answer": "5"
+  },
+  {
+    "question": "The internal energy of $n$ moles of an ideal gas is given by:",
+    "options": ["$n C_v T$", "$n C_p T$", "$n R T$", "$\\frac{1}{2} n R T$"],
+    "answer": "$n C_v T$"
+  },
+  {
+    "question": "The value of $\\gamma$ for a diatomic gas is:",
+    "options": ["1.67", "1.40", "1.33", "1.00"],
+    "answer": "1.40"
+  },
+  {
+    "question": "In an isobaric process, the heat supplied is used for:",
+    "options": ["Only increasing internal energy", "Only doing work", "Both increasing internal energy and doing work", "Changing the phase"],
+    "answer": "Both increasing internal energy and doing work"
+  },
+  {
+    "question": "An ideal gas heat engine operates in a Carnot cycle between $227^\\circ C$ and $127^\\circ C$. Its efficiency is:",
+    "options": ["20%", "44%", "10%", "50%"],
+    "answer": "20%"
+  },
+  {
+    "question": "Entropy can be thought of as a measure of:",
+    "options": ["Order", "Disorder", "Total energy", "Pressure"],
+    "answer": "Disorder"
+  },
+  {
+    "question": "The First Law of Thermodynamics can be written as:",
+    "options": ["$\\Delta Q = \\Delta U + \\Delta W$", "$\\Delta Q = \\Delta U - \\Delta W$", "$\\Delta U = \\Delta Q + \\Delta W$", "$\\Delta W = \\Delta Q + \\Delta U$"],
+    "answer": "$\\Delta Q = \\Delta U + \\Delta W$"
+  },
+  {
+    "question": "Which of the following is an extensive property?",
+    "options": ["Temperature", "Pressure", "Density", "Volume"],
+    "answer": "Volume"
+  },
+  {
+    "question": "A quasi-static process is one that is:",
+    "options": ["Very fast", "Very slow", "Adiabatic", "Isobaric"],
+    "answer": "Very slow"
+  },
+  {
+    "question": "Heat added to a system is taken as:",
+    "options": ["Positive", "Negative", "Zero", "Constant"],
+    "answer": "Positive"
+  },
+  {
+    "question": "Work done on the system is taken as:",
+    "options": ["Positive", "Negative", "Zero", "Depends on the gas"],
+    "answer": "Negative"
+  },
+  {
+    "question": "In a reversible adiabatic process, entropy:",
+    "options": ["Increases", "Decreases", "Remains constant", "Becomes zero"],
+    "answer": "Remains constant"
+  },
+  {
+    "question": "The internal energy of a real gas depends on:",
+    "options": ["Temperature only", "Volume only", "Both temperature and volume", "Pressure only"],
+    "answer": "Both temperature and volume"
+  },
+  {
+    "question": "The work done during an adiabatic process is given by:",
+    "options": ["$\\frac{P_1 V_1 - P_2 V_2}{\\gamma - 1}$", "$nRT \\ln(V_2/V_1)$", "$P(V_2 - V_1)$", "$0$"],
+    "answer": "$\\frac{P_1 V_1 - P_2 V_2}{\\gamma - 1}$"
+  },
+  {
+    "question": "Triple point of water is at:",
+    "options": ["$0 K$", "$273.16 K$", "$373.15 K$", "$273.15 K$"],
+    "answer": "$273.16 K$"
+  },
+  {
+    "question": "The source temperature of a Carnot engine is increased. Its efficiency will:",
+    "options": ["Increase", "Decrease", "Remain same", "Become zero"],
+    "answer": "Increase"
+  },
+  {
+    "question": "The sink temperature of a Carnot engine is decreased. Its efficiency will:",
+    "options": ["Increase", "Decrease", "Remain same", "Become 100%"],
+    "answer": "Increase"
+  },
+  {
+    "question": "Which of the following is NOT a thermodynamic coordinate?",
+    "options": ["Pressure", "Volume", "Temperature", "Force"],
+    "answer": "Force"
+  },
+  {
+    "question": "The law of equipartition of energy states that the energy per degree of freedom is:",
+    "options": ["$RT$", "$kT$", "$\\frac{1}{2} kT$", "$\\frac{1}{2} RT$"],
+    "answer": "$\\frac{1}{2} kT$"
+  },
+  {
+    "question": "During a phase change, the temperature of a substance:",
+    "options": ["Increases", "Decreases", "Remains constant", "Changes linearly"],
+    "answer": "Remains constant"
+  },
+  {
+    "question": "What is the relation between $\\gamma$, $C_p$ and $C_v$?",
+    "options": ["$\\gamma = C_p / C_v$", "$\\gamma = C_v / C_p$", "$\\gamma = C_p - C_v$", "$\\gamma = C_p + C_v$"],
+    "answer": "$\\gamma = C_p / C_v$"
+  },
+  {
+    "question": "A system is in thermal equilibrium if:",
+    "options": ["Pressure is same", "Volume is same", "Temperature is same", "Energy is same"],
+    "answer": "Temperature is same"
+  },
+  {
+    "question": "For a monatomic gas, the value of $C_v$ is:",
+    "options": ["$\\frac{3}{2} R$", "$\\frac{5}{2} R$", "$\\frac{1}{2} R$", "$3 R$"],
+    "answer": "$\\frac{3}{2} R$"
+  },
+  {
+    "question": "The Carnot cycle consists of:",
+    "options": ["Two isothermals and two adiabatics", "Two isobars and two isochores", "One isothermal and one adiabatic", "Four isothermals"],
+    "answer": "Two isothermals and two adiabatics"
+  },
+  {
+    "question": "A heat engine converts:",
+    "options": ["Work into heat", "Heat into work", "Internal energy into heat", "Pressure into volume"],
+    "answer": "Heat into work"
+  }
+]

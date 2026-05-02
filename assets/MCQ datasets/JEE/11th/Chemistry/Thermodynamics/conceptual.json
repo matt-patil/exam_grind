@@ -1,0 +1,602 @@
+[
+  {
+    "question": "Which of the following is a state function?",
+    "options": [
+      "Work ($w$)",
+      "Heat ($q$)",
+      "Internal energy ($U$)",
+      "Heat capacity ($C$)"
+    ],
+    "answer": "Internal energy ($U$)"
+  },
+  {
+    "question": "For an adiabatic process, which of the following is correct?",
+    "options": [
+      "$q = 0$",
+      "$w = 0$",
+      "$\\Delta U = 0$",
+      "$\\Delta T = 0$"
+    ],
+    "answer": "$q = 0$"
+  },
+  {
+    "question": "Which of the following properties is intensive?",
+    "options": [
+      "Mass",
+      "Volume",
+      "Density",
+      "Enthalpy"
+    ],
+    "answer": "Density"
+  },
+  {
+    "question": "The first law of thermodynamics is a statement of:",
+    "options": [
+      "Conservation of mass",
+      "Conservation of energy",
+      "Conservation of momentum",
+      "Conservation of charge"
+    ],
+    "answer": "Conservation of energy"
+  },
+  {
+    "question": "For an isothermal expansion of an ideal gas into vacuum, which of the following is zero?",
+    "options": [
+      "$q$",
+      "$w$",
+      "$\\Delta U$",
+      "All of these"
+    ],
+    "answer": "All of these"
+  },
+  {
+    "question": "The change in internal energy ($\\Delta U$) for an isolated system is:",
+    "options": [
+      "Positive",
+      "Negative",
+      "Zero",
+      "Depends on the process"
+    ],
+    "answer": "Zero"
+  },
+  {
+    "question": "Enthalpy ($H$) is defined as:",
+    "options": [
+      "$U + PV$",
+      "$U - PV$",
+      "$U + TS$",
+      "$U - TS$"
+    ],
+    "answer": "$U + PV$"
+  },
+  {
+    "question": "For a spontaneous process at constant $T$ and $P$, the Gibbs free energy change ($\\Delta G$) must be:",
+    "options": [
+      "Positive",
+      "Negative",
+      "Zero",
+      "Positive or zero"
+    ],
+    "answer": "Negative"
+  },
+  {
+    "question": "Which of the following is an extensive property?",
+    "options": [
+      "Molar heat capacity",
+      "Specific heat capacity",
+      "Heat capacity",
+      "Temperature"
+    ],
+    "answer": "Heat capacity"
+  },
+  {
+    "question": "The entropy of a perfectly crystalline substance is zero at:",
+    "options": [
+      "$0^\\circ C$",
+      "$273 K$",
+      "$0 K$",
+      "$100 K$"
+    ],
+    "answer": "$0 K$"
+  },
+  {
+    "question": "For the process $H_2O(l) \\rightarrow H_2O(g)$ at $100^\\circ C$ and 1 atm pressure, which is true?",
+    "options": [
+      "$\\Delta G = 0$",
+      "$\\Delta S = 0$",
+      "$\\Delta H = 0$",
+      "$\\Delta U = 0$"
+    ],
+    "answer": "$\\Delta G = 0$"
+  },
+  {
+    "question": "In an exothermic reaction, the enthalpy of products is:",
+    "options": [
+      "Greater than reactants",
+      "Less than reactants",
+      "Equal to reactants",
+      "Zero"
+    ],
+    "answer": "Less than reactants"
+  },
+  {
+    "question": "The criteria for spontaneity in terms of entropy is:",
+    "options": [
+      "$\\Delta S_{sys} > 0$",
+      "$\\Delta S_{surr} > 0$",
+      "$\\Delta S_{total} > 0$",
+      "$\\Delta S_{sys} < 0$"
+    ],
+    "answer": "$\\Delta S_{total} > 0$"
+  },
+  {
+    "question": "Which of the following is not a path function?",
+    "options": [
+      "Heat ($q$)",
+      "Work ($w$)",
+      "Heat + Work ($q+w$)",
+      "Molar heat"
+    ],
+    "answer": "Heat + Work ($q+w$)"
+  },
+  {
+    "question": "For an endothermic reaction, $\\Delta H$ is:",
+    "options": [
+      "Positive",
+      "Negative",
+      "Zero",
+      "Undefined"
+    ],
+    "answer": "Positive"
+  },
+  {
+    "question": "The standard enthalpy of formation of $O_2(g)$ at 298 K is:",
+    "options": [
+      "$0 kJ/mol$",
+      "$100 kJ/mol$",
+      "$-100 kJ/mol$",
+      "$1 kJ/mol$"
+    ],
+    "answer": "$0 kJ/mol$"
+  },
+  {
+    "question": "According to Hess's Law, the enthalpy change of a reaction depends on:",
+    "options": [
+      "The path taken",
+      "Number of steps",
+      "Initial and final states",
+      "The rate of reaction"
+    ],
+    "answer": "Initial and final states"
+  },
+  {
+    "question": "In a reversible adiabatic process, the entropy change is:",
+    "options": [
+      "Positive",
+      "Negative",
+      "Zero",
+      "Infinite"
+    ],
+    "answer": "Zero"
+  },
+  {
+    "question": "The work done in an isochoric process is:",
+    "options": [
+      "Positive",
+      "Negative",
+      "Zero",
+      "$P \\Delta V$"
+    ],
+    "answer": "Zero"
+  },
+  {
+    "question": "For a cyclic process, the change in any state function is:",
+    "options": [
+      "Positive",
+      "Negative",
+      "Zero",
+      "Depends on path"
+    ],
+    "answer": "Zero"
+  },
+  {
+    "question": "Which of the following is true for an ideal gas expansion into vacuum (Joule expansion)?",
+    "options": [
+      "$\\Delta T = 0$",
+      "$\\Delta U = 0$",
+      "$w = 0$",
+      "All of these"
+    ],
+    "answer": "All of these"
+  },
+  {
+    "question": "The relationship between $\\Delta H$ and $\\Delta U$ is given by:",
+    "options": [
+      "$\\Delta H = \\Delta U + \\Delta n_g RT$",
+      "$\\Delta H = \\Delta U - \\Delta n_g RT$",
+      "$\\Delta H = \\Delta U + RT$",
+      "$\\Delta H = \\Delta U - RT$"
+    ],
+    "answer": "$\\Delta H = \\Delta U + \\Delta n_g RT$"
+  },
+  {
+    "question": "Entropy is a measure of:",
+    "options": [
+      "Energy of system",
+      "Randomness or disorder",
+      "Heat content",
+      "Internal work"
+    ],
+    "answer": "Randomness or disorder"
+  },
+  {
+    "question": "If $\\Delta G < 0$ for a reaction, the reaction is:",
+    "options": [
+      "Spontaneous",
+      "Non-spontaneous",
+      "At equilibrium",
+      "Slow"
+    ],
+    "answer": "Spontaneous"
+  },
+  {
+    "question": "Heat of neutralization of a strong acid and a strong base is approximately:",
+    "options": [
+      "$-57.1 kJ/mol$",
+      "$+57.1 kJ/mol$",
+      "$-13.7 kJ/mol$",
+      "$0 kJ/mol$"
+    ],
+    "answer": "$-57.1 kJ/mol$"
+  },
+  {
+    "question": "The unit of entropy is:",
+    "options": [
+      "$J K^{-1} mol^{-1}$",
+      "$J mol^{-1}$",
+      "$kJ mol^{-1}$",
+      "$J K$"
+    ],
+    "answer": "$J K^{-1} mol^{-1}$"
+  },
+  {
+    "question": "For a process to be spontaneous at all temperatures:",
+    "options": [
+      "$\\Delta H < 0, \\Delta S > 0$",
+      "$\\Delta H > 0, \\Delta S < 0$",
+      "$\\Delta H < 0, \\Delta S < 0$",
+      "$\\Delta H > 0, \\Delta S > 0$"
+    ],
+    "answer": "$\\Delta H < 0, \\Delta S > 0$"
+  },
+  {
+    "question": "Which of the following describes a closed system?",
+    "options": [
+      "Exchange of both matter and energy",
+      "No exchange of matter but exchange of energy",
+      "No exchange of both matter and energy",
+      "Exchange of matter but not energy"
+    ],
+    "answer": "No exchange of matter but exchange of energy"
+  },
+  {
+    "question": "Internal energy of an ideal gas depends only on:",
+    "options": [
+      "Pressure",
+      "Volume",
+      "Temperature",
+      "Density"
+    ],
+    "answer": "Temperature"
+  },
+  {
+    "question": "Molar heat capacity at constant pressure ($C_p$) and constant volume ($C_v$) for an ideal gas are related as:",
+    "options": [
+      "$C_p - C_v = R$",
+      "$C_v - C_p = R$",
+      "$C_p / C_v = R$",
+      "$C_p + C_v = R$"
+    ],
+    "answer": "$C_p - C_v = R$"
+  },
+  {
+    "question": "The second law of thermodynamics introduced the concept of:",
+    "options": [
+      "Internal energy",
+      "Enthalpy",
+      "Entropy",
+      "Free energy"
+    ],
+    "answer": "Entropy"
+  },
+  {
+    "question": "A process occurring at constant pressure is called:",
+    "options": [
+      "Isothermal",
+      "Isobaric",
+      "Isochoric",
+      "Adiabatic"
+    ],
+    "answer": "Isobaric"
+  },
+  {
+    "question": "For the combustion of methane, $CH_4(g) + 2O_2(g) \\rightarrow CO_2(g) + 2H_2O(l)$, $\\Delta n_g$ is:",
+    "options": [
+      "$0$",
+      "$1$",
+      "$-2$",
+      "$-1$"
+    ],
+    "answer": "$-2$"
+  },
+  {
+    "question": "In which of the following processes does entropy decrease?",
+    "options": [
+      "Melting of ice",
+      "Vaporization of water",
+      "Condensation of steam",
+      "Dissolution of salt in water"
+    ],
+    "answer": "Condensation of steam"
+  },
+  {
+    "question": "The standard state of a substance is its most stable form at:",
+    "options": [
+      "$1 atm, 273 K$",
+      "$1 bar, 298 K$",
+      "$1 atm, 0 K$",
+      "$1 bar, 373 K$"
+    ],
+    "answer": "$1 bar, 298 K$"
+  },
+  {
+    "question": "Which of the following is not an intensive property?",
+    "options": [
+      "Boiling point",
+      "Surface tension",
+      "Gibbs free energy",
+      "Viscosity"
+    ],
+    "answer": "Gibbs free energy"
+  },
+  {
+    "question": "For a spontaneous endothermic reaction:",
+    "options": [
+      "$\\Delta S$ must be negative",
+      "$\\Delta S$ must be positive",
+      "$\\Delta G$ must be positive",
+      "$\\Delta T$ must be zero"
+    ],
+    "answer": "$\\Delta S$ must be positive"
+  },
+  {
+    "question": "The enthalpy of atomization is always:",
+    "options": [
+      "Positive",
+      "Negative",
+      "Zero",
+      "Positive or negative"
+    ],
+    "answer": "Positive"
+  },
+  {
+    "question": "Third law of thermodynamics helps in calculating:",
+    "options": [
+      "Enthalpy change",
+      "Entropy change",
+      "Absolute entropy",
+      "Free energy change"
+    ],
+    "answer": "Absolute entropy"
+  },
+  {
+    "question": "Heat absorbed at constant volume is equal to:",
+    "options": [
+      "$\\Delta H$",
+      "$\\Delta U$",
+      "$\\Delta G$",
+      "$\\Delta S$"
+    ],
+    "answer": "$\\Delta U$"
+  },
+  {
+    "question": "Heat absorbed at constant pressure is equal to:",
+    "options": [
+      "$\\Delta H$",
+      "$\\Delta U$",
+      "$\\Delta G$",
+      "$\\Delta S$"
+    ],
+    "answer": "$\\Delta H$"
+  },
+  {
+    "question": "In a reversible process, the system and surroundings can be restored to their initial states:",
+    "options": [
+      "Without any change in the rest of the universe",
+      "With a small change in the universe",
+      "Only at high temperature",
+      "Only at low pressure"
+    ],
+    "answer": "Without any change in the rest of the universe"
+  },
+  {
+    "question": "Which of the following is zero for a reaction at equilibrium?",
+    "options": [
+      "$\\Delta G^\\circ$",
+      "$\\Delta G$",
+      "$\\Delta S$",
+      "$\\Delta H$"
+    ],
+    "answer": "$\\Delta G$"
+  },
+  {
+    "question": "Bomb calorimeter is used to measure:",
+    "options": [
+      "$q_p$",
+      "$q_v$",
+      "$\\Delta H$",
+      "$\\Delta G$"
+    ],
+    "answer": "$q_v$"
+  },
+  {
+    "question": "For which reaction is $\\Delta H = \\Delta U$?",
+    "options": [
+      "$H_2(g) + I_2(g) \\rightarrow 2HI(g)$",
+      "$N_2(g) + 3H_2(g) \\rightarrow 2NH_3(g)$",
+      "$PCl_5(g) \\rightarrow PCl_3(g) + Cl_2(g)$",
+      "$C(s) + O_2(g) \\rightarrow CO_2(g)$"
+    ],
+    "answer": "$H_2(g) + I_2(g) \\rightarrow 2HI(g)$"
+  },
+  {
+    "question": "Enthalpy of sublimation is equal to:",
+    "options": [
+      "$\\Delta H_{fus} + \\Delta H_{vap}$",
+      "$\\Delta H_{fus} - \\Delta H_{vap}$",
+      "$\\Delta H_{vap} - \\Delta H_{fus}$",
+      "$\\Delta H_{fus} \\times \\Delta H_{vap}$"
+    ],
+    "answer": "$\\Delta H_{fus} + \\Delta H_{vap}$"
+  },
+  {
+    "question": "The work done by the system in an irreversible expansion against a constant external pressure $P_{ext}$ is:",
+    "options": [
+      "$-P_{ext} \\Delta V$",
+      "$P_{ext} \\Delta V$",
+      "$-nRT \\ln(V_2/V_1)$",
+      "$0$"
+    ],
+    "answer": "$-P_{ext} \\Delta V$"
+  },
+  {
+    "question": "Lattice enthalpy is the energy required to:",
+    "options": [
+      "Break one mole of an ionic compound into gaseous ions",
+      "Form one mole of an ionic compound from gaseous ions",
+      "Melt one mole of an ionic compound",
+      "Dissolve one mole of an ionic compound in water"
+    ],
+    "answer": "Break one mole of an ionic compound into gaseous ions"
+  },
+  {
+    "question": "For a reaction $A + B \\rightarrow C + D$, if $\\Delta H$ is $-ve$ and $\\Delta S$ is $-ve$, the reaction is spontaneous at:",
+    "options": [
+      "High temperature",
+      "Low temperature",
+      "All temperatures",
+      "No temperature"
+    ],
+    "answer": "Low temperature"
+  },
+  {
+    "question": "Which of the following has the highest entropy?",
+    "options": [
+      "$H_2O(s)$ at $0^\\circ C$",
+      "$H_2O(l)$ at $0^\\circ C$",
+      "$H_2O(g)$ at $100^\\circ C$",
+      "$H_2O(l)$ at $100^\\circ C$"
+    ],
+    "answer": "$H_2O(g)$ at $100^\\circ C$"
+  },
+  {
+    "question": "The relationship $\\Delta G^\\circ = -RT \\ln K$ relates:",
+    "options": [
+      "Standard free energy change and equilibrium constant",
+      "Free energy change and equilibrium constant",
+      "Standard enthalpy and equilibrium constant",
+      "Standard entropy and equilibrium constant"
+    ],
+    "answer": "Standard free energy change and equilibrium constant"
+  },
+  {
+    "question": "Spontaneous mixing of two non-reacting gases is an example of:",
+    "options": [
+      "Increase in enthalpy",
+      "Decrease in internal energy",
+      "Increase in entropy",
+      "Decrease in entropy"
+    ],
+    "answer": "Increase in entropy"
+  },
+  {
+    "question": "The intensive property among the following is:",
+    "options": [
+      "Internal energy",
+      "Free energy",
+      "Molar volume",
+      "Mass"
+    ],
+    "answer": "Molar volume"
+  },
+  {
+    "question": "For the process of freezing of a liquid at its freezing point, which is correct?",
+    "options": [
+      "$\\Delta S_{sys} < 0, \\Delta S_{surr} > 0$",
+      "$\\Delta S_{sys} > 0, \\Delta S_{surr} < 0$",
+      "$\\Delta S_{sys} = 0, \\Delta S_{surr} = 0$",
+      "$\\Delta S_{sys} < 0, \\Delta S_{surr} < 0$"
+    ],
+    "answer": "$\\Delta S_{sys} < 0, \\Delta S_{surr} > 0$"
+  },
+  {
+    "question": "Which thermodynamic quantity is called the 'available energy' for useful work?",
+    "options": [
+      "Internal energy",
+      "Enthalpy",
+      "Gibbs free energy",
+      "Entropy"
+    ],
+    "answer": "Gibbs free energy"
+  },
+  {
+    "question": "A system which can neither exchange matter nor energy with the surroundings is called:",
+    "options": [
+      "Open system",
+      "Closed system",
+      "Isolated system",
+      "Isothermal system"
+    ],
+    "answer": "Isolated system"
+  },
+  {
+    "question": "The bond dissociation energy of $H-H$ bond is the enthalpy change for:",
+    "options": [
+      "$H_2(g) \\rightarrow 2H(g)$",
+      "$H_2(l) \\rightarrow 2H(g)$",
+      "$2H(g) \\rightarrow H_2(g)$",
+      "$H_2(g) \\rightarrow H_2^+(g) + e^-$"
+    ],
+    "answer": "$H_2(g) \\rightarrow 2H(g)$"
+  },
+  {
+    "question": "For a reaction to be at equilibrium, the necessary condition is:",
+    "options": [
+      "$\\Delta H = 0$",
+      "$\\Delta S = 0$",
+      "$\\Delta G = 0$",
+      "$\\Delta U = 0$"
+    ],
+    "answer": "$\\Delta G = 0$"
+  },
+  {
+    "question": "Absolute zero temperature is the temperature at which:",
+    "options": [
+      "All substances become gases",
+      "Molecular motion ceases theoretically",
+      "Water freezes",
+      "Entropy of any system is maximum"
+    ],
+    "answer": "Molecular motion ceases theoretically"
+  },
+  {
+    "question": "The enthalpy change for the reaction $NaOH(aq) + HCl(aq) \\rightarrow NaCl(aq) + H_2O(l)$ is called:",
+    "options": [
+      "Enthalpy of formation",
+      "Enthalpy of solution",
+      "Enthalpy of neutralization",
+      "Enthalpy of hydration"
+    ],
+    "answer": "Enthalpy of neutralization"
+  }
+]

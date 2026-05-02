@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Work done is defined as the dot product of:",
+    "options": ["Force and velocity", "Force and displacement", "Mass and acceleration", "Force and time"],
+    "answer": "Force and displacement"
+  },
+  {
+    "question": "What is the work done by a centripetal force in a circular motion?",
+    "options": ["Positive", "Negative", "Zero", "Infinite"],
+    "answer": "Zero"
+  },
+  {
+    "question": "The SI unit of work is Joule ($J$), which is equivalent to:",
+    "options": ["$N \\cdot m$", "$N/m$", "$kg \\cdot m/s$", "$W/s$"],
+    "answer": "$N \\cdot m$"
+  },
+  {
+    "question": "Work done by a friction force is usually:",
+    "options": ["Positive", "Negative", "Zero", "Depends on the frame"],
+    "answer": "Negative"
+  },
+  {
+    "question": "If the angle between force and displacement is $90^\\circ$, the work done is:",
+    "options": ["Maximum", "Minimum", "Zero", "Positive"],
+    "answer": "Zero"
+  },
+  {
+    "question": "Which of the following is a scalar quantity?",
+    "options": ["Force", "Displacement", "Work", "Acceleration"],
+    "answer": "Work"
+  },
+  {
+    "question": "Energy is defined as the:",
+    "options": ["Rate of doing work", "Capacity of doing work", "Force per unit area", "Product of force and time"],
+    "answer": "Capacity of doing work"
+  },
+  {
+    "question": "Kinetic energy of a body of mass $m$ moving with velocity $v$ is given by:",
+    "options": ["$mv$", "$mv^2$", "$\\frac{1}{2}mv^2$", "$\\frac{1}{2}mv$"],
+    "answer": "$\\frac{1}{2}mv^2$"
+  },
+  {
+    "question": "The work-energy theorem states that the work done by the net force on a body is equal to the change in its:",
+    "options": ["Potential energy", "Kinetic energy", "Total energy", "Momentum"],
+    "answer": "Kinetic energy"
+  },
+  {
+    "question": "Gravitational potential energy of a body at height $h$ is given by:",
+    "options": ["$mgh$", "$\\frac{1}{2}mgh$", "$mg/h$", "$mgh^2$"],
+    "answer": "$mgh$"
+  },
+  {
+    "question": "A force is conservative if the work done by it in a closed path is:",
+    "options": ["Positive", "Negative", "Zero", "Depends on the path"],
+    "answer": "Zero"
+  },
+  {
+    "question": "Which of the following is a non-conservative force?",
+    "options": ["Gravitational force", "Electrostatic force", "Viscous force", "Elastic spring force"],
+    "answer": "Viscous force"
+  },
+  {
+    "question": "The potential energy of a spring with spring constant $k$ and extension $x$ is:",
+    "options": ["$kx$", "$\\frac{1}{2}kx$", "$\\frac{1}{2}kx^2$", "$kx^2$"],
+    "answer": "$\\frac{1}{2}kx^2$"
+  },
+  {
+    "question": "In an isolated system, if only conservative forces are acting, the total mechanical energy:",
+    "options": ["Increases", "Decreases", "Remains constant", "Becomes zero"],
+    "answer": "Remains constant"
+  },
+  {
+    "question": "Power is defined as the:",
+    "options": ["Capacity of doing work", "Rate of doing work", "Total work done", "Product of force and distance"],
+    "answer": "Rate of doing work"
+  },
+  {
+    "question": "The SI unit of power is:",
+    "options": ["Joule", "Watt", "Newton", "Horsepower"],
+    "answer": "Watt"
+  },
+  {
+    "question": "One horsepower ($1$ hp) is approximately equal to:",
+    "options": ["$500$ W", "$746$ W", "$1000$ W", "$846$ W"],
+    "answer": "$746$ W"
+  },
+  {
+    "question": "Instantaneous power is the dot product of:",
+    "options": ["Force and acceleration", "Force and velocity", "Force and time", "Momentum and velocity"],
+    "answer": "Force and velocity"
+  },
+  {
+    "question": "In an elastic collision, which of the following is conserved?",
+    "options": ["Momentum only", "Kinetic energy only", "Both momentum and kinetic energy", "Neither momentum nor kinetic energy"],
+    "answer": "Both momentum and kinetic energy"
+  },
+  {
+    "question": "In an inelastic collision, which of the following is NOT conserved?",
+    "options": ["Total momentum", "Total energy", "Kinetic energy", "Mass"],
+    "answer": "Kinetic energy"
+  },
+  {
+    "question": "The coefficient of restitution ($e$) for a perfectly elastic collision is:",
+    "options": ["$0$", "$0.5$", "$1$", "Infinite"],
+    "answer": "$1$"
+  },
+  {
+    "question": "For a perfectly inelastic collision, the coefficient of restitution ($e$) is:",
+    "options": ["$0$", "$1$", "$-1$", "$0.5$"],
+    "answer": "$0$"
+  },
+  {
+    "question": "The area under a force-displacement graph represents:",
+    "options": ["Power", "Work done", "Momentum", "Acceleration"],
+    "answer": "Work done"
+  },
+  {
+    "question": "When a body falls freely under gravity, its potential energy:",
+    "options": ["Increases", "Decreases", "Remains constant", "First increases then decreases"],
+    "answer": "Decreases"
+  },
+  {
+    "question": "When a body falls freely under gravity, its kinetic energy:",
+    "options": ["Increases", "Decreases", "Remains constant", "Is always zero"],
+    "answer": "Increases"
+  },
+  {
+    "question": "The relation between kinetic energy ($K$) and momentum ($p$) is:",
+    "options": ["$K = p^2/2m$", "$K = p/2m$", "$K = 2mp^2$", "$K = p^2/m$"],
+    "answer": "$K = p^2/2m$"
+  },
+  {
+    "question": "A person holds a heavy suitcase for $10$ minutes without moving. The work done by the person is:",
+    "options": ["Positive", "Negative", "Zero", "Maximum"],
+    "answer": "Zero"
+  },
+  {
+    "question": "Which of the following energy is possessed by a compressed spring?",
+    "options": ["Kinetic energy", "Potential energy", "Thermal energy", "Chemical energy"],
+    "answer": "Potential energy"
+  },
+  {
+    "question": "The work done by a weightlifter holding a weight steady above his head is:",
+    "options": ["Positive", "Negative", "Zero", "Infinite"],
+    "answer": "Zero"
+  },
+  {
+    "question": "If the velocity of a body is doubled, its kinetic energy becomes:",
+    "options": ["Two times", "Four times", "Eight times", "Remain same"],
+    "answer": "Four times"
+  },
+  {
+    "question": "A light body and a heavy body have the same kinetic energy. Which one has more momentum?",
+    "options": ["Light body", "Heavy body", "Both have same momentum", "Depends on their shape"],
+    "answer": "Heavy body"
+  },
+  {
+    "question": "A light body and a heavy body have the same momentum. Which one has more kinetic energy?",
+    "options": ["Light body", "Heavy body", "Both have same kinetic energy", "Depends on their volumes"],
+    "answer": "Light body"
+  },
+  {
+    "question": "The negative of the work done by a conservative internal force is equal to the change in:",
+    "options": ["Kinetic energy", "Potential energy", "Total energy", "Momentum"],
+    "answer": "Potential energy"
+  },
+  {
+    "question": "When a spring is stretched or compressed, the work done by the spring force is:",
+    "options": ["Always positive", "Always negative", "Zero", "Depends on the spring constant"],
+    "answer": "Always negative"
+  },
+  {
+    "question": "Kilowatt-hour ($kWh$) is a unit of:",
+    "options": ["Power", "Force", "Energy", "Time"],
+    "answer": "Energy"
+  },
+  {
+    "question": "In a vertical circular motion, the minimum velocity at the highest point to complete the circle is:",
+    "options": ["$\\sqrt{rg}$", "$\\sqrt{2rg}$", "$\\sqrt{3rg}$", "$\\sqrt{5rg}$"],
+    "answer": "$\\sqrt{rg}$"
+  },
+  {
+    "question": "In a vertical circular motion, the minimum velocity at the lowest point to complete the circle is:",
+    "options": ["$\\sqrt{rg}$", "$\\sqrt{2rg}$", "$\\sqrt{3rg}$", "$\\sqrt{5rg}$"],
+    "answer": "$\\sqrt{5rg}$"
+  },
+  {
+    "question": "What is the angle between force and displacement for negative work?",
+    "options": ["$0^\\circ$", "$90^\\circ$", "$180^\\circ$", "$45^\\circ$"],
+    "answer": "$180^\\circ$"
+  },
+  {
+    "question": "A body is moving in a horizontal circle at constant speed. The work done by gravity is:",
+    "options": ["Positive", "Negative", "Zero", "Constant"],
+    "answer": "Zero"
+  },
+  {
+    "question": "Energy can neither be created nor destroyed, it can only be transformed. This is the law of:",
+    "options": ["Conservation of Mass", "Conservation of Momentum", "Conservation of Energy", "Conservation of Charge"],
+    "answer": "Conservation of Energy"
+  },
+  {
+    "question": "Collision between subatomic particles is generally:",
+    "options": ["Elastic", "Inelastic", "Perfectly inelastic", "Superelastic"],
+    "answer": "Elastic"
+  },
+  {
+    "question": "When two bodies stick together after collision, the collision is:",
+    "options": ["Elastic", "Partially elastic", "Perfectly inelastic", "Random"],
+    "answer": "Perfectly inelastic"
+  },
+  {
+    "question": "The slope of a work-time graph represents:",
+    "options": ["Force", "Power", "Energy", "Momentum"],
+    "answer": "Power"
+  },
+  {
+    "question": "A ball is dropped from a height $h$. After bouncing from the floor, it reaches a height $h/2$. The collision is:",
+    "options": ["Elastic", "Inelastic", "Perfectly inelastic", "Impossible"],
+    "answer": "Inelastic"
+  },
+  {
+    "question": "Work done by a gas during expansion is:",
+    "options": ["Positive", "Negative", "Zero", "Depends on the gas"],
+    "answer": "Positive"
+  },
+  {
+    "question": "Potential energy is a property of:",
+    "options": ["A single particle", "A system of interacting particles", "Moving bodies only", "Vacuum"],
+    "answer": "A system of interacting particles"
+  },
+  {
+    "question": "If the momentum of a body increases by $100\\%$, its kinetic energy increases by:",
+    "options": ["$100\\%$", "$200\\%$", "$300\\%$", "$400\\%$"],
+    "answer": "$300\\%$"
+  },
+  {
+    "question": "Which of the following is NOT a unit of energy?",
+    "options": ["Joule", "Calorie", "Electron-volt", "Watt"],
+    "answer": "Watt"
+  },
+  {
+    "question": "The work done in pulling a body over a smooth horizontal surface is:",
+    "options": ["Zero", "Positive", "Negative", "Infinite"],
+    "answer": "Positive"
+  },
+  {
+    "question": "Internal forces can change:",
+    "options": ["Total momentum", "Total kinetic energy", "Total mass", "Center of mass velocity"],
+    "answer": "Total kinetic energy"
+  },
+  {
+    "question": "The stability of a system is maximum when its potential energy is:",
+    "options": ["Maximum", "Minimum", "Zero", "Positive"],
+    "answer": "Minimum"
+  },
+  {
+    "question": "A frame of reference attached to a person who is running with constant velocity is:",
+    "options": ["Inertial", "Non-inertial", "Rotating", "Accelerated"],
+    "answer": "Inertial"
+  },
+  {
+    "question": "The work done by the gravitational force on a satellite orbiting Earth in a circular path is:",
+    "options": ["Positive", "Negative", "Zero", "Variable"],
+    "answer": "Zero"
+  },
+  {
+    "question": "When a bullet is fired into a wooden block and gets embedded, which of the following is conserved?",
+    "options": ["Momentum only", "Kinetic energy only", "Both", "Neither"],
+    "answer": "Momentum only"
+  },
+  {
+    "question": "A force $F = -kx$ is a:",
+    "options": ["Conservative force", "Non-conservative force", "Constant force", "Frictional force"],
+    "answer": "Conservative force"
+  },
+  {
+    "question": "The mechanical energy of a system is the sum of:",
+    "options": ["Kinetic and Potential energy", "Kinetic and Thermal energy", "Potential and Chemical energy", "All forms of energy"],
+    "answer": "Kinetic and Potential energy"
+  },
+  {
+    "question": "What is the dimension of power?",
+    "options": ["$[ML^2T^{-2}]$","$[ML^2T^{-3}]$","$[MLT^{-2}]$","$[ML^2T^{-1}]$"],
+    "answer": "$[ML^2T^{-3}]$"
+  },
+  {
+    "question": "The work done by a conservative force along a closed loop is:",
+    "options": ["Dependent on the starting point", "Always zero", "Always positive", "Equal to the total energy"],
+    "answer": "Always zero"
+  },
+  {
+    "question": "In a head-on elastic collision of two equal masses, their velocities are:",
+    "options": ["Doubled", "Halved", "Interchanged", "Reduced to zero"],
+    "answer": "Interchanged"
+  },
+  {
+    "question": "If work is done on a system, its energy:",
+    "options": ["Increases", "Decreases", "Remains same", "Becomes zero"],
+    "answer": "Increases"
+  }
+]

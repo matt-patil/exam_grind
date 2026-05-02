@@ -1,0 +1,302 @@
+[
+  {
+    "question": "The center of mass of a system of particles does not depend on:",
+    "options": ["Masses of particles", "Internal forces", "Positions of particles", "Relative distances"],
+    "answer": "Internal forces"
+  },
+  {
+    "question": "The motion of the center of mass is affected only by:",
+    "options": ["Internal forces", "External forces", "Frictional forces only", "Gravitational forces only"],
+    "answer": "External forces"
+  },
+  {
+    "question": "A rigid body is one in which the distance between any two points:",
+    "options": ["Increases with force", "Decreases with force", "Remains constant", "Depends on temperature"],
+    "answer": "Remains constant"
+  },
+  {
+    "question": "In pure rotational motion, all particles of the body move in circles whose centers lie on:",
+    "options": ["The surface", "The axis of rotation", "The center of mass", "Infinity"],
+    "answer": "The axis of rotation"
+  },
+  {
+    "question": "The angular displacement is measured in:",
+    "options": ["Degrees", "Radians", "Revolutions", "All of these"],
+    "answer": "All of these"
+  },
+  {
+    "question": "The rate of change of angular velocity is called:",
+    "options": ["Angular displacement", "Angular acceleration", "Torque", "Moment of inertia"],
+    "answer": "Angular acceleration"
+  },
+  {
+    "question": "The relation between linear velocity ($v$) and angular velocity ($\\omega$) is:",
+    "options": ["$v = r \\omega$", "$v = \\omega / r$", "$v = r^2 \\omega$", "$v = \\sqrt{r \\omega}$"],
+    "answer": "$v = r \\omega$"
+  },
+  {
+    "question": "The rotational analogue of mass is:",
+    "options": ["Torque", "Angular momentum", "Moment of inertia", "Angular acceleration"],
+    "answer": "Moment of inertia"
+  },
+  {
+    "question": "Moment of inertia depends on:",
+    "options": ["Mass of the body", "Distribution of mass about the axis", "Position of axis of rotation", "All of these"],
+    "answer": "All of these"
+  },
+  {
+    "question": "The SI unit of moment of inertia is:",
+    "options": ["$kg \\cdot m$", "$kg \\cdot m^2$", "$kg/m^2$", "$N \\cdot m$"],
+    "answer": "$kg \\cdot m^2$"
+  },
+  {
+    "question": "The radius of gyration ($k$) is defined as:",
+    "options": ["$I = mk^2$", "$I = m^2k$", "$I = m/k^2$", "$I = \\sqrt{mk}$"],
+    "answer": "$I = mk^2$"
+  },
+  {
+    "question": "The theorem of parallel axes is given by:",
+    "options": ["$I = I_{cm} + Md^2$", "$I = I_{cm} - Md^2$", "$I = I_{cm} + Md$", "$I = Md^2$"],
+    "answer": "$I = I_{cm} + Md^2$"
+  },
+  {
+    "question": "The theorem of perpendicular axes is applicable to:",
+    "options": ["3D bodies", "Laminar (2D) bodies", "Spheres only", "Cylinders only"],
+    "answer": "Laminar (2D) bodies"
+  },
+  {
+    "question": "Torque is the rotational analogue of:",
+    "options": ["Mass", "Force", "Momentum", "Energy"],
+    "answer": "Force"
+  },
+  {
+    "question": "The magnitude of torque ($\\tau$) is given by:",
+    "options": ["$r F \\sin \\theta$", "$r F \\cos \\theta$", "$r F \\tan \\theta$", "$r/F$"],
+    "answer": "$r F \\sin \\theta$"
+  },
+  {
+    "question": "The relation between torque ($\\tau$) and angular acceleration ($\\alpha$) is:",
+    "options": ["$\\tau = I \\alpha$", "$\\tau = I / \\alpha$", "$\\tau = m \\alpha$", "$\\tau = L \\alpha$"],
+    "answer": "$\\tau = I \\alpha$"
+  },
+  {
+    "question": "Angular momentum ($L$) of a rigid body is given by:",
+    "options": ["$L = I \\omega$", "$L = I \\alpha$", "$L = m v$", "$L = \\tau \\omega$"],
+    "answer": "$L = I \\omega$"
+  },
+  {
+    "question": "The rate of change of angular momentum is equal to:",
+    "options": ["Force", "Torque", "Power", "Work"],
+    "answer": "Torque"
+  },
+  {
+    "question": "If the net external torque on a system is zero, then:",
+    "options": ["$\u03c9$ is constant", "$L$ is constant", "$\u03b1$ is constant", "$I$ is constant"],
+    "answer": "$L$ is constant"
+  },
+  {
+    "question": "When a diver pulls her hands and legs close to her body while spinning, her moment of inertia:",
+    "options": ["Increases", "Decreases", "Remains same", "Becomes zero"],
+    "answer": "Decreases"
+  },
+  {
+    "question": "In the previous question, the diver's angular velocity:",
+    "options": ["Increases", "Decreases", "Remains same", "Becomes zero"],
+    "answer": "Increases"
+  },
+  {
+    "question": "Rotational kinetic energy is given by:",
+    "options": ["$\\frac{1}{2}I \\omega^2$", "$\\frac{1}{2}m v^2$", "$I \\omega$", "$L^2 / I$"],
+    "answer": "$\\frac{1}{2}I \\omega^2$"
+  },
+  {
+    "question": "The total kinetic energy of a rolling body (without slipping) is the sum of:",
+    "options": ["Translational and Rotational KE", "Translational and Potential KE", "Rotational and Potential KE", "Only Rotational KE"],
+    "answer": "Translational and Rotational KE"
+  },
+  {
+    "question": "For a body rolling without slipping, the velocity of the point of contact with the ground is:",
+    "options": ["$v$", "$2v$", "Zero", "$v/2$"],
+    "answer": "Zero"
+  },
+  {
+    "question": "A ring and a solid sphere of same mass and radius roll down an inclined plane. Which one reaches the bottom first?",
+    "options": ["Ring", "Solid sphere", "Both at same time", "Depends on inclination"],
+    "answer": "Solid sphere"
+  },
+  {
+    "question": "The moment of inertia of a thin rod of mass $M$ and length $L$ about an axis passing through its center and perpendicular to its length is:",
+    "options": ["$ML^2/12$", "$ML^2/3$", "$ML^2/2$", "$ML^2/4$"],
+    "answer": "$ML^2/12$"
+  },
+  {
+    "question": "The moment of inertia of a circular disc about its diameter is:",
+    "options": ["$MR^2/2$", "$MR^2/4$", "$MR^2$", "$2MR^2$"],
+    "answer": "$MR^2/4$"
+  },
+  {
+    "question": "The moment of inertia of a solid sphere about its diameter is:",
+    "options": ["$\\frac{2}{5}MR^2$", "$\\frac{2}{3}MR^2$", "$\\frac{1}{2}MR^2$", "$MR^2$"],
+    "answer": "$\\frac{2}{5}MR^2$"
+  },
+  {
+    "question": "The moment of inertia of a hollow sphere (thin shell) about its diameter is:",
+    "options": ["$\\frac{2}{5}MR^2$", "$\\frac{2}{3}MR^2$", "$\\frac{1}{2}MR^2$", "$MR^2$"],
+    "answer": "$\\frac{2}{3}MR^2$"
+  },
+  {
+    "question": "A couple produces:",
+    "options": ["Pure linear motion", "Pure rotational motion", "Both linear and rotational motion", "No motion"],
+    "answer": "Pure rotational motion"
+  },
+  {
+    "question": "The work done by torque is:",
+    "options": ["$\\int \\tau d\\theta$", "$\\tau / \\theta$", "$\\tau \\cdot \\omega$", "$\\frac{1}{2}I \\omega^2$"],
+    "answer": "$\\int \\tau d\\theta$"
+  },
+  {
+    "question": "Power in rotational motion is given by:",
+    "options": ["$P = \\tau \\omega$", "$P = I \\omega$", "$P = L \\omega$", "$P = \\tau \\alpha$"],
+    "answer": "$P = \\tau \\omega$"
+  },
+  {
+    "question": "Which of the following remains constant for a planet revolving around the sun in an elliptical orbit?",
+    "options": ["Linear velocity", "Angular momentum", "Kinetic energy", "Distance from sun"],
+    "answer": "Angular momentum"
+  },
+  {
+    "question": "The center of mass of a uniform semi-circular wire of radius $R$ is at a distance from the center:",
+    "options": ["$2R/\\pi$", "$4R/3\\pi$", "$R/2$", "$R/\\pi$"],
+    "answer": "$2R/\\pi$"
+  },
+  {
+    "question": "The center of mass of a uniform semi-circular disc of radius $R$ is at a distance from the center:",
+    "options": ["$2R/\\pi$", "$4R/3\\pi$", "$R/2$", "$3R/4\\pi$"],
+    "answer": "$4R/3\\pi$"
+  },
+  {
+    "question": "In a head-on collision of two particles, the center of mass velocity:",
+    "options": ["Changes", "Remains constant", "Becomes zero", "Increases"],
+    "answer": "Remains constant"
+  },
+  {
+    "question": "The direction of angular velocity vector is along:",
+    "options": ["The tangent to the path", "The radius", "The axis of rotation", "The displacement"],
+    "answer": "The axis of rotation"
+  },
+  {
+    "question": "Angular momentum is a:",
+    "options": ["Polar vector", "Axial vector", "Scalar", "None of these"],
+    "answer": "Axial vector"
+  },
+  {
+    "question": "If a body is rotating with a constant angular velocity, the net torque acting on it is:",
+    "options": ["Constant", "Zero", "Variable", "Infinite"],
+    "answer": "Zero"
+  },
+  {
+    "question": "Which of the following has the largest moment of inertia for the same mass and radius?",
+    "options": ["Solid sphere", "Hollow sphere", "Solid cylinder", "Ring"],
+    "answer": "Ring"
+  },
+  {
+    "question": "The moment of inertia of a body depends on the choice of axis:",
+    "options": ["True", "False", "Only for irregular bodies", "Only for gases"],
+    "answer": "True"
+  },
+  {
+    "question": "A boy sitting on a rotating stool with weights in his hands suddenly withdraws his hands. The angular velocity will:",
+    "options": ["Increase", "Decrease", "Remain same", "Become zero"],
+    "answer": "Increase"
+  },
+  {
+    "question": "The condition for a body to be in mechanical equilibrium is:",
+    "options": ["Net force = 0", "Net torque = 0", "Both net force and net torque = 0", "Mass = 0"],
+    "answer": "Both net force and net torque = 0"
+  },
+  {
+    "question": "What is the ratio of rotational KE to total KE for a solid sphere rolling without slipping?",
+    "options": ["$2/7$", "$2/5$", "$5/7$", "$1/2$"],
+    "answer": "$2/7$"
+  },
+  {
+    "question": "What is the ratio of rotational KE to total KE for a ring rolling without slipping?",
+    "options": ["$1/2$", "$2/3$", "$1/3$", "$1$"],
+    "answer": "$1/2$"
+  },
+  {
+    "question": "The point about which the total gravitational torque is zero is called:",
+    "options": ["Center of mass", "Center of gravity", "Geometric center", "Focus"],
+    "answer": "Center of gravity"
+  },
+  {
+    "question": "For a symmetric body, the center of mass and center of gravity coincide in a:",
+    "options": ["Uniform gravitational field", "Non-uniform gravitational field", "Rotating frame", "Vacuum"],
+    "answer": "Uniform gravitational field"
+  },
+  {
+    "question": "The angular momentum of a particle of mass $m$ moving with velocity $v$ at a distance $r$ from origin is:",
+    "options": ["$m(r \\times v)$", "$m(v \\times r)$", "$r \\times (m v)$", "Both (a) and (c)"],
+    "answer": "Both (a) and (c)"
+  },
+  {
+    "question": "The acceleration of a body rolling down an inclined plane of angle $\\theta$ is:",
+    "options": ["$g \\sin \\theta$", "$\\frac{g \\sin \\theta}{1 + k^2/R^2}$", "$\\frac{g \\sin \\theta}{1 + R^2/k^2}$", "$g \\cos \\theta$"],
+    "answer": "$\\frac{g \\sin \\theta}{1 + k^2/R^2}$"
+  },
+  {
+    "question": "If the earth suddenly shrinks to half its radius without change in mass, the duration of the day will:",
+    "options": ["Increase", "Decrease", "Remain same", "Become zero"],
+    "answer": "Decrease"
+  },
+  {
+    "question": "A particle moves in a circle with constant angular speed. Its angular momentum about the center is:",
+    "options": ["Constant in magnitude and direction", "Constant in magnitude only", "Constant in direction only", "Variable"],
+    "answer": "Constant in magnitude and direction"
+  },
+  {
+    "question": "The moment of inertia of a fly wheel is increased to:",
+    "options": ["Decrease the torque", "Maintain uniform motion", "Increase power", "Reduce friction"],
+    "answer": "Maintain uniform motion"
+  },
+  {
+    "question": "Rolling is a combination of:",
+    "options": ["Translation and Vibration", "Translation and Rotation", "Rotation and Vibration", "Linear motion only"],
+    "answer": "Translation and Rotation"
+  },
+  {
+    "question": "The dimension of angular momentum is:",
+    "options": ["$[ML^2T^{-1}]$","$[MLT^{-1}]$","$[ML^2T^{-2}]$","$[MLT^{-2}]$"],
+    "answer": "$[ML^2T^{-1}]$"
+  },
+  {
+    "question": "The dimension of angular momentum is same as that of:",
+    "options": ["Work", "Linear momentum", "Planck's constant", "Force"],
+    "answer": "Planck's constant"
+  },
+  {
+    "question": "In a purely rolling motion, the friction force:",
+    "options": ["Does work", "Does no work", "Is always kinetic", "Is zero"],
+    "answer": "Does no work"
+  },
+  {
+    "question": "For a disc, the moment of inertia about an axis through its center and perpendicular to its plane is:",
+    "options": ["$MR^2/2$", "$MR^2/4$", "$MR^2$", "$2MR^2$"],
+    "answer": "$MR^2/2$"
+  },
+  {
+    "question": "The center of mass of a system of two equal masses lies:",
+    "options": ["At the first mass", "At the second mass", "At the midpoint of the line joining them", "Outside the system"],
+    "answer": "At the midpoint of the line joining them"
+  },
+  {
+    "question": "A body is in rotational equilibrium if:",
+    "options": ["$\\sum \\vec{F} = 0$", "$\\sum \\vec{\\tau} = 0$", "$\\vec{v} = 0$", "$\\vec{\\omega} = 0$"],
+    "answer": "$\\sum \\vec{\\tau} = 0$"
+  },
+  {
+    "question": "Angular impulse is equal to the change in:",
+    "options": ["Linear momentum", "Angular velocity", "Angular momentum", "Torque"],
+    "answer": "Angular momentum"
+  }
+]

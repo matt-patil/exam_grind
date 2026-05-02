@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Which of Newton's Laws of Motion is also known as the Law of Inertia?",
+    "options": ["First Law", "Second Law", "Third Law", "None of these"],
+    "answer": "First Law"
+  },
+  {
+    "question": "What does inertia depend on?",
+    "options": ["Velocity", "Acceleration", "Mass", "Force"],
+    "answer": "Mass"
+  },
+  {
+    "question": "A passenger in a moving bus is thrown forward when the bus suddenly stops. This is due to:",
+    "options": ["Inertia of rest", "Inertia of motion", "Inertia of direction", "Momentum"],
+    "answer": "Inertia of motion"
+  },
+  {
+    "question": "The SI unit of linear momentum is:",
+    "options": ["$kg \\cdot m/s^2$", "$kg \\cdot m/s$", "$N \\cdot m$", "$kg \\cdot m^2/s$"],
+    "answer": "$kg \\cdot m/s$"
+  },
+  {
+    "question": "Newton's second law of motion gives a measure of:",
+    "options": ["Inertia", "Force", "Momentum", "Acceleration"],
+    "answer": "Force"
+  },
+  {
+    "question": "Impulse is equal to the change in:",
+    "options": ["Force", "Acceleration", "Linear momentum", "Kinetic energy"],
+    "answer": "Linear momentum"
+  },
+  {
+    "question": "A fielder pulls his hands backwards while catching a cricket ball. This action reduces:",
+    "options": ["The momentum", "The force exerted by the ball", "The impulse", "The catch time"],
+    "answer": "The force exerted by the ball"
+  },
+  {
+    "question": "Action and reaction forces act on:",
+    "options": ["The same body", "Different bodies", "Depends on the magnitude", "Only stationary bodies"],
+    "answer": "Different bodies"
+  },
+  {
+    "question": "The rocket works on the principle of conservation of:",
+    "options": ["Mass", "Energy", "Linear momentum", "Angular momentum"],
+    "answer": "Linear momentum"
+  },
+  {
+    "question": "The apparent weight of a person in a lift moving upwards with constant acceleration $a$ is:",
+    "options": ["$m(g-a)$", "$mg$", "$m(g+a)$", "Zero"],
+    "answer": "$m(g+a)$"
+  },
+  {
+    "question": "Friction is a:",
+    "options": ["Self-adjusting force", "Conservative force", "Non-conservative force", "Both (a) and (c)"],
+    "answer": "Both (a) and (c)"
+  },
+  {
+    "question": "Which type of friction is the greatest?",
+    "options": ["Static friction", "Limiting friction", "Kinetic friction", "Rolling friction"],
+    "answer": "Limiting friction"
+  },
+  {
+    "question": "The coefficient of friction depends on:",
+    "options": ["Area of contact", "Nature of surfaces", "Normal reaction", "Both (b) and (c)"],
+    "answer": "Nature of surfaces"
+  },
+  {
+    "question": "A block of mass $m$ is placed on a rough horizontal surface. The maximum static friction force is:",
+    "options": ["$\\mu_s m g$", "$\\mu_k m g$", "$m g / \\mu_s$", "Zero"],
+    "answer": "$\\mu_s m g$"
+  },
+  {
+    "question": "Why is it easier to pull a lawn mower than to push it?",
+    "options": ["Normal reaction decreases when pulling", "Normal reaction increases when pulling", "Friction increases when pulling", "Pulling requires less force"],
+    "answer": "Normal reaction decreases when pulling"
+  },
+  {
+    "question": "The angle between the normal reaction and the resultant of normal reaction and limiting friction is called:",
+    "options": ["Angle of repose", "Angle of friction", "Angle of contact", "Angle of banking"],
+    "answer": "Angle of friction"
+  },
+  {
+    "question": "For a block on an inclined plane, the angle of repose is equal to:",
+    "options": ["Angle of friction", "Angle of banking", "90 degrees", "45 degrees"],
+    "answer": "Angle of friction"
+  },
+  {
+    "question": "The purpose of banking of roads is to:",
+    "options": ["Reduce friction", "Provide necessary centripetal force", "Increase speed", "Prevent wear and tear of tires"],
+    "answer": "Provide necessary centripetal force"
+  },
+  {
+    "question": "In a circular motion with constant speed, the net force is directed:",
+    "options": ["Along the tangent", "Towards the center", "Away from the center", "Vertically upwards"],
+    "answer": "Towards the center"
+  },
+  {
+    "question": "What is the centripetal force required for a car of mass $m$ moving with speed $v$ on a flat road of radius $r$?",
+    "options": ["$mv/r$", "$mv^2/r$", "$mv^2/r^2$", "$mvr$"],
+    "answer": "$mv^2/r$"
+  },
+  {
+    "question": "If the net external force on a system is zero, then the total momentum of the system:",
+    "options": ["Increases", "Decreases", "Remains constant", "Becomes zero"],
+    "answer": "Remains constant"
+  },
+  {
+    "question": "Which of the following is an example of an inertial frame of reference?",
+    "options": ["A rotating platform", "A car moving with constant velocity", "A lift falling freely", "A decelerating train"],
+    "answer": "A car moving with constant velocity"
+  },
+  {
+    "question": "A pseudo-force (fictitious force) is required in:",
+    "options": ["Inertial frames", "Non-inertial frames", "Both frames", "None of these"],
+    "answer": "Non-inertial frames"
+  },
+  {
+    "question": "The direction of the friction force is always:",
+    "options": ["Along the normal reaction", "Opposite to the relative motion", "Towards the motion", "Perpendicular to the surface"],
+    "answer": "Opposite to the relative motion"
+  },
+  {
+    "question": "When a horse pulls a cart, the force that helps the horse move forward is the force exerted by:",
+    "options": ["The cart on the horse", "The ground on the horse", "The horse on the ground", "The horse on the cart"],
+    "answer": "The ground on the horse"
+  },
+  {
+    "question": "The magnitude of impulse is equal to the area under which graph?",
+    "options": ["Force-time graph", "Velocity-time graph", "Acceleration-time graph", "Momentum-time graph"],
+    "answer": "Force-time graph"
+  },
+  {
+    "question": "What happens to the coefficient of friction if the weight of the body is doubled?",
+    "options": ["It is doubled", "It is halved", "It remains the same", "It becomes four times"],
+    "answer": "It remains the same"
+  },
+  {
+    "question": "Rolling friction is smaller than sliding friction because:",
+    "options": ["The area of contact is small", "The surfaces are smooth", "The point of contact is momentarily at rest", "No relative motion occurs"],
+    "answer": "The point of contact is momentarily at rest"
+  },
+  {
+    "question": "The law which defines force is:",
+    "options": ["Newton's first law", "Newton's second law", "Newton's third law", "Newton's law of gravitation"],
+    "answer": "Newton's first law"
+  },
+  {
+    "question": "Newton's second law is a vector relationship. The direction of acceleration is always:",
+    "options": ["Opposite to the net force", "Same as the net force", "Perpendicular to the net force", "Towards the initial velocity"],
+    "answer": "Same as the net force"
+  },
+  {
+    "question": "The recoil of a gun is a consequence of:",
+    "options": ["Conservation of mass", "Conservation of energy", "Conservation of momentum", "Newton's first law"],
+    "answer": "Conservation of momentum"
+  },
+  {
+    "question": "A body is moving with a constant velocity. The net force acting on it is:",
+    "options": ["Constant", "Variable", "Zero", "Infinite"],
+    "answer": "Zero"
+  },
+  {
+    "question": "If a force $F$ acts on a body of mass $m$ for time $t$, the change in momentum is:",
+    "options": ["$F/t$", "$F \\cdot t$", "$m \\cdot a$", "$F/m$"],
+    "answer": "$F \\cdot t$"
+  },
+  {
+    "question": "Which of the following is a non-contact force?",
+    "options": ["Friction", "Normal reaction", "Gravitational force", "Tension in a string"],
+    "answer": "Gravitational force"
+  },
+  {
+    "question": "The unit of coefficient of friction is:",
+    "options": ["$N$", "$kg$", "$m/s$", "Unitless"],
+    "answer": "Unitless"
+  },
+  {
+    "question": "When a body is in equilibrium, the vector sum of all forces acting on it is:",
+    "options": ["Maximum", "Minimum", "Zero", "Constant"],
+    "answer": "Zero"
+  },
+  {
+    "question": "In the absence of air resistance, all bodies fall with the same:",
+    "options": ["Velocity", "Acceleration", "Momentum", "Force"],
+    "answer": "Acceleration"
+  },
+  {
+    "question": "The tension in a string in an Atwood machine (two masses $m_1$ and $m_2$ over a pulley) is:",
+    "options": ["$\\frac{2m_1m_2g}{m_1+m_2}$", "$\\frac{m_1m_2g}{m_1+m_2}$", "$\\frac{(m_1-m_2)g}{m_1+m_2}$", "Zero"],
+    "answer": "$\\frac{2m_1m_2g}{m_1+m_2}$"
+  },
+  {
+    "question": "Lubricants are used to reduce friction by:",
+    "options": ["Increasing the normal reaction", "Providing a thin layer between surfaces", "Changing the nature of materials", "Decreasing the mass"],
+    "answer": "Providing a thin layer between surfaces"
+  },
+  {
+    "question": "The maximum velocity with which a car can safely take a turn on a banked road of radius $r$ and angle $\\theta$ (ignoring friction) is:",
+    "options": ["$\\sqrt{rg \\tan \\theta}$", "$\\sqrt{rg \\sin \\theta}$", "$\\sqrt{rg \\cos \\theta}$", "$rg \\tan \\theta$"],
+    "answer": "$\\sqrt{rg \\tan \\theta}$"
+  },
+  {
+    "question": "A block is sliding down an inclined plane with constant velocity. The coefficient of kinetic friction is:",
+    "options": ["$\\tan \\theta$", "$\\sin \\theta$", "$\\cos \\theta$", "$\\cot \\theta$"],
+    "answer": "$\\tan \\theta$"
+  },
+  {
+    "question": "Centrifugal force is a:",
+    "options": ["Real force", "Inertial force", "Pseudo force", "Contact force"],
+    "answer": "Pseudo force"
+  },
+  {
+    "question": "The force required to keep a body in uniform circular motion is:",
+    "options": ["Centripetal force", "Centrifugal force", "Tangential force", "Frictional force"],
+    "answer": "Centripetal force"
+  },
+  {
+    "question": "What happens to the friction if we polish the surface excessively?",
+    "options": ["It decreases", "It increases due to molecular adhesion", "It remains zero", "It becomes kinetic friction"],
+    "answer": "It increases due to molecular adhesion"
+  },
+  {
+    "question": "The string of a simple pendulum is cut when the bob is at its mean position. The path of the bob will be:",
+    "options": ["Circular", "Parabolic", "Straight line", "Elliptical"],
+    "answer": "Parabolic"
+  },
+  {
+    "question": "Newton's third law of motion is applicable when:",
+    "options": ["Bodies are at rest", "Bodies are in motion", "Both (a) and (b)", "Only in vacuum"],
+    "answer": "Both (a) and (b)"
+  },
+  {
+    "question": "The force of static friction is always:",
+    "options": ["Equal to $\\mu_s N$", "Less than or equal to $\\mu_s N$", "Greater than $\\mu_s N$", "Equal to kinetic friction"],
+    "answer": "Less than or equal to $\\mu_s N$"
+  },
+  {
+    "question": "When a body moves over a surface, the friction acting is called:",
+    "options": ["Static friction", "Dynamic friction", "Limiting friction", "Normal friction"],
+    "answer": "Dynamic friction"
+  },
+  {
+    "question": "The linear momentum of a body is a:",
+    "options": ["Scalar quantity", "Vector quantity", "Tensor quantity", "Dimensionless quantity"],
+    "answer": "Vector quantity"
+  },
+  {
+    "question": "In a lift accelerating downwards with $a = g$, the apparent weight of a body is:",
+    "options": ["$mg$", "$2mg$", "Zero", "$mg/2$"],
+    "answer": "Zero"
+  },
+  {
+    "question": "The change in momentum per unit time is equal to:",
+    "options": ["Impulse", "Force", "Work", "Power"],
+    "answer": "Force"
+  },
+  {
+    "question": "If the same force is applied to two bodies of different masses, which one will have more acceleration?",
+    "options": ["Lighter body", "Heavier body", "Both will have same acceleration", "Depends on their volumes"],
+    "answer": "Lighter body"
+  },
+  {
+    "question": "Which of the following does not affect the friction between two surfaces?",
+    "options": ["Nature of surfaces", "Normal force", "Area of contact", "Roughness"],
+    "answer": "Area of contact"
+  },
+  {
+    "question": "The principle of 'conservation of linear momentum' is derived from:",
+    "options": ["Newton's first law", "Newton's second and third laws", "Newton's law of gravitation", "Pascal's law"],
+    "answer": "Newton's second and third laws"
+  },
+  {
+    "question": "When a bullet is fired from a rifle, the rifle recoils. The velocity of the rifle is:",
+    "options": ["More than bullet velocity", "Less than bullet velocity", "Same as bullet velocity", "Zero"],
+    "answer": "Less than bullet velocity"
+  },
+  {
+    "question": "The direction of impulsive force is:",
+    "options": ["Same as change in momentum", "Opposite to change in momentum", "Perpendicular to momentum", "Random"],
+    "answer": "Same as change in momentum"
+  },
+  {
+    "question": "A body is placed on a rough inclined plane. Friction will act:",
+    "options": ["Up the plane", "Down the plane", "Depends on the tendency of motion", "Vertically downwards"],
+    "answer": "Depends on the tendency of motion"
+  },
+  {
+    "question": "Static friction is:",
+    "options": ["Always equal to the applied force", "Always greater than the applied force", "Always less than the applied force", "Independent of the applied force"],
+    "answer": "Always equal to the applied force"
+  },
+  {
+    "question": "The tension in the rope of a lift moving up with uniform velocity is:",
+    "options": ["Equal to weight", "More than weight", "Less than weight", "Zero"],
+    "answer": "Equal to weight"
+  },
+  {
+    "question": "What is the angle between the velocity vector and the acceleration vector in uniform circular motion?",
+    "options": ["$0^\\circ$", "$90^\\circ$", "$180^\\circ$", "$45^\\circ$"],
+    "answer": "$90^\\circ$"
+  }
+]

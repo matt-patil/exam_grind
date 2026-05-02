@@ -1,0 +1,302 @@
+[
+  {
+    "question": "The universal law of gravitation was first proposed by which scientist?",
+    "options": ["Albert Einstein", "Isaac Newton", "Johannes Kepler", "Galileo Galilei"],
+    "answer": "Isaac Newton"
+  },
+  {
+    "question": "What is the nature of the gravitational force between two masses?",
+    "options": ["Attractive only", "Repulsive only", "Both attractive and repulsive", "Neither attractive nor repulsive"],
+    "answer": "Attractive only"
+  },
+  {
+    "question": "The gravitational constant $G$ depends on which of the following?",
+    "options": ["Nature of the medium between the masses", "Temperature of the masses", "Mass of the objects", "None of these"],
+    "answer": "None of these"
+  },
+  {
+    "question": "The SI unit of the universal gravitational constant $G$ is:",
+    "options": ["$N \\cdot m^2 \\cdot kg^{-2}$", "$N \\cdot m \\cdot kg^{-1}$", "$N^2 \\cdot m \\cdot kg^{-2}$", "$N \\cdot m^2 \\cdot kg^{-1}$"],
+    "answer": "$N \\cdot m^2 \\cdot kg^{-2}$"
+  },
+  {
+    "question": "According to Newton's law of gravitation, the force between two point masses is inversely proportional to:",
+    "options": ["The sum of their masses", "The square of the distance between them", "The distance between them", "The product of their masses"],
+    "answer": "The square of the distance between them"
+  },
+  {
+    "question": "Gravitational force is a:",
+    "options": ["Contact force", "Non-conservative force", "Central force", "Short-range force"],
+    "answer": "Central force"
+  },
+  {
+    "question": "The value of gravitational acceleration $g$ at the center of the Earth is:",
+    "options": ["Maximum", "Minimum but non-zero", "Infinite", "Zero"],
+    "answer": "Zero"
+  },
+  {
+    "question": "As we move from the equator to the poles, the value of $g$:",
+    "options": ["Increases", "Decreases", "Remains constant", "First increases then decreases"],
+    "answer": "Increases"
+  },
+  {
+    "question": "The variation of $g$ with height $h$ from the Earth's surface (for $h \\ll R$) is given by:",
+    "options": ["$g' = g(1 - \\frac{h}{R})$", "$g' = g(1 - \\frac{2h}{R})$", "$g' = g(1 + \\frac{h}{R})$", "$g' = g(1 + \\frac{2h}{R})$"],
+    "answer": "$g' = g(1 - \\frac{2h}{R})$"
+  },
+  {
+    "question": "The value of $g$ at a depth $d$ below the Earth's surface is given by:",
+    "options": ["$g' = g(1 - \\frac{d}{R})$", "$g' = g(1 - \\frac{2d}{R})$", "$g' = g(1 + \\frac{d}{R})$", "$g' = g(1 - \\frac{d^2}{R^2})$"],
+    "answer": "$g' = g(1 - \\frac{d}{R})$"
+  },
+  {
+    "question": "Which of the following describes Kepler's First Law?",
+    "options": ["All planets move in circular orbits with the Sun at the center.", "All planets move in elliptical orbits with the Sun at one of the foci.", "The square of the period of revolution is proportional to the cube of the semi-major axis.", "A line joining a planet and the Sun sweeps out equal areas in equal intervals of time."],
+    "answer": "All planets move in elliptical orbits with the Sun at one of the foci."
+  },
+  {
+    "question": "Kepler's Second Law (Law of Areas) is a consequence of the conservation of:",
+    "options": ["Linear momentum", "Energy", "Angular momentum", "Mass"],
+    "answer": "Angular momentum"
+  },
+  {
+    "question": "Kepler's Third Law states that the square of the time period $T$ of a planet is proportional to:",
+    "options": ["$R^2$", "$R^3$", "$R^{1/2}$", "$R$"],
+    "answer": "$R^3$"
+  },
+  {
+    "question": "The gravitational potential energy of a system of two masses $m_1$ and $m_2$ separated by distance $r$ is:",
+    "options": ["$\\frac{G m_1 m_2}{r}$", "$-\\frac{G m_1 m_2}{r}$", "$\\frac{G m_1 m_2}{r^2}$", "$-\\frac{G m_1 m_2}{r^2}$"],
+    "answer": "$-\\frac{G m_1 m_2}{r}$"
+  },
+  {
+    "question": "Gravitational potential at a point is defined as:",
+    "options": ["Force per unit mass", "Work done per unit mass in bringing it from infinity", "Energy per unit volume", "Force times distance"],
+    "answer": "Work done per unit mass in bringing it from infinity"
+  },
+  {
+    "question": "The escape velocity from the Earth's surface depends on:",
+    "options": ["The mass of the escaping body", "The angle of projection", "The mass of the Earth", "The direction of projection"],
+    "answer": "The mass of the Earth"
+  },
+  {
+    "question": "The expression for escape velocity $v_e$ from a planet of mass $M$ and radius $R$ is:",
+    "options": ["$\\sqrt{\\frac{GM}{R}}$", "$\\sqrt{\\frac{2GM}{R}}$", "$\\sqrt{\\frac{GM}{R^2}}$", "$\\sqrt{2gR^2}$"],
+    "answer": "$\\sqrt{\\frac{2GM}{R}}$"
+  },
+  {
+    "question": "The orbital velocity of a satellite revolving very close to the Earth's surface is approximately:",
+    "options": ["$11.2 \\text{ km/s}$", "$8 \\text{ km/s}$", "$5 \\text{ km/s}$", "$20 \\text{ km/s}$"],
+    "answer": "$8 \\text{ km/s}$"
+  },
+  {
+    "question": "A geostationary satellite has an orbital period of:",
+    "options": ["12 hours", "24 hours", "48 hours", "1 month"],
+    "answer": "24 hours"
+  },
+  {
+    "question": "The height of a geostationary satellite from the Earth's surface is approximately:",
+    "options": ["$36,000 \\text{ km}$", "$6,400 \\text{ km}$", "$1,000 \\text{ km}$", "$10,000 \\text{ km}$"],
+    "answer": "$36,000 \\text{ km}$"
+  },
+  {
+    "question": "Weightlessness in a satellite is due to:",
+    "options": ["Zero gravitational force", "Zero acceleration", "Zero reaction force from the floor", "The satellite being in deep space"],
+    "answer": "Zero reaction force from the floor"
+  },
+  {
+    "question": "The ratio of escape velocity to orbital velocity for a satellite close to the Earth is:",
+    "options": ["$2$", "$\\sqrt{2}$", "$1/\\sqrt{2}$", "$1$"],
+    "answer": "$\\sqrt{2}$"
+  },
+  {
+    "question": "If the distance between two masses is doubled, the gravitational force between them becomes:",
+    "options": ["Double", "Half", "One-fourth", "Four times"],
+    "answer": "One-fourth"
+  },
+  {
+    "question": "The gravitational field inside a uniform spherical shell is:",
+    "options": ["Uniform and non-zero", "Variable", "Zero", "Maximum at the center"],
+    "answer": "Zero"
+  },
+  {
+    "question": "The gravitational potential inside a uniform spherical shell is:",
+    "options": ["Zero", "Constant and non-zero", "Variable with distance from center", "Maximum at the surface"],
+    "answer": "Constant and non-zero"
+  },
+  {
+    "question": "Which of the following is true about the binding energy of a satellite?",
+    "options": ["It is always positive", "It is always negative", "It is zero", "It depends on the mass of the satellite only"],
+    "answer": "It is always positive"
+  },
+  {
+    "question": "The total energy of a satellite revolving around the Earth is:",
+    "options": ["Positive", "Negative", "Zero", "Infinite"],
+    "answer": "Negative"
+  },
+  {
+    "question": "If a satellite stops in its orbit and is allowed to fall freely towards the Earth, its speed on hitting the Earth will be:",
+    "options": ["Escape velocity", "Orbital velocity", "Zero", "Infinity"],
+    "answer": "Escape velocity"
+  },
+  {
+    "question": "The relation between gravitational field intensity $E$ and gravitational potential $V$ is:",
+    "options": ["$E = \\frac{dV}{dr}$", "$E = -\\frac{dV}{dr}$", "$V = -\\frac{dE}{dr}$", "$E = \\int V dr$"],
+    "answer": "$E = -\\frac{dV}{dr}$"
+  },
+  {
+    "question": "A body is taken from the surface of the Earth to a height equal to the radius of the Earth. The change in its potential energy is:",
+    "options": ["$mgR$", "$\\frac{1}{2} mgR$", "$2mgR$", "$\\frac{1}{4} mgR$"],
+    "answer": "$\\frac{1}{2} mgR$"
+  },
+  {
+    "question": "The trajectory of a projecttile with a velocity less than orbital velocity is:",
+    "options": ["Circular", "Parabolic", "Elliptical", "Hyperbolic"],
+    "answer": "Elliptical"
+  },
+  {
+    "question": "Polar satellites are used for:",
+    "options": ["Telecommunication", "Weather monitoring and remote sensing", "GPS only", "TV broadcasting"],
+    "answer": "Weather monitoring and remote sensing"
+  },
+  {
+    "question": "The time period of a simple pendulum inside a satellite orbiting the Earth is:",
+    "options": ["Zero", "Same as on Earth", "Infinite", "2 seconds"],
+    "answer": "Infinite"
+  },
+  {
+    "question": "Gravity is a:",
+    "options": ["Strong force", "Weak force", "Electromagnetic force", "Nuclear force"],
+    "answer": "Weak force"
+  },
+  {
+    "question": "The acceleration due to gravity on the Moon is approximately:",
+    "options": ["Same as Earth", "1/6th of Earth", "6 times of Earth", "1/2 of Earth"],
+    "answer": "1/6th of Earth"
+  },
+  {
+    "question": "If the Earth stops rotating about its axis, the value of $g$ at the equator will:",
+    "options": ["Increase", "Decrease", "Remain same", "Become zero"],
+    "answer": "Increase"
+  },
+  {
+    "question": "If the Earth stops rotating, the value of $g$ at the poles will:",
+    "options": ["Increase", "Decrease", "Remain same", "Become zero"],
+    "answer": "Remain same"
+  },
+  {
+    "question": "The gravitational force between two bodies does not depend on:",
+    "options": ["Their masses", "Distance between them", "Their shapes", "Universal gravitational constant"],
+    "answer": "Their shapes"
+  },
+  {
+    "question": "Which of the following graphs represents the variation of $g$ with distance $r$ from the center of Earth ($r < R$)?",
+    "options": ["$g \\propto r$", "$g \\propto 1/r$", "$g \\propto 1/r^2$", "$g$ is constant"],
+    "answer": "$g \\propto r$"
+  },
+  {
+    "question": "Which of the following graphs represents the variation of $g$ with distance $r$ from the center of Earth ($r > R$)?",
+    "options": ["$g \\propto r$", "$g \\propto r^2$", "$g \\propto 1/r^2$", "$g \\propto 1/r$"],
+    "answer": "$g \\propto 1/r^2$"
+  },
+  {
+    "question": "The direction of gravitational field intensity is always towards the:",
+    "options": ["Source mass", "Testing mass", "Away from source mass", "Tangent to the orbit"],
+    "answer": "Source mass"
+  },
+  {
+    "question": "In an elliptical orbit, the speed of the planet is maximum when it is:",
+    "options": ["At aphelion", "At perihelion", "At the end of minor axis", "Constant throughout"],
+    "answer": "At perihelion"
+  },
+  {
+    "question": "The areal velocity of a planet revolving around the Sun is:",
+    "options": ["Constant", "Variable", "Zero", "Proportional to distance"],
+    "answer": "Constant"
+  },
+  {
+    "question": "In the case of a satellite, if the radius of the orbit increases, the orbital velocity:",
+    "options": ["Increases", "Decreases", "Remains same", "First increases then decreases"],
+    "answer": "Decreases"
+  },
+  {
+    "question": "If a satellite is shifted to a higher orbit, its potential energy:",
+    "options": ["Increases", "Decreases", "Remains same", "Becomes zero"],
+    "answer": "Increases"
+  },
+  {
+    "question": "If a satellite is shifted to a higher orbit, its kinetic energy:",
+    "options": ["Increases", "Decreases", "Remains same", "Becomes negative"],
+    "answer": "Decreases"
+  },
+  {
+    "question": "The value of escape velocity on Earth is approximately:",
+    "options": ["$7.9 \\text{ km/s}$", "$11.2 \\text{ km/s}$", "$11.2 \\text{ m/s}$", "$42 \\text{ km/s}$"],
+    "answer": "$11.2 \\text{ km/s}$"
+  },
+  {
+    "question": "The escape velocity for a planet depends on the planet's:",
+    "options": ["Mass only", "Radius only", "Both mass and radius", "Atmospheric pressure"],
+    "answer": "Both mass and radius"
+  },
+  {
+    "question": "Can a body have a weight of zero?",
+    "options": ["No, mass is always present", "Yes, at the center of the Earth", "Yes, in a vacuum", "Only at the poles"],
+    "answer": "Yes, at the center of the Earth"
+  },
+  {
+    "question": "The inertia of an object in space is:",
+    "options": ["Zero", "Same as on Earth", "Infinite", "Dependent on gravity"],
+    "answer": "Same as on Earth"
+  },
+  {
+    "question": "The force of gravity on a body is also known as its:",
+    "options": ["Mass", "Inertia", "Weight", "Density"],
+    "answer": "Weight"
+  },
+  {
+    "question": "The planetary motion is a result of which force?",
+    "options": ["Centrifugal force", "Gravitational force", "Magnetic force", "Frictional force"],
+    "answer": "Gravitational force"
+  },
+  {
+    "question": "A satellite is launched into a circular orbit. The centripetal force is provided by:",
+    "options": ["Engine thrust", "Gravitational pull of Earth", "Atmospheric pressure", "Magnetic field"],
+    "answer": "Gravitational pull of Earth"
+  },
+  {
+    "question": "What happens to the gravitational force between two objects if the mass of one object is tripled?",
+    "options": ["Force is tripled", "Force is reduced to one-third", "Force remains same", "Force is nine times"],
+    "answer": "Force is tripled"
+  },
+  {
+    "question": "Gravitational shielding is:",
+    "options": ["Possible using lead sheets", "Possible using superconductors", "Not possible", "Possible in a vacuum"],
+    "answer": "Not possible"
+  },
+  {
+    "question": "The principle of superposition in gravitation states that:",
+    "options": ["Total force is the product of individual forces", "Total force is the vector sum of individual forces", "Forces cancel each other out", "Gravitational constant changes with more masses"],
+    "answer": "Total force is the vector sum of individual forces"
+  },
+  {
+    "question": "The gravitational mass of a body is proportional to the gravitational:",
+    "options": ["Field", "Potential", "Force", "Intensity"],
+    "answer": "Force"
+  },
+  {
+    "question": "Which of the following is an example of a geostationary satellite?",
+    "options": ["INSAT", "Sputnik", "Hubble Space Telescope", "ISS"],
+    "answer": "INSAT"
+  },
+  {
+    "question": "The period of a satellite in a very low orbit around a planet depends on:",
+    "options": ["The mass of the planet only", "The radius of the planet only", "The density of the planet", "The mass of the satellite"],
+    "answer": "The density of the planet"
+  },
+  {
+    "question": "If a body is projected with a velocity $v$ such that $v_{orbital} < v < v_{escape}$, the path followed will be:",
+    "options": ["Circle", "Parabola", "Ellipse", "Hyperbola"],
+    "answer": "Ellipse"
+  }
+]

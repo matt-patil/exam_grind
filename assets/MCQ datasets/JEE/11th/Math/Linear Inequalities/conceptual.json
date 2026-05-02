@@ -1,0 +1,252 @@
+[
+  {
+    "question": "If $a < b$ and $c > 0$, then which of the following is true?",
+    "options": ["$ac > bc$", "$ac < bc$", "$ac = bc$", "$ac \\leq bc$"],
+    "answer": "$ac < bc$"
+  },
+  {
+    "question": "If $a < b$ and $c < 0$, then which of the following is true?",
+    "options": ["$ac > bc$", "$ac < bc$", "$ac = bc$", "$ac \\leq bc$"],
+    "answer": "$ac > bc$"
+  },
+  {
+    "question": "The solution of $3x - 5 < 7$ for $x \\in R$ is:",
+    "options": ["$x < 4$", "$x > 4$", "$x < -4$", "$x > -4$"],
+    "answer": "$x < 4$"
+  },
+  {
+    "question": "The solution set of $|x| < 3$ is:",
+    "options": ["$(-3, 3)$", "$[-3, 3]$", "$(-\\infty, -3) \\cup (3, \\infty)$", "$R$"],
+    "answer": "$(-3, 3)$"
+  },
+  {
+    "question": "The solution set of $|x| > 5$ is:",
+    "options": ["$(-5, 5)$", "$[-5, 5]$", "$(-\\infty, -5) \\cup (5, \\infty)$", "$\\{5, -5\\}$"],
+    "answer": "$(-\\infty, -5) \\cup (5, \\infty)$"
+  },
+  {
+    "question": "If $x$ is a natural number, the solution of $2x + 1 \\leq 5$ is:",
+    "options": ["$\\{1, 2\\}$", "$\\{0, 1, 2\\}$", "$\\{1, 2, 3\\}$", "$x \\leq 2$"],
+    "answer": "$\\{1, 2\\}$"
+  },
+  {
+    "question": "Which of the following operations reverses the sign of an inequality?",
+    "options": ["Adding a negative number", "Subtracting a positive number", "Multiplying by a negative number", "Dividing by a positive number"],
+    "answer": "Multiplying by a negative number"
+  },
+  {
+    "question": "The inequality $x^2 < 0$ has how many real solutions?",
+    "options": ["0", "1", "2", "Infinite"],
+    "answer": "0"
+  },
+  {
+    "question": "The inequality $x^2 \\leq 0$ has how many real solutions?",
+    "options": ["0", "1", "2", "Infinite"],
+    "answer": "1"
+  },
+  {
+    "question": "The solution of $-x > 5$ is:",
+    "options": ["$x > 5$", "$x < 5$", "$x > -5$", "$x < -5$"],
+    "answer": "$x < -5$"
+  },
+  {
+    "question": "The graph of $x \\geq a$ on a number line is:",
+    "options": ["A ray to the right including $a$", "A ray to the right excluding $a$", "A ray to the left including $a$", "A ray to the left excluding $a$"],
+    "answer": "A ray to the right including $a$"
+  },
+  {
+    "question": "The solution of $x/3 > 2$ is:",
+    "options": ["$x > 6$", "$x < 6$", "$x > 2/3$", "$x < 2/3$"],
+    "answer": "$x > 6$"
+  },
+  {
+    "question": "If $1/x > 0$, then $x$ must be:",
+    "options": ["Positive", "Negative", "Non-zero", "Greater than 1"],
+    "answer": "Positive"
+  },
+  {
+    "question": "The solution set of $2 < x < 5$ is represented by:",
+    "options": ["$[2, 5]$", "$(2, 5)$", "$\\{2, 3, 4, 5\\}$", "$R$"],
+    "answer": "$(2, 5)$"
+  },
+  {
+    "question": "If $|x-1| \\leq 0$, then $x$ is:",
+    "options": ["0", "1", "-1", "No solution"],
+    "answer": "1"
+  },
+  {
+    "question": "The solution of $x + 3 > x + 5$ is:",
+    "options": ["$x > 0$", "$x < 0$", "Empty set", "Universal set"],
+    "answer": "Empty set"
+  },
+  {
+    "question": "The solution of $2x - 4 \\leq 2x - 1$ is:",
+    "options": ["$x \\geq 0$", "$x \\leq 0$", "Empty set", "Universal set"],
+    "answer": "Universal set"
+  },
+  {
+    "question": "The inequality $ax + b > 0$ is a linear inequality in one variable if:",
+    "options": ["$a \\neq 0$", "$b \\neq 0$", "$a > 0$", "$a, b$ are integers"],
+    "answer": "$a \\neq 0$"
+  },
+  {
+    "question": "The solution of $5x - 3 < 3x + 1$ is:",
+    "options": ["$x < 2$", "$x > 2$", "$x < 1$", "$x > 1$"],
+    "answer": "$x < 2$"
+  },
+  {
+    "question": "The region represented by $x > 0$ and $y > 0$ is the:",
+    "options": ["First quadrant", "Second quadrant", "Third quadrant", "Fourth quadrant"],
+    "answer": "First quadrant"
+  },
+  {
+    "question": "The region represented by $x < 0$ and $y < 0$ is the:",
+    "options": ["First quadrant", "Second quadrant", "Third quadrant", "Fourth quadrant"],
+    "answer": "Third quadrant"
+  },
+  {
+    "question": "If $x$ is an integer, the solution of $-12x > 30$ is:",
+    "options": ["$x \\leq -3$", "$x < -2.5$", "$\\{..., -5, -4, -3\\}$", "$x > -2.5$"],
+    "answer": "$\\{..., -5, -4, -3\\}$"
+  },
+  {
+    "question": "The solution set of $x^2 + 1 > 0$ is:",
+    "options": ["$R$", "Empty set", "$(1, \\infty)$", "$(-1, 1)$"],
+    "answer": "$R$"
+  },
+  {
+    "question": "If $|x| = a$ (where $a > 0$), then $x$ is:",
+    "options": ["$a$", "$-a$", "$\\pm a$", "0"],
+    "answer": "$\\pm a$"
+  },
+  {
+    "question": "The intersection of $x > 2$ and $x < 5$ is:",
+    "options": ["$(2, 5)$", "$[2, 5]$", "$R$", "Empty set"],
+    "answer": "$(2, 5)$"
+  },
+  {
+    "question": "The union of $x < 2$ and $x > 5$ is:",
+    "options": ["$(2, 5)$", "$(-\\infty, 2) \\cup (5, \\infty)$", "Empty set", "$R$"],
+    "answer": "$(-\\infty, 2) \\cup (5, \\infty)$"
+  },
+  {
+    "question": "If $a > b$, then $-a$ and $-b$ are related as:",
+    "options": ["$-a > -b$", "$-a < -b$", "$-a = -b$", "No relation"],
+    "answer": "$-a < -b$"
+  },
+  {
+    "question": "The solution of $1/(x-2) < 0$ is:",
+    "options": ["$x < 2$", "$x > 2$", "$x < 0$", "$x > 0$"],
+    "answer": "$x < 2$"
+  },
+  {
+    "question": "The solution of $x^2 - 4 \\leq 0$ is:",
+    "options": ["$[-2, 2]$", "$(-2, 2)$", "$(-\\infty, -2] \\cup [2, \\infty)$", "$R$"],
+    "answer": "$[-2, 2]$"
+  },
+  {
+    "question": "The solution of $x^2 - 9 > 0$ is:",
+    "options": ["$(-3, 3)$", "$(-\\infty, -3) \\cup (3, \\infty)$", "$[3, \\infty)$", "$R$"],
+    "answer": "$(-\\infty, -3) \\cup (3, \\infty)$"
+  },
+  {
+    "question": "The inequality $|x-2| < 1$ is equivalent to:",
+    "options": ["$1 < x < 3$", "$-1 < x < 1$", "$x < 3$", "$x > 1$"],
+    "answer": "$1 < x < 3$"
+  },
+  {
+    "question": "If $x$ is a non-positive real number, it is written as:",
+    "options": ["$x < 0$", "$x \\leq 0$", "$x > 0$", "$x \\geq 0$"],
+    "answer": "$x \\leq 0$"
+  },
+  {
+    "question": "The graph of $y < 2$ is the region:",
+    "options": ["Above the line $y=2$", "Below the line $y=2$", "To the right of $y=2$", "To the left of $y=2$"],
+    "answer": "Below the line $y=2$"
+  },
+  {
+    "question": "The solution of $3(x-2)/5 \\leq 5(2-x)/3$ is:",
+    "options": ["$x \\leq 2$", "$x \\geq 2$", "$x < 2$", "$x > 2$"],
+    "answer": "$x \\leq 2$"
+  },
+  {
+    "question": "If $a/b > 0$, then:",
+    "options": ["$a, b$ same sign", "$a, b$ opposite sign", "$a > b$", "$a < b$"],
+    "answer": "$a, b$ same sign"
+  },
+  {
+    "question": "The solution of $|x| + 1 < 0$ is:",
+    "options": ["$R$", "Empty set", "$x < -1$", "$x > 1$"],
+    "answer": "Empty set"
+  },
+  {
+    "question": "The number of integers satisfying $1 < x \\leq 4$ is:",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3"
+  },
+  {
+    "question": "The inequality $0 \\cdot x < 5$ has:",
+    "options": ["No solution", "Exactly one solution", "Infinitely many solutions", "Solution $x < 5$"],
+    "answer": "Infinitely many solutions"
+  },
+  {
+    "question": "The inequality $0 \\cdot x > 5$ has:",
+    "options": ["No solution", "Exactly one solution", "Infinitely many solutions", "Solution $x > 5$"],
+    "answer": "No solution"
+  },
+  {
+    "question": "The solution of $x - 2 \\geq 0$ and $2x - 5 \\leq 0$ is:",
+    "options": ["$[2, 2.5]$", "$(2, 2.5)$", "$[2, \\infty)$", "$(-\\infty, 2.5]$"],
+    "answer": "$[2, 2.5]$"
+  },
+  {
+    "question": "If $x < y$, then $x+z$ and $y+z$ are related as:",
+    "options": ["$x+z < y+z$", "$x+z > y+z$", "$x+z = y+z$", "Depends on $z$"],
+    "answer": "$x+z < y+z$"
+  },
+  {
+    "question": "The solution set of $|x| \\geq 0$ is:",
+    "options": ["$R$", "$(0, \\infty)$", "$[0, \\infty)$", "Empty set"],
+    "answer": "$R$"
+  },
+  {
+    "question": "The inequality $x/y < 0$ implies:",
+    "options": ["$x, y$ opposite signs", "$x, y$ same signs", "$x < y$", "$x > y$"],
+    "answer": "$x, y$ opposite signs"
+  },
+  {
+    "question": "The solution of $4x + 3 < 6x + 7$ is:",
+    "options": ["$x > -2$", "$x < -2$", "$x > 2$", "$x < 2$"],
+    "answer": "$x > -2$"
+  },
+  {
+    "question": "The graphical solution of $x + y \\geq 5$ is a:",
+    "options": ["Half plane", "Straight line", "Point", "Full plane"],
+    "answer": "Half plane"
+  },
+  {
+    "question": "The value of $x$ satisfying $|x-3| = x-3$ is:",
+    "options": ["$x \\geq 3$", "$x \\leq 3$", "$x = 3$", "$R$"],
+    "answer": "$x \\geq 3$"
+  },
+  {
+    "question": "The solution of $|x| \\leq 5$ is:",
+    "options": ["$[-5, 5]$", "$(-5, 5)$", "$\\{5, -5\\}$", "$x \\leq 5$"],
+    "answer": "$[-5, 5]$"
+  },
+  {
+    "question": "If $-3x + 17 < -13$, then:",
+    "options": ["$x > 10$", "$x < 10$", "$x > -10$", "$x < -10$"],
+    "answer": "$x > 10$"
+  },
+  {
+    "question": "The inequality $2/(x-3) > 0$ is satisfied by:",
+    "options": ["$x > 3$", "$x < 3$", "$x = 3$", "$R$"],
+    "answer": "$x > 3$"
+  },
+  {
+    "question": "The solution of $|2x - 3| < 1$ is:",
+    "options": ["$(1, 2)$", "$[1, 2]$", "$(1, 3)$", "$(-1, 1)$"],
+    "answer": "$(1, 2)$"
+  }
+]

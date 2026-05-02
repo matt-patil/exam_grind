@@ -1,0 +1,602 @@
+[
+  {
+    "question": "The octet rule was proposed by:",
+    "options": [
+      "Lewis and Kossel",
+      "Pauling",
+      "Sidgwick",
+      "Heitler and London"
+    ],
+    "answer": "Lewis and Kossel"
+  },
+  {
+    "question": "Which of the following molecules violates the octet rule?",
+    "options": [
+      "$CH_4$",
+      "$NH_3$",
+      "$PCl_5$",
+      "$H_2O$"
+    ],
+    "answer": "$PCl_5$"
+  },
+  {
+    "question": "A covalent bond is formed by:",
+    "options": [
+      "Transfer of electrons",
+      "Sharing of electrons",
+      "Electrostatic attraction",
+      "None of these"
+    ],
+    "answer": "Sharing of electrons"
+  },
+  {
+    "question": "The geometry of $CH_4$ molecule is:",
+    "options": [
+      "Linear",
+      "Trigonal planar",
+      "Tetrahedral",
+      "Octahedral"
+    ],
+    "answer": "Tetrahedral"
+  },
+  {
+    "question": "The bond angle in $NH_3$ is approximately:",
+    "options": [
+      "$109.5^\\circ$",
+      "$107^\\circ$",
+      "$104.5^\\circ$",
+      "$120^\\circ$"
+    ],
+    "answer": "$107^\\circ$"
+  },
+  {
+    "question": "According to VSEPR theory, the shape of $H_2O$ is:",
+    "options": [
+      "Linear",
+      "Bent (V-shape)",
+      "Trigonal pyramidal",
+      "Tetrahedral"
+    ],
+    "answer": "Bent (V-shape)"
+  },
+  {
+    "question": "The hybridization of Carbon in Ethene ($C_2H_4$) is:",
+    "options": [
+      "$sp$",
+      "$sp^2$",
+      "$sp^3$",
+      "$dsp^2$"
+    ],
+    "answer": "$sp^2$"
+  },
+  {
+    "question": "Which of the following has a linear shape?",
+    "options": [
+      "$SO_2$",
+      "$CO_2$",
+      "$NO_2$",
+      "$H_2O$"
+    ],
+    "answer": "$CO_2$"
+  },
+  {
+    "question": "The strongest type of chemical bond among the following is:",
+    "options": [
+      "Ionic bond",
+      "Covalent bond",
+      "Hydrogen bond",
+      "Van der Waals forces"
+    ],
+    "answer": "Ionic bond"
+  },
+  {
+    "question": "Sigma ($\\sigma$) bond is formed by:",
+    "options": [
+      "Sideways overlap of orbitals",
+      "Head-on overlap of orbitals",
+      "No overlap",
+      "Overlap of $p$-orbitals only"
+    ],
+    "answer": "Head-on overlap of orbitals"
+  },
+  {
+    "question": "Pi ($\\pi$) bond is formed by:",
+    "options": [
+      "Head-on overlap",
+      "Sideways overlap",
+      "Overlapping of $s$-orbitals",
+      "None of these"
+    ],
+    "answer": "Sideways overlap"
+  },
+  {
+    "question": "Which molecule has zero dipole moment?",
+    "options": [
+      "$NH_3$",
+      "$H_2O$",
+      "$BF_3$",
+      "$CHCl_3$"
+    ],
+    "answer": "$BF_3$"
+  },
+  {
+    "question": "The hybridization of Phosphorus in $PCl_5$ is:",
+    "options": [
+      "$sp^3$",
+      "$sp^3d$",
+      "$sp^3d^2$",
+      "$sp^2$"
+    ],
+    "answer": "$sp^3d$"
+  },
+  {
+    "question": "The bond order of $O_2$ molecule is:",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "2.5"
+    ],
+    "answer": "2"
+  },
+  {
+    "question": "Which of the following is paramagnetic?",
+    "options": [
+      "$N_2$",
+      "$O_2$",
+      "$F_2$",
+      "$H_2$"
+    ],
+    "answer": "$O_2$"
+  },
+  {
+    "question": "Hydrogen bonding is strongest in:",
+    "options": [
+      "$H_2O$",
+      "$HF$",
+      "$NH_3$",
+      "$CH_4$"
+    ],
+    "answer": "$HF$"
+  },
+  {
+    "question": "The formal charge on the central Oxygen atom in $O_3$ (ozone) is:",
+    "options": [
+      "0",
+      "$+1$",
+      "$-1$",
+      "$+2$"
+    ],
+    "answer": "$+1$"
+  },
+  {
+    "question": "Which theory explains the paramagnetic nature of Oxygen?",
+    "options": [
+      "Valence Bond Theory",
+      "Molecular Orbital Theory",
+      "VSEPR Theory",
+      "Lewis Theory"
+    ],
+    "answer": "Molecular Orbital Theory"
+  },
+  {
+    "question": "The shape of $SF_6$ molecule is:",
+    "options": [
+      "Trigonal bipyramidal",
+      "Octahedral",
+      "Square planar",
+      "Tetrahedral"
+    ],
+    "answer": "Octahedral"
+  },
+  {
+    "question": "Bond length is inversely proportional to:",
+    "options": [
+      "Bond order",
+      "Atomic size",
+      "Number of lone pairs",
+      "None of these"
+    ],
+    "answer": "Bond order"
+  },
+  {
+    "question": "The hybridization in Ethyne ($C_2H_2$) is:",
+    "options": [
+      "$sp^3$",
+      "$sp^2$",
+      "$sp$",
+      "$dsp^2$"
+    ],
+    "answer": "$sp$"
+  },
+  {
+    "question": "Which of the following has a square planar geometry?",
+    "options": [
+      "$CH_4$",
+      "$XeF_4$",
+      "$SF_4$",
+      "$BF_4^-$"
+    ],
+    "answer": "$XeF_4$"
+  },
+  {
+    "question": "In a double bond, there are:",
+    "options": [
+      "Two $\\sigma$ bonds",
+      "Two $\\pi$ bonds",
+      "One $\\sigma$ and one $\\pi$ bond",
+      "None of these"
+    ],
+    "answer": "One $\\sigma$ and one $\\pi$ bond"
+  },
+  {
+    "question": "Which of the following has the highest bond dissociation energy?",
+    "options": [
+      "$N_2$",
+      "$O_2$",
+      "$F_2$",
+      "$Cl_2$"
+    ],
+    "answer": "$N_2$"
+  },
+  {
+    "question": "The bond angle in $BeCl_2$ is:",
+    "options": [
+      "$90^\\circ$",
+      "$109.5^\\circ$",
+      "$120^\\circ$",
+      "$180^\\circ$"
+    ],
+    "answer": "$180^\\circ$"
+  },
+  {
+    "question": "Intermolecular hydrogen bonding is present in:",
+    "options": [
+      "o-Nitrophenol",
+      "p-Nitrophenol",
+      "Salicylaldehyde",
+      "Nitrogen"
+    ],
+    "answer": "p-Nitrophenol"
+  },
+  {
+    "question": "The percentage of $s$-character in $sp^3$ hybrid orbital is:",
+    "options": [
+      "25%",
+      "33.3%",
+      "50%",
+      "75%"
+    ],
+    "answer": "25%"
+  },
+  {
+    "question": "The shape of $ClF_3$ molecule is:",
+    "options": [
+      "Trigonal planar",
+      "T-shaped",
+      "Trigonal pyramidal",
+      "Linear"
+    ],
+    "answer": "T-shaped"
+  },
+  {
+    "question": "Which of the following species has a bond order of 0?",
+    "options": [
+      "$H_2$",
+      "$He_2$",
+      "$Li_2$",
+      "$N_2$"
+    ],
+    "answer": "$He_2$"
+  },
+  {
+    "question": "Isoelectronic species have the same:",
+    "options": [
+      "Shape",
+      "Bond order",
+      "Number of electrons",
+      "All of these"
+    ],
+    "answer": "Number of electrons"
+  },
+  {
+    "question": "The dipole moment of $NH_3$ is greater than that of $NF_3$ because:",
+    "options": [
+      "Nitrogen is more electronegative than Fluorine",
+      "In $NH_3$, the lone pair and bond pair moments are in the same direction",
+      "In $NF_3$, the lone pair and bond pair moments are in the same direction",
+      "Hydrogen is more electronegative than Fluorine"
+    ],
+    "answer": "In $NH_3$, the lone pair and bond pair moments are in the same direction"
+  },
+  {
+    "question": "The hybridization of Sulfur in $SO_2$ is:",
+    "options": [
+      "$sp$",
+      "$sp^2$",
+      "$sp^3$",
+      "$dsp^2$"
+    ],
+    "answer": "$sp^2$"
+  },
+  {
+    "question": "Fajans' rule deals with:",
+    "options": [
+      "Covalent character in ionic bonds",
+      "Ionic character in covalent bonds",
+      "Resonance",
+      "Hydrogen bonding"
+    ],
+    "answer": "Covalent character in ionic bonds"
+  },
+  {
+    "question": "Which of the following has the smallest bond angle?",
+    "options": [
+      "$H_2O$",
+      "$H_2S$",
+      "$H_2Se$",
+      "$H_2Te$"
+    ],
+    "answer": "$H_2Te$"
+  },
+  {
+    "question": "The resonance structures of a molecule have:",
+    "options": [
+      "Same arrangement of atoms",
+      "Same number of paired electrons",
+      "Similar energy",
+      "All of these"
+    ],
+    "answer": "All of these"
+  },
+  {
+    "question": "A triple bond consists of:",
+    "options": [
+      "Three $\\sigma$ bonds",
+      "Three $\\pi$ bonds",
+      "One $\\sigma$ and two $\\pi$ bonds",
+      "Two $\\sigma$ and one $\\pi$ bond"
+    ],
+    "answer": "One $\\sigma$ and two $\\pi$ bonds"
+  },
+  {
+    "question": "Which of the following molecules has a trigonal bipyramidal geometry?",
+    "options": [
+      "$SF_6$",
+      "$PCl_5$",
+      "$IF_7$",
+      "$CH_4$"
+    ],
+    "answer": "$PCl_5$"
+  },
+  {
+    "question": "Metallic bonding is explained by:",
+    "options": [
+      "Electron sea model",
+      "Valence bond theory",
+      "Molecular orbital theory",
+      "Octet rule"
+    ],
+    "answer": "Electron sea model"
+  },
+  {
+    "question": "The bond angle in $BCl_3$ is:",
+    "options": [
+      "$180^\\circ$",
+      "$120^\\circ$",
+      "$109.5^\\circ$",
+      "$90^\\circ$"
+    ],
+    "answer": "$120^\\circ$"
+  },
+  {
+    "question": "Hybridization of $Xe$ in $XeF_2$ is:",
+    "options": [
+      "$sp^3$",
+      "$sp^3d$",
+      "$sp^3d^2$",
+      "$sp^2$"
+    ],
+    "answer": "$sp^3d$"
+  },
+  {
+    "question": "Which of the following forces is the weakest?",
+    "options": [
+      "Ionic bond",
+      "Metallic bond",
+      "Dipole-dipole forces",
+      "London dispersion forces"
+    ],
+    "answer": "London dispersion forces"
+  },
+  {
+    "question": "The number of lone pairs on the central atom in $XeF_4$ is:",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "answer": "2"
+  },
+  {
+    "question": "The hybridization of Nitrogen in $NO_3^-$ is:",
+    "options": [
+      "$sp$",
+      "$sp^2$",
+      "$sp^3$",
+      "$dsp^2$"
+    ],
+    "answer": "$sp^2$"
+  },
+  {
+    "question": "Lattice energy of an ionic compound depends on:",
+    "options": [
+      "Charge on ions",
+      "Size of ions",
+      "Packing of ions",
+      "All of these"
+    ],
+    "answer": "All of these"
+  },
+  {
+    "question": "In $Molecular Orbital Theory$, the number of molecular orbitals formed is:",
+    "options": [
+      "Half the number of atomic orbitals",
+      "Equal to the number of atomic orbitals",
+      "Double the number of atomic orbitals",
+      "None of these"
+    ],
+    "answer": "Equal to the number of atomic orbitals"
+  },
+  {
+    "question": "Bond order of $N_2$ is:",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "2.5"
+    ],
+    "answer": "3"
+  },
+  {
+    "question": "Which of the following molecules is non-polar but contains polar bonds?",
+    "options": [
+      "$HCl$",
+      "$H_2O$",
+      "$CCl_4$",
+      "$NH_3$"
+    ],
+    "answer": "$CCl_4$"
+  },
+  {
+    "question": "The geometry of $IF_7$ is:",
+    "options": [
+      "Octahedral",
+      "Pentagonal bipyramidal",
+      "Trigonal bipyramidal",
+      "Square pyramidal"
+    ],
+    "answer": "Pentagonal bipyramidal"
+  },
+  {
+    "question": "The $s$-orbital is always involved in:",
+    "options": [
+      "$\\sigma$ bond",
+      "$\\pi$ bond",
+      "$\\delta$ bond",
+      "None of these"
+    ],
+    "answer": "$\\sigma$ bond"
+  },
+  {
+    "question": "Which of the following has $sp^3d^2$ hybridization?",
+    "options": [
+      "$PCl_5$",
+      "$SF_6$",
+      "$IF_7$",
+      "$CH_4$"
+    ],
+    "answer": "$SF_6$"
+  },
+  {
+    "question": "According to MOT, which species does not exist?",
+    "options": [
+      "$Be_2$",
+      "$B_2$",
+      "$C_2$",
+      "$O_2$"
+    ],
+    "answer": "$Be_2$"
+  },
+  {
+    "question": "Intramolecular hydrogen bonding is present in:",
+    "options": [
+      "Water",
+      "Ethanol",
+      "o-Nitrophenol",
+      "Ammonia"
+    ],
+    "answer": "o-Nitrophenol"
+  },
+  {
+    "question": "The shape of $SnCl_2$ is:",
+    "options": [
+      "Linear",
+      "Bent",
+      "Tetrahedral",
+      "Trigonal planar"
+    ],
+    "answer": "Bent"
+  },
+  {
+    "question": "Number of $\\sigma$ and $\\pi$ bonds in Benzene ($C_6H_6$) is:",
+    "options": [
+      "$6 \\sigma, 3 \\pi$",
+      "$12 \\sigma, 3 \\pi$",
+      "$9 \\sigma, 3 \\pi$",
+      "$12 \\sigma, 6 \\pi$"
+    ],
+    "answer": "$12 \\sigma, 3 \\pi$"
+  },
+  {
+    "question": "Which of the following is not a property of ionic compounds?",
+    "options": [
+      "High melting point",
+      "Soluble in polar solvents",
+      "Conduct electricity in solid state",
+      "Directionless bonds"
+    ],
+    "answer": "Conduct electricity in solid state"
+  },
+  {
+    "question": "The coordinate covalent bond is also known as:",
+    "options": [
+      "Ionic bond",
+      "Dative bond",
+      "Metallic bond",
+      "Hydrogen bond"
+    ],
+    "answer": "Dative bond"
+  },
+  {
+    "question": "The strength of a covalent bond depends on:",
+    "options": [
+      "Extent of overlap",
+      "Atomic size",
+      "Electronegativity difference",
+      "All of these"
+    ],
+    "answer": "All of these"
+  },
+  {
+    "question": "Which of the following has a see-saw shape?",
+    "options": [
+      "$CH_4$",
+      "$SF_4$",
+      "$XeF_4$",
+      "$ClF_3$"
+    ],
+    "answer": "$SF_4$"
+  },
+  {
+    "question": "The hybridization of Oxygen in $H_2O$ is:",
+    "options": [
+      "$sp$",
+      "$sp^2$",
+      "$sp^3$",
+      "$dsp^2$"
+    ],
+    "answer": "$sp^3$"
+  },
+  {
+    "question": "Polarization of an anion by a cation is favored by:",
+    "options": [
+      "Small cation and large anion",
+      "Large cation and small anion",
+      "Small cation and small anion",
+      "Large cation and large anion"
+    ],
+    "answer": "Small cation and large anion"
+  }
+]

@@ -1,0 +1,602 @@
+[
+  {
+    "question": "Which of the following is the fundamental property of an element as per Moseley's work?",
+    "options": [
+      "Atomic mass",
+      "Atomic number",
+      "Atomic volume",
+      "Atomic weight"
+    ],
+    "answer": "Atomic number"
+  },
+  {
+    "question": "The uncertainty principle was proposed by:",
+    "options": [
+      "De-Broglie",
+      "Heisenberg",
+      "Einstein",
+      "Planck"
+    ],
+    "answer": "Heisenberg"
+  },
+  {
+    "question": "The region where there is a zero probability of finding an electron is called:",
+    "options": [
+      "Nucleus",
+      "Orbit",
+      "Node",
+      "Shell"
+    ],
+    "answer": "Node"
+  },
+  {
+    "question": "Which quantum number determines the orientation of an orbital in space?",
+    "options": [
+      "Principal quantum number ($n$)",
+      "Azimuthal quantum number ($l$)",
+      "Magnetic quantum number ($m_l$)",
+      "Spin quantum number ($s$)"
+    ],
+    "answer": "Magnetic quantum number ($m_l$)"
+  },
+  {
+    "question": "According to Bohr's theory, the angular momentum of an electron in the $n$-th orbit is given by:",
+    "options": [
+      "$mvr = \\frac{nh}{2\\pi}$",
+      "$mvr = \\frac{nh}{\\pi}$",
+      "$mvr = \\frac{2nh}{\\pi}$",
+      "$mvr = nh$"
+    ],
+    "answer": "$mvr = \\frac{nh}{2\\pi}$"
+  },
+  {
+    "question": "Which rule states that electrons enter the lowest energy orbital first?",
+    "options": [
+      "Hund's Rule",
+      "Pauli's Exclusion Principle",
+      "Aufbau Principle",
+      "Heisenberg's Uncertainty Principle"
+    ],
+    "answer": "Aufbau Principle"
+  },
+  {
+    "question": "The shape of the $p$-orbital is:",
+    "options": [
+      "Spherical",
+      "Dumbbell",
+      "Double dumbbell",
+      "Circular"
+    ],
+    "answer": "Dumbbell"
+  },
+  {
+    "question": "How many electrons can be accommodated in a $d$-orbital?",
+    "options": [
+      "2",
+      "6",
+      "10",
+      "14"
+    ],
+    "answer": "2"
+  },
+  {
+    "question": "Which of the following describes the dual nature of matter?",
+    "options": [
+      "Planck's equation",
+      "Einstein's equation",
+      "De-Broglie's equation",
+      "Schrodinger equation"
+    ],
+    "answer": "De-Broglie's equation"
+  },
+  {
+    "question": "The number of radial nodes in a $3s$ orbital is:",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "answer": "2"
+  },
+  {
+    "question": "Which series of hydrogen spectrum lies in the visible region?",
+    "options": [
+      "Lyman series",
+      "Balmer series",
+      "Paschen series",
+      "Brackett series"
+    ],
+    "answer": "Balmer series"
+  },
+  {
+    "question": "Cathode rays consist of:",
+    "options": [
+      "Protons",
+      "Neutrons",
+      "Electrons",
+      "Positrons"
+    ],
+    "answer": "Electrons"
+  },
+  {
+    "question": "The value of Planck's constant is approximately:",
+    "options": [
+      "$6.626 \\times 10^{-34}$ J s",
+      "$6.626 \\times 10^{-27}$ J s",
+      "$6.626 \\times 10^{-31}$ J s",
+      "$6.626 \\times 10^{-23}$ J s"
+    ],
+    "answer": "$6.626 \\times 10^{-34}$ J s"
+  },
+  {
+    "question": "Which principle states that no two electrons in an atom can have the same set of four quantum numbers?",
+    "options": [
+      "Hund's Rule",
+      "Pauli's Exclusion Principle",
+      "Aufbau Principle",
+      "Bohr's Rule"
+    ],
+    "answer": "Pauli's Exclusion Principle"
+  },
+  {
+    "question": "The maximum number of electrons in a shell with principal quantum number $n$ is:",
+    "options": [
+      "$n^2$",
+      "$2n$",
+      "$2n^2$",
+      "$n+1$"
+    ],
+    "answer": "$2n^2$"
+  },
+  {
+    "question": "What is the shape of an $s$-orbital?",
+    "options": [
+      "Dumbbell",
+      "Spherical",
+      "Double dumbbell",
+      "Tetrahedral"
+    ],
+    "answer": "Spherical"
+  },
+  {
+    "question": "Which subshell has the lowest energy among $4s$, $4p$, $4d$, and $4f$?",
+    "options": [
+      "$4s$",
+      "$4p$",
+      "$4d$",
+      "$4f$"
+    ],
+    "answer": "$4s$"
+  },
+  {
+    "question": "The ratio of the mass of a proton to the mass of an electron is approximately:",
+    "options": [
+      "1",
+      "1836",
+      "100",
+      "2000"
+    ],
+    "answer": "1836"
+  },
+  {
+    "question": "Isotopes are atoms of the same element with different:",
+    "options": [
+      "Atomic number",
+      "Number of protons",
+      "Number of neutrons",
+      "Number of electrons"
+    ],
+    "answer": "Number of neutrons"
+  },
+  {
+    "question": "The energy of a photon is directly proportional to its:",
+    "options": [
+      "Wavelength",
+      "Frequency",
+      "Velocity",
+      "Amplitude"
+    ],
+    "answer": "Frequency"
+  },
+  {
+    "question": "Which of the following subshells does not exist?",
+    "options": [
+      "$2p$",
+      "$3s$",
+      "$2d$",
+      "$4f$"
+    ],
+    "answer": "$2d$"
+  },
+  {
+    "question": "The total number of orbitals in a shell with principal quantum number $n$ is:",
+    "options": [
+      "$2n$",
+      "$n^2$",
+      "$2n^2$",
+      "$n-1$"
+    ],
+    "answer": "$n^2$"
+  },
+  {
+    "question": "Which experiment proved the existence of the nucleus in an atom?",
+    "options": [
+      "Cathode ray experiment",
+      "Oil drop experiment",
+      "$\\alpha$-particle scattering experiment",
+      "Discharge tube experiment"
+    ],
+    "answer": "$\\alpha$-particle scattering experiment"
+  },
+  {
+    "question": "The spin quantum number can have values:",
+    "options": [
+      "$0, 1$",
+      "$-1, 0, +1$",
+      "$+\\frac{1}{2}, -\\frac{1}{2}$",
+      "Any integer"
+    ],
+    "answer": "$+\\frac{1}{2}, -\\frac{1}{2}$"
+  },
+  {
+    "question": "Hund's rule deals with:",
+    "options": [
+      "Orientation of orbitals",
+      "Filling of electrons in degenerate orbitals",
+      "Maximum number of electrons in a shell",
+      "Uncertainty in position"
+    ],
+    "answer": "Filling of electrons in degenerate orbitals"
+  },
+  {
+    "question": "The electronic configuration of Chromium ($Z=24$) is:",
+    "options": [
+      "$[Ar] 3d^4 4s^2$",
+      "$[Ar] 3d^5 4s^1$",
+      "$[Ar] 3d^6 4s^0$",
+      "$[Ar] 4s^2 4p^4$"
+    ],
+    "answer": "$[Ar] 3d^5 4s^1$"
+  },
+  {
+    "question": "The particle that has the same mass as a proton but is electrically neutral is:",
+    "options": [
+      "Electron",
+      "Neutron",
+      "Positron",
+      "Meson"
+    ],
+    "answer": "Neutron"
+  },
+  {
+    "question": "Which of the following is an electromagnetic radiation of the shortest wavelength?",
+    "options": [
+      "Radio waves",
+      "X-rays",
+      "Gamma rays",
+      "Microwaves"
+    ],
+    "answer": "Gamma rays"
+  },
+  {
+    "question": "The wave nature of electrons was experimentally verified by:",
+    "options": [
+      "Davisson and Germer",
+      "Rutherford",
+      "J.J. Thomson",
+      "Millikan"
+    ],
+    "answer": "Davisson and Germer"
+  },
+  {
+    "question": "Isobars are atoms with same:",
+    "options": [
+      "Atomic number",
+      "Mass number",
+      "Number of neutrons",
+      "Chemical properties"
+    ],
+    "answer": "Mass number"
+  },
+  {
+    "question": "The value of azimuthal quantum number ($l$) for $d$-orbital is:",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "answer": "2"
+  },
+  {
+    "question": "Black body radiation is explained by:",
+    "options": [
+      "Wave theory",
+      "Particle theory (Quantum theory)",
+      "Classical mechanics",
+      "Electromagnetic theory"
+    ],
+    "answer": "Particle theory (Quantum theory)"
+  },
+  {
+    "question": "The photoelectric effect was explained by:",
+    "options": [
+      "Newton",
+      "Einstein",
+      "Maxwell",
+      "Hertz"
+    ],
+    "answer": "Einstein"
+  },
+  {
+    "question": "The number of angular nodes in an orbital is equal to:",
+    "options": [
+      "$n$",
+      "$l$",
+      "$n-l-1$",
+      "$n-1$"
+    ],
+    "answer": "$l$"
+  },
+  {
+    "question": "Electronic configuration of Copper ($Z=29$) is:",
+    "options": [
+      "$[Ar] 3d^9 4s^2$",
+      "$[Ar] 3d^{10} 4s^1$",
+      "$[Ar] 3d^8 4s^2 4p^1$",
+      "$[Ar] 3d^7 4s^2 4p^2$"
+    ],
+    "answer": "$[Ar] 3d^{10} 4s^1$"
+  },
+  {
+    "question": "Which of the following is not a property of cathode rays?",
+    "options": [
+      "They cast shadows of objects",
+      "They produce heating effect",
+      "They are independent of the material of cathode",
+      "They consist of positively charged particles"
+    ],
+    "answer": "They consist of positively charged particles"
+  },
+  {
+    "question": "The Rydberg constant ($R_H$) for hydrogen has a value of approximately:",
+    "options": [
+      "$109677$ cm$^{-1}$",
+      "$109677$ m$^{-1}$",
+      "$1.09677 \\times 10^7$ cm$^{-1}$",
+      "$1096.77$ cm$^{-1}$"
+    ],
+    "answer": "$109677$ cm$^{-1}$"
+  },
+  {
+    "question": "The discovery of neutrons was made by:",
+    "options": [
+      "Rutherford",
+      "Chadwick",
+      "Thomson",
+      "Bohr"
+    ],
+    "answer": "Chadwick"
+  },
+  {
+    "question": "An orbital is a:",
+    "options": [
+      "Circular path of electron",
+      "Elliptical path of electron",
+      "Three-dimensional space around nucleus where probability of finding electron is maximum",
+      "Region where electron is definitely present"
+    ],
+    "answer": "Three-dimensional space around nucleus where probability of finding electron is maximum"
+  },
+  {
+    "question": "The orbital with $n=3$ and $l=1$ is:",
+    "options": [
+      "$3s$",
+      "$3p$",
+      "$3d$",
+      "$4p$"
+    ],
+    "answer": "$3p$"
+  },
+  {
+    "question": "Which quantum number provides information about the size and energy of the orbital?",
+    "options": [
+      "Principal quantum number",
+      "Azimuthal quantum number",
+      "Magnetic quantum number",
+      "Spin quantum number"
+    ],
+    "answer": "Principal quantum number"
+  },
+  {
+    "question": "The $d_{z^2}$ orbital has a shape known as:",
+    "options": [
+      "Dumbbell",
+      "Double dumbbell",
+      "Dumbbell with a doughnut-shaped ring",
+      "Spherical"
+    ],
+    "answer": "Dumbbell with a doughnut-shaped ring"
+  },
+  {
+    "question": "The energy of the electron in the hydrogen atom depends only on:",
+    "options": [
+      "$n$",
+      "$l$",
+      "$m_l$",
+      "$s$"
+    ],
+    "answer": "$n$"
+  },
+  {
+    "question": "The total number of nodes in a $4p$ orbital is:",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "3"
+  },
+  {
+    "question": "Which of the following ions is isoelectronic with Neon?",
+    "options": [
+      "$O^-$",
+      "$F^-$",
+      "$Li^+$",
+      "$Mg^+$"
+    ],
+    "answer": "$F^-$"
+  },
+  {
+    "question": "The magnetic moment of an atom is related to the number of:",
+    "options": [
+      "Paired electrons",
+      "Unpaired electrons",
+      "Protons",
+      "Neutrons"
+    ],
+    "answer": "Unpaired electrons"
+  },
+  {
+    "question": "The Zeeman effect refers to the splitting of spectral lines in the presence of:",
+    "options": [
+      "Electric field",
+      "Magnetic field",
+      "Gravitational field",
+      "Vacuum"
+    ],
+    "answer": "Magnetic field"
+  },
+  {
+    "question": "The Stark effect refers to the splitting of spectral lines in the presence of:",
+    "options": [
+      "Magnetic field",
+      "Electric field",
+      "Pressure",
+      "Temperature"
+    ],
+    "answer": "Electric field"
+  },
+  {
+    "question": "The Lyman series appears when an electron jumps from higher orbits to:",
+    "options": [
+      "$n=1$",
+      "$n=2$",
+      "$n=3$",
+      "$n=4$"
+    ],
+    "answer": "$n=1$"
+  },
+  {
+    "question": "The ratio of charge to mass ($e/m$) for cathode rays is:",
+    "options": [
+      "Constant for all gases",
+      "Varies with gas",
+      "Varies with cathode material",
+      "Zero"
+    ],
+    "answer": "Constant for all gases"
+  },
+  {
+    "question": "Which of the following subshells has the highest number of orbitals?",
+    "options": [
+      "$s$",
+      "$p$",
+      "$d$",
+      "$f$"
+    ],
+    "answer": "$f$"
+  },
+  {
+    "question": "The de-Broglie wavelength ($\\lambda$) is related to momentum ($p$) by:",
+    "options": [
+      "$\\lambda = h/p$",
+      "$\\lambda = hp$",
+      "$\\lambda = p/h$",
+      "$\\lambda = h^2/p$"
+    ],
+    "answer": "$\\lambda = h/p$"
+  },
+  {
+    "question": "The number of electrons in the outermost shell of an atom is called:",
+    "options": [
+      "Core electrons",
+      "Valence electrons",
+      "Inert electrons",
+      "Stable electrons"
+    ],
+    "answer": "Valence electrons"
+  },
+  {
+    "question": "Which of the following is not a valid set of quantum numbers ($n, l, m_l, s$)?",
+    "options": [
+      "$2, 1, 0, +1/2$",
+      "$1, 0, 0, -1/2$",
+      "$3, 2, -3, +1/2$",
+      "$4, 3, +2, -1/2$"
+    ],
+    "answer": "$3, 2, -3, +1/2$"
+  },
+  {
+    "question": "The maximum number of electrons that can be filled in a subshell is given by:",
+    "options": [
+      "$2l+1$",
+      "$4l+2$",
+      "$2n^2$",
+      "$n^2$"
+    ],
+    "answer": "$4l+2$"
+  },
+  {
+    "question": "An atom with atomic number 20 will have electronic configuration in subshells as:",
+    "options": [
+      "$1s^2 2s^2 2p^6 3s^2 3p^6 4s^2$",
+      "$1s^2 2s^2 2p^6 3s^2 3p^6 3d^2$",
+      "$1s^2 2s^2 2p^6 3s^2 3p^6 4p^2$",
+      "$1s^2 2s^2 2p^6 3s^2 3p^8$"
+    ],
+    "answer": "$1s^2 2s^2 2p^6 3s^2 3p^6 4s^2$"
+  },
+  {
+    "question": "The value of $l$ for an orbital with 2 angular nodes is:",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "answer": "2"
+  },
+  {
+    "question": "The energy level of an orbital in a multi-electron atom is determined by:",
+    "options": [
+      "$n$ only",
+      "$l$ only",
+      "$n+l$",
+      "$n-l$"
+    ],
+    "answer": "$n+l$"
+  },
+  {
+    "question": "Which of the following species is paramagnetic?",
+    "options": [
+      "$N_2$",
+      "$O_2$",
+      "$F_2$",
+      "$H_2$"
+    ],
+    "answer": "$O_2$"
+  },
+  {
+    "question": "According to Heisenberg's Uncertainty Principle, $\\Delta x \\cdot \\Delta p \\ge$:",
+    "options": [
+      "$h/4\\pi$",
+      "$h/2\\pi$",
+      "$h/\\pi$",
+      "$4\\pi/h$"
+    ],
+    "answer": "$h/4\\pi$"
+  }
+]

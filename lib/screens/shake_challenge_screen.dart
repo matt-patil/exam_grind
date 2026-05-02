@@ -222,230 +222,232 @@ class _ShakeChallengeScreenState extends State<ShakeChallengeScreen> {
           ),
         ],
       ),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              // Example Badge
-              Container(
-                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-                decoration: BoxDecoration(
-                  color: const Color(0xFF00D084),
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                child: const Text(
-                  'Shake Challenge',
-                  style: TextStyle(
-                    color: Color(0xFF0F0F11),
-                    fontWeight: FontWeight.bold,
-                    fontSize: 14,
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                // Example Badge
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFF00D084),
+                    borderRadius: BorderRadius.circular(20),
                   ),
-                ),
-              ),
-              const SizedBox(height: 30),
-
-              // Shake Challenge Description
-              Column(
-                children: [
-                  const Text(
-                    'Shake your phone to dismiss',
+                  child: const Text(
+                    'Shake Challenge',
                     style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 18,
+                      color: Color(0xFF0F0F11),
                       fontWeight: FontWeight.bold,
+                      fontSize: 14,
                     ),
                   ),
-                  const SizedBox(height: 40),
+                ),
+                const SizedBox(height: 30),
 
-                  // Visual representation of shake
-                  Container(
-                    padding: const EdgeInsets.all(40),
-                    decoration: BoxDecoration(
-                      color: const Color(0xFF1E1E1E),
-                      borderRadius: BorderRadius.circular(20),
+                // Shake Challenge Description
+                Column(
+                  children: [
+                    const Text(
+                      'Shake your phone to dismiss',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                    child: Column(
-                      children: [
-                        Icon(
-                          Icons.vibration,
-                          color: const Color(0xFF00D084),
-                          size: 80,
-                        ),
-                        const SizedBox(height: 20),
-                        const Text(
-                          'Prepare your device',
-                          style: TextStyle(
-                            color: Colors.grey,
-                            fontSize: 14,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(height: 60),
+                    const SizedBox(height: 40),
 
-                  // Intensity Section
-                  Container(
-                    padding: const EdgeInsets.all(24),
-                    decoration: BoxDecoration(
-                      color: const Color(0xFF1E1E1E),
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          _getIntensityLabel(),
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18,
+                    // Visual representation of shake
+                    Container(
+                      padding: const EdgeInsets.all(40),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFF1E1E1E),
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: Column(
+                        children: [
+                          Icon(
+                            Icons.vibration,
+                            color: const Color(0xFF00D084),
+                            size: 80,
                           ),
-                        ),
-                        const SizedBox(height: 16),
-                        Row(
-                          children: [
-                            const Text(
-                              'Easy',
-                              style: TextStyle(color: Colors.grey, fontSize: 12),
+                          const SizedBox(height: 20),
+                          const Text(
+                            'Prepare your device',
+                            style: TextStyle(
+                              color: Colors.grey,
+                              fontSize: 14,
                             ),
-                            Expanded(
-                              child: Slider(
-                                value: _intensity,
-                                min: 0,
-                                max: 100,
-                                activeColor: Colors.white,
-                                inactiveColor: Colors.grey[700],
-                                onChanged: (value) {
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: 60),
+
+                    // Intensity Section
+                    Container(
+                      padding: const EdgeInsets.all(24),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFF1E1E1E),
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            _getIntensityLabel(),
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
+                          ),
+                          const SizedBox(height: 16),
+                          Row(
+                            children: [
+                              const Text(
+                                'Easy',
+                                style: TextStyle(color: Colors.grey, fontSize: 12),
+                              ),
+                              Expanded(
+                                child: Slider(
+                                  value: _intensity,
+                                  min: 0,
+                                  max: 100,
+                                  activeColor: Colors.white,
+                                  inactiveColor: Colors.grey[700],
+                                  onChanged: (value) {
+                                    setState(() {
+                                      _intensity = value;
+                                    });
+                                  },
+                                ),
+                              ),
+                              const Text(
+                                'Hard',
+                                style: TextStyle(color: Colors.grey, fontSize: 12),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: 25),
+
+                    // Duration Section (repurposed for shake count)
+                    Container(
+                      padding: const EdgeInsets.all(24),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFF1E1E1E),
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text(
+                            'Number of Shakes',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
+                          ),
+                          const SizedBox(height: 16),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              IconButton(
+                                icon: const Icon(Icons.remove, color: Colors.grey),
+                                onPressed: () {
                                   setState(() {
-                                    _intensity = value;
+                                    if (_targetShakes > 5) _targetShakes -= 5;
                                   });
                                 },
                               ),
-                            ),
-                            const Text(
-                              'Hard',
-                              style: TextStyle(color: Colors.grey, fontSize: 12),
-                            ),
-                          ],
-                        ),
-                      ],
+                              const SizedBox(width: 20),
+                              Text(
+                                '$_targetShakes',
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 32,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              const SizedBox(width: 20),
+                              IconButton(
+                                icon: const Icon(Icons.add, color: Colors.grey),
+                                onPressed: () {
+                                  setState(() {
+                                    _targetShakes += 5;
+                                  });
+                                },
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 25),
+                  ],
+                ),
+                const SizedBox(height: 25),
 
-                  // Duration Section (repurposed for shake count)
-                  Container(
-                    padding: const EdgeInsets.all(24),
-                    decoration: BoxDecoration(
-                      color: const Color(0xFF1E1E1E),
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text(
-                          'Number of Shakes',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18,
+                // Preview and Complete Buttons
+                Row(
+                  children: [
+                    Expanded(
+                      child: OutlinedButton(
+                        onPressed: () {
+                          // Preview action
+                        },
+                        style: OutlinedButton.styleFrom(
+                          padding: const EdgeInsets.symmetric(vertical: 16),
+                          side: const BorderSide(color: Colors.grey),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12),
                           ),
                         ),
-                        const SizedBox(height: 16),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            IconButton(
-                              icon: const Icon(Icons.remove, color: Colors.grey),
-                              onPressed: () {
-                                setState(() {
-                                  if (_targetShakes > 5) _targetShakes -= 5;
-                                });
-                              },
-                            ),
-                            const SizedBox(width: 20),
-                            Text(
-                              '$_targetShakes',
-                              style: const TextStyle(
-                                color: Colors.white,
-                                fontSize: 32,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            const SizedBox(width: 20),
-                            IconButton(
-                              icon: const Icon(Icons.add, color: Colors.grey),
-                              onPressed: () {
-                                setState(() {
-                                  _targetShakes += 5;
-                                });
-                              },
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 25),
-
-              // Preview and Complete Buttons
-              Row(
-                children: [
-                  Expanded(
-                    child: OutlinedButton(
-                      onPressed: () {
-                        // Preview action
-                      },
-                      style: OutlinedButton.styleFrom(
-                        padding: const EdgeInsets.symmetric(vertical: 16),
-                        side: const BorderSide(color: Colors.grey),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                      ),
-                      child: const Text(
-                        'Preview',
-                        style: TextStyle(color: Colors.white, fontSize: 16),
-                      ),
-                    ),
-                  ),
-                  const SizedBox(width: 16),
-                  Expanded(
-                    child: ElevatedButton(
-                      onPressed: () {
-                        // Complete action - save the mission configuration
-                        Navigator.pop(context, {
-                          'type': 'Shake',
-                          'intensity': _intensity,
-                          'duration': _targetShakes,
-                        });
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF00D084),
-                        padding: const EdgeInsets.symmetric(vertical: 16),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                      ),
-                      child: const Text(
-                        'Complete',
-                        style: TextStyle(
-                          color: Color(0xFF0F0F11),
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
+                        child: const Text(
+                          'Preview',
+                          style: TextStyle(color: Colors.white, fontSize: 16),
                         ),
                       ),
                     ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 15),
-            ],
+                    const SizedBox(width: 16),
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {
+                          // Complete action - save the mission configuration
+                          Navigator.pop(context, {
+                            'type': 'Shake',
+                            'intensity': _intensity,
+                            'duration': _targetShakes,
+                          });
+                        },
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color(0xFF00D084),
+                          padding: const EdgeInsets.symmetric(vertical: 16),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                        ),
+                        child: const Text(
+                          'Complete',
+                          style: TextStyle(
+                            color: Color(0xFF0F0F11),
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 15),
+              ],
+            ),
           ),
         ),
       ),

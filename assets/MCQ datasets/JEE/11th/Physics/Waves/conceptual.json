@@ -1,0 +1,602 @@
+[
+  {
+    "question": "Which of the following is a characteristic of a mechanical wave?",
+    "options": [
+      "It can travel through vacuum.",
+      "It requires a material medium for propagation.",
+      "It is always longitudinal.",
+      "It is always transverse."
+    ],
+    "answer": "It requires a material medium for propagation."
+  },
+  {
+    "question": "In a transverse wave, the particles of the medium vibrate:",
+    "options": [
+      "In the direction of wave propagation",
+      "Perpendicular to the direction of wave propagation",
+      "In a circular path",
+      "They do not vibrate"
+    ],
+    "answer": "Perpendicular to the direction of wave propagation"
+  },
+  {
+    "question": "Sound waves in air are always:",
+    "options": [
+      "Transverse",
+      "Longitudinal",
+      "Electromagnetic",
+      "Surface waves"
+    ],
+    "answer": "Longitudinal"
+  },
+  {
+    "question": "The speed of a wave in a medium depends on:",
+    "options": [
+      "The frequency of the wave",
+      "The amplitude of the wave",
+      "The properties of the medium",
+      "The phase of the wave"
+    ],
+    "answer": "The properties of the medium"
+  },
+  {
+    "question": "According to Newton's formula, the propagation of sound in a gas is assumed to be an:",
+    "options": [
+      "Isothermal process",
+      "Adiabatic process",
+      "Isobaric process",
+      "Isochoric process"
+    ],
+    "answer": "Isothermal process"
+  },
+  {
+    "question": "Laplace corrected Newton's formula by assuming that the propagation of sound is an:",
+    "options": [
+      "Isothermal process",
+      "Adiabatic process",
+      "Isobaric process",
+      "Isochoric process"
+    ],
+    "answer": "Adiabatic process"
+  },
+  {
+    "question": "The speed of sound in a gas is proportional to:",
+    "options": [
+      "The square root of absolute temperature",
+      "The absolute temperature",
+      "The square of absolute temperature",
+      "Independent of temperature"
+    ],
+    "answer": "The square root of absolute temperature"
+  },
+  {
+    "question": "What happens to the speed of sound in air when humidity increases?",
+    "options": [
+      "It decreases.",
+      "It increases.",
+      "It remains unchanged.",
+      "It becomes zero."
+    ],
+    "answer": "It increases."
+  },
+  {
+    "question": "When a wave is reflected from a rigid boundary (fixed end), the phase change is:",
+    "options": [
+      "0",
+      "$\\pi/2$",
+      "$\\pi$",
+      "$2\\pi$"
+    ],
+    "answer": "$\\pi$"
+  },
+  {
+    "question": "When a wave is reflected from a free boundary, the phase change is:",
+    "options": [
+      "0",
+      "$\\pi/2$",
+      "$\\pi$",
+      "$2\\pi$"
+    ],
+    "answer": "0"
+  },
+  {
+    "question": "Standing waves are produced by the superposition of two waves of:",
+    "options": [
+      "Same frequency and amplitude traveling in the same direction",
+      "Same frequency and amplitude traveling in opposite directions",
+      "Different frequencies traveling in the same direction",
+      "Different frequencies traveling in opposite directions"
+    ],
+    "answer": "Same frequency and amplitude traveling in opposite directions"
+  },
+  {
+    "question": "In a stationary wave, the points of zero amplitude are called:",
+    "options": [
+      "Antinodes",
+      "Nodes",
+      "Crests",
+      "Troughs"
+    ],
+    "answer": "Nodes"
+  },
+  {
+    "question": "The distance between a node and an adjacent antinode is:",
+    "options": [
+      "$\\lambda$",
+      "$\\lambda/2$",
+      "$\\lambda/4$",
+      "$2\\lambda$"
+    ],
+    "answer": "$\\lambda/4$"
+  },
+  {
+    "question": "In a stretched string fixed at both ends, the fundamental frequency is given by:",
+    "options": [
+      "$v/L$",
+      "$v/2L$",
+      "$v/4L$",
+      "$2v/L$"
+    ],
+    "answer": "$v/2L$"
+  },
+  {
+    "question": "An open organ pipe produces:",
+    "options": [
+      "Only odd harmonics",
+      "Only even harmonics",
+      "Both odd and even harmonics",
+      "No harmonics"
+    ],
+    "answer": "Both odd and even harmonics"
+  },
+  {
+    "question": "A closed organ pipe (closed at one end) produces:",
+    "options": [
+      "Only odd harmonics",
+      "Only even harmonics",
+      "Both odd and even harmonics",
+      "No harmonics"
+    ],
+    "answer": "Only odd harmonics"
+  },
+  {
+    "question": "The phenomenon of beats is used to find:",
+    "options": [
+      "The velocity of sound",
+      "The frequency of an unknown tuning fork",
+      "The wavelength of a wave",
+      "The intensity of sound"
+    ],
+    "answer": "The frequency of an unknown tuning fork"
+  },
+  {
+    "question": "The number of beats heard per second is equal to:",
+    "options": [
+      "The sum of frequencies of the two sources",
+      "The difference of frequencies of the two sources",
+      "The average of frequencies of the two sources",
+      "The product of frequencies of the two sources"
+    ],
+    "answer": "The difference of frequencies of the two sources"
+  },
+  {
+    "question": "The Doppler effect is a change in the observed frequency due to:",
+    "options": [
+      "The change in amplitude of the source",
+      "The relative motion between the source and the observer",
+      "The change in the medium's density",
+      "The reflection of the wave"
+    ],
+    "answer": "The relative motion between the source and the observer"
+  },
+  {
+    "question": "When a source of sound moves towards a stationary observer, the apparent frequency:",
+    "options": [
+      "Increases",
+      "Decreases",
+      "Remains the same",
+      "Becomes zero"
+    ],
+    "answer": "Increases"
+  },
+  {
+    "question": "The speed of a transverse wave in a stretched string depends on:",
+    "options": [
+      "Tension and mass per unit length",
+      "Tension and amplitude",
+      "Length and frequency",
+      "Mass and frequency"
+    ],
+    "answer": "Tension and mass per unit length"
+  },
+  {
+    "question": "In a longitudinal wave, the regions of high pressure are called:",
+    "options": [
+      "Rarefactions",
+      "Compressions",
+      "Nodes",
+      "Antinodes"
+    ],
+    "answer": "Compressions"
+  },
+  {
+    "question": "The energy transported by a wave is proportional to:",
+    "options": [
+      "The amplitude",
+      "The square of the amplitude",
+      "The square root of the amplitude",
+      "The frequency"
+    ],
+    "answer": "The square of the amplitude"
+  },
+  {
+    "question": "Which of the following properties of a wave remains unchanged when it enters a different medium?",
+    "options": [
+      "Speed",
+      "Wavelength",
+      "Frequency",
+      "Amplitude"
+    ],
+    "answer": "Frequency"
+  },
+  {
+    "question": "A wavefront is defined as a surface where all points have the same:",
+    "options": [
+      "Amplitude",
+      "Phase",
+      "Velocity",
+      "Intensity"
+    ],
+    "answer": "Phase"
+  },
+  {
+    "question": "In a stationary wave, the energy is:",
+    "options": [
+      "Transferred from one point to another",
+      "Not transferred, but confined between nodes",
+      "Always zero",
+      "Constant at all points"
+    ],
+    "answer": "Not transferred, but confined between nodes"
+  },
+  {
+    "question": "The fundamental frequency of a closed organ pipe is $n$. The frequency of its first overtone is:",
+    "options": [
+      "$2n$",
+      "$3n$",
+      "$4n$",
+      "$5n$"
+    ],
+    "answer": "$3n$"
+  },
+  {
+    "question": "The fundamental frequency of an open organ pipe is $n$. The frequency of its first overtone is:",
+    "options": [
+      "$2n$",
+      "$3n$",
+      "$4n$",
+      "$n/2$"
+    ],
+    "answer": "$2n$"
+  },
+  {
+    "question": "The speed of sound in a gas is NOT affected by change in:",
+    "options": [
+      "Temperature",
+      "Pressure (at constant temperature)",
+      "Humidity",
+      "Density (at constant pressure)"
+    ],
+    "answer": "Pressure (at constant temperature)"
+  },
+  {
+    "question": "The quality (or timbre) of a sound depends on:",
+    "options": [
+      "The frequency",
+      "The intensity",
+      "The waveform and overtones present",
+      "The speed"
+    ],
+    "answer": "The waveform and overtones present"
+  },
+  {
+    "question": "If the tension in a string is increased four times, the speed of the transverse wave will:",
+    "options": [
+      "Double",
+      "Become four times",
+      "Remain the same",
+      "Halve"
+    ],
+    "answer": "Double"
+  },
+  {
+    "question": "Beats are best heard when the frequencies of the two sources are:",
+    "options": [
+      "Exactly the same",
+      "Very different",
+      "Slightly different",
+      "Harmonics of each other"
+    ],
+    "answer": "Slightly different"
+  },
+  {
+    "question": "In the Doppler effect, the frequency change depends on:",
+    "options": [
+      "The distance between source and observer",
+      "The velocities of source and observer",
+      "The intensity of sound",
+      "The time for which source has been moving"
+    ],
+    "answer": "The velocities of source and observer"
+  },
+  {
+    "question": "Transverse waves cannot be propagated in:",
+    "options": [
+      "Solids",
+      "Liquids and gases (internally)",
+      "Stretched strings",
+      "Metal rods"
+    ],
+    "answer": "Liquids and gases (internally)"
+  },
+  {
+    "question": "The persistence of sound due to multiple reflections is called:",
+    "options": [
+      "Echo",
+      "Reverberation",
+      "Resonance",
+      "Interference"
+    ],
+    "answer": "Reverberation"
+  },
+  {
+    "question": "For a sound wave, 'loudness' is primarily related to:",
+    "options": [
+      "Frequency",
+      "Wavelength",
+      "Intensity or Amplitude",
+      "Overtones"
+    ],
+    "answer": "Intensity or Amplitude"
+  },
+  {
+    "question": "A wave represented by $y = a \\sin(kx - \\omega t)$ is traveling along:",
+    "options": [
+      "Positive x-direction",
+      "Negative x-direction",
+      "Positive y-direction",
+      "Negative y-direction"
+    ],
+    "answer": "Positive x-direction"
+  },
+  {
+    "question": "The ratio of velocities of sound in two different gases at the same temperature depends on:",
+    "options": [
+      "Their pressures",
+      "Their molecular weights and adiabatic constants",
+      "Their amplitudes",
+      "Their frequencies"
+    ],
+    "answer": "Their molecular weights and adiabatic constants"
+  },
+  {
+    "question": "In a stationary wave, the phase difference between two points within the same loop is:",
+    "options": [
+      "0",
+      "$\\pi/2$",
+      "$\\pi$",
+      "Variable"
+    ],
+    "answer": "0"
+  },
+  {
+    "question": "In a stationary wave, the phase difference between two points in adjacent loops is:",
+    "options": [
+      "0",
+      "$\\pi/2$",
+      "$\\pi$",
+      "$2\\pi$"
+    ],
+    "answer": "$\\pi$"
+  },
+  {
+    "question": "Shock waves are produced when the speed of a source is:",
+    "options": [
+      "Zero",
+      "Equal to the speed of sound",
+      "Greater than the speed of sound",
+      "Less than the speed of sound"
+    ],
+    "answer": "Greater than the speed of sound"
+  },
+  {
+    "question": "The end correction in an organ pipe is due to:",
+    "options": [
+      "The finite diameter of the pipe",
+      "The length of the pipe",
+      "The frequency of sound",
+      "The material of the pipe"
+    ],
+    "answer": "The finite diameter of the pipe"
+  },
+  {
+    "question": "When sound travels from air to water, which of the following increases?",
+    "options": [
+      "Frequency",
+      "Wavelength",
+      "Time period",
+      "All of these"
+    ],
+    "answer": "Wavelength"
+  },
+  {
+    "question": "Two waves having the same amplitude and frequency but a phase difference of $\\pi$ interfere. The resultant amplitude is:",
+    "options": [
+      "Double the original",
+      "Zero",
+      "Same as the original",
+      "Square of the original"
+    ],
+    "answer": "Zero"
+  },
+  {
+    "question": "Sonometer is used to verify the laws of:",
+    "options": [
+      "Vibrating strings",
+      "Organ pipes",
+      "Reflection of sound",
+      "Doppler effect"
+    ],
+    "answer": "Vibrating strings"
+  },
+  {
+    "question": "The pitch of a musical note is determined by its:",
+    "options": [
+      "Amplitude",
+      "Frequency",
+      "Velocity",
+      "Intensity"
+    ],
+    "answer": "Frequency"
+  },
+  {
+    "question": "Which of the following is NOT a property of longitudinal waves?",
+    "options": [
+      "Reflection",
+      "Refraction",
+      "Polarization",
+      "Interference"
+    ],
+    "answer": "Polarization"
+  },
+  {
+    "question": "The intensity of a wave at a point is defined as:",
+    "options": [
+      "Energy per unit area",
+      "Energy per unit time per unit area",
+      "Power per unit volume",
+      "Force per unit area"
+    ],
+    "answer": "Energy per unit time per unit area"
+  },
+  {
+    "question": "In an open organ pipe, antinodes are formed at:",
+    "options": [
+      "Both ends",
+      "The middle only",
+      "One end only",
+      "Nowhere"
+    ],
+    "answer": "Both ends"
+  },
+  {
+    "question": "The fundamental mode of vibration of a string has how many nodes?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "0"
+    ],
+    "answer": "2"
+  },
+  {
+    "question": "The speed of sound in hydrogen is ____ than the speed of sound in oxygen at the same temperature.",
+    "options": [
+      "Less",
+      "More",
+      "Same",
+      "Zero"
+    ],
+    "answer": "More"
+  },
+  {
+    "question": "Which of the following graphs correctly represents the relation between velocity $v$ and tension $T$ for a string?",
+    "options": [
+      "$v \\propto T$",
+      "$v \\propto \\sqrt{T}$",
+      "$v \\propto 1/T$",
+      "$v \\propto T^2$"
+    ],
+    "answer": "$v \\propto \\sqrt{T}$"
+  },
+  {
+    "question": "What is the relation between wave velocity $v$, frequency $f$, and wavelength $\\lambda$?",
+    "options": [
+      "$v = f/\\lambda$",
+      "$v = f\\lambda$",
+      "$f = v\\lambda$",
+      "$\\lambda = fv$"
+    ],
+    "answer": "$v = f\\lambda$"
+  },
+  {
+    "question": "In a progressive wave, all particles of the medium:",
+    "options": [
+      "Have different amplitudes",
+      "Have the same amplitude",
+      "Do not move",
+      "Move in the same phase always"
+    ],
+    "answer": "Have the same amplitude"
+  },
+  {
+    "question": "The phase difference between two points separated by distance $\\Delta x$ is:",
+    "options": [
+      "$\\frac{2\\pi}{\\lambda} \\Delta x$",
+      "$\\frac{\\lambda}{2\\pi} \\Delta x$",
+      "$2\\pi \\lambda \\Delta x$",
+      "$\\frac{2\\pi}{\\Delta x} \\lambda$"
+    ],
+    "answer": "$\\frac{2\\pi}{\\lambda} \\Delta x$"
+  },
+  {
+    "question": "A tuning fork of frequency $256$ Hz produces $4$ beats/sec with another fork. If the second fork is loaded with wax, the beat frequency decreases. The original frequency of the second fork was:",
+    "options": [
+      "$252$ Hz",
+      "$260$ Hz",
+      "$256$ Hz",
+      "$264$ Hz"
+    ],
+    "answer": "$260$ Hz"
+  },
+  {
+    "question": "The wave equation $y = A \\sin(\\omega t + kx)$ represents a wave traveling in the:",
+    "options": [
+      "Positive x-direction",
+      "Negative x-direction",
+      "Positive y-direction",
+      "Negative y-direction"
+    ],
+    "answer": "Negative x-direction"
+  },
+  {
+    "question": "Ultrasonic waves are those waves which have a frequency:",
+    "options": [
+      "Below $20$ Hz",
+      "Between $20$ Hz and $20,000$ Hz",
+      "Above $20,000$ Hz",
+      "Equal to the speed of light"
+    ],
+    "answer": "Above $20,000$ Hz"
+  },
+  {
+    "question": "The maximum number of beats a human ear can distinguish is approximately:",
+    "options": [
+      "2",
+      "10",
+      "20",
+      "100"
+    ],
+    "answer": "10"
+  },
+  {
+    "question": "When a wave is reflected from a denser medium, it suffers a phase change of:",
+    "options": [
+      "0",
+      "$\\pi/2$",
+      "$\\pi$",
+      "$2\\pi$"
+    ],
+    "answer": "$\\pi$"
+  }
+]

@@ -1,0 +1,602 @@
+[
+  {
+    "question": "Which of the following represents a dynamic equilibrium?",
+    "options": [
+      "The reaction has stopped",
+      "Rate of forward reaction equals rate of backward reaction",
+      "Concentration of reactants equals concentration of products",
+      "Reactants are completely converted to products"
+    ],
+    "answer": "Rate of forward reaction equals rate of backward reaction"
+  },
+  {
+    "question": "For a reversible reaction $A + B \\rightleftharpoons C + D$, the equilibrium constant $K_c$ is:",
+    "options": [
+      "$\\frac{[A][B]}{[C][D]}$",
+      "$\\frac{[C][D]}{[A][B]}$",
+      "$[A][B][C][D]$",
+      "$\\frac{[C]+[D]}{[A]+[B]}$"
+    ],
+    "answer": "$\\frac{[C][D]}{[A][B]}$"
+  },
+  {
+    "question": "The value of equilibrium constant $K$ depends on:",
+    "options": [
+      "Initial concentrations",
+      "Pressure",
+      "Temperature",
+      "Presence of a catalyst"
+    ],
+    "answer": "Temperature"
+  },
+  {
+    "question": "In the reaction $N_2(g) + 3H_2(g) \\rightleftharpoons 2NH_3(g)$, the relationship between $K_p$ and $K_c$ is:",
+    "options": [
+      "$K_p = K_c(RT)^2$",
+      "$K_p = K_c(RT)^{-2}$",
+      "$K_p = K_c(RT)$",
+      "$K_p = K_c$"
+    ],
+    "answer": "$K_p = K_c(RT)^{-2}$"
+  },
+  {
+    "question": "According to Le Chatelier's principle, adding a catalyst to a system at equilibrium will:",
+    "options": [
+      "Shift equilibrium to the right",
+      "Shift equilibrium to the left",
+      "Increase the value of $K$",
+      "Not affect the equilibrium position"
+    ],
+    "answer": "Not affect the equilibrium position"
+  },
+  {
+    "question": "For the endothermic reaction $PCl_5(g) \\rightleftharpoons PCl_3(g) + Cl_2(g)$, increasing the temperature will:",
+    "options": [
+      "Increase the yield of $PCl_5$",
+      "Increase the yield of $PCl_3$",
+      "Decrease the value of $K_c$",
+      "Have no effect"
+    ],
+    "answer": "Increase the yield of $PCl_3$"
+  },
+  {
+    "question": "Increasing the pressure on the equilibrium $2SO_2(g) + O_2(g) \\rightleftharpoons 2SO_3(g)$ will:",
+    "options": [
+      "Shift equilibrium to the right",
+      "Shift equilibrium to the left",
+      "Decrease the yield of $SO_3$",
+      "Increase the value of $K_p$"
+    ],
+    "answer": "Shift equilibrium to the right"
+  },
+  {
+    "question": "A Bronsted-Lowry acid is a substance that:",
+    "options": [
+      "Accepts a proton",
+      "Donates a proton",
+      "Accepts an electron pair",
+      "Donates an electron pair"
+    ],
+    "answer": "Donates a proton"
+  },
+  {
+    "question": "The conjugate base of $H_2SO_4$ is:",
+    "options": [
+      "$SO_4^{2-}$",
+      "$HSO_4^-$",
+      "$H_3SO_4^+$",
+      "$H_2SO_3$"
+    ],
+    "answer": "$HSO_4^-$"
+  },
+  {
+    "question": "Which of the following is a Lewis base?",
+    "options": [
+      "$BF_3$",
+      "$AlCl_3$",
+      "$NH_3$",
+      "$H^+$"
+    ],
+    "answer": "$NH_3$"
+  },
+  {
+    "question": "The pH of a $10^{-8} M HCl$ solution is:",
+    "options": [
+      "$8$",
+      "$6$",
+      "Between 6 and 7",
+      "$7$"
+    ],
+    "answer": "Between 6 and 7"
+  },
+  {
+    "question": "For a sparingly soluble salt $AB_2$, the solubility product $K_{sp}$ in terms of solubility $s$ is:",
+    "options": [
+      "$s^2$",
+      "$4s^3$",
+      "$2s^2$",
+      "$s^3$"
+    ],
+    "answer": "$4s^3$"
+  },
+  {
+    "question": "Which of the following acts as a buffer solution?",
+    "options": [
+      "$CH_3COOH + CH_3COONa$",
+      "$HCl + NaCl$",
+      "$NaOH + NaCl$",
+      "$HNO_3 + NH_4NO_3$"
+    ],
+    "answer": "$CH_3COOH + CH_3COONa$"
+  },
+  {
+    "question": "The ionic product of water ($K_w$) at $25^\\circ C$ is:",
+    "options": [
+      "$10^{-7}$",
+      "$10^{-14}$",
+      "$10^{14}$",
+      "$10^{-10}$"
+    ],
+    "answer": "$10^{-14}$"
+  },
+  {
+    "question": "Degree of ionization of a weak electrolyte increases with:",
+    "options": [
+      "Increase in concentration",
+      "Decrease in temperature",
+      "Dilution",
+      "Decrease in pressure"
+    ],
+    "answer": "Dilution"
+  },
+  {
+    "question": "Ostwald's dilution law is applicable to:",
+    "options": [
+      "Strong electrolytes",
+      "Weak electrolytes",
+      "Non-electrolytes",
+      "All electrolytes"
+    ],
+    "answer": "Weak electrolytes"
+  },
+  {
+    "question": "In the reaction $CO(g) + H_2O(g) \\rightleftharpoons CO_2(g) + H_2(g)$, the effect of adding an inert gas at constant volume is:",
+    "options": [
+      "Shift to right",
+      "Shift to left",
+      "No effect",
+      "Change in $K_p$"
+    ],
+    "answer": "No effect"
+  },
+  {
+    "question": "For which of the following reactions is $K_p = K_c$?",
+    "options": [
+      "$PCl_5 \\rightleftharpoons PCl_3 + Cl_2$",
+      "$2HI \\rightleftharpoons H_2 + I_2$",
+      "$2SO_2 + O_2 \\rightleftharpoons 2SO_3$",
+      "$N_2 + 3H_2 \\rightleftharpoons 2NH_3$"
+    ],
+    "answer": "$2HI \\rightleftharpoons H_2 + I_2$"
+  },
+  {
+    "question": "The pH of an aqueous solution of $NH_4Cl$ is:",
+    "options": [
+      "$7$",
+      "$> 7$",
+      "$< 7$",
+      "$0$"
+    ],
+    "answer": "$< 7$"
+  },
+  {
+    "question": "The conjugate acid of $NH_3$ is:",
+    "options": [
+      "$NH_2^-$",
+      "$NH_4^+$",
+      "$NH_2$",
+      "$NH_4$"
+    ],
+    "answer": "$NH_4^+$"
+  },
+  {
+    "question": "Which of the following is an amphoteric species?",
+    "options": [
+      "$HCO_3^-$",
+      "$CO_3^{2-}$",
+      "$Cl^-$",
+      "$H_3O^+$"
+    ],
+    "answer": "$HCO_3^-$"
+  },
+  {
+    "question": "If the reaction quotient $Q < K$, the reaction will:",
+    "options": [
+      "Proceed in the forward direction",
+      "Proceed in the backward direction",
+      "Remain at equilibrium",
+      "Stop"
+    ],
+    "answer": "Proceed in the forward direction"
+  },
+  {
+    "question": "The solubility of $AgCl$ will be minimum in:",
+    "options": [
+      "Pure water",
+      "$0.1 M AgNO_3$",
+      "$0.1 M NaCl$",
+      "$0.1 M CaCl_2$"
+    ],
+    "answer": "$0.1 M CaCl_2$"
+  },
+  {
+    "question": "A salt of strong acid and weak base undergoes:",
+    "options": [
+      "Anionic hydrolysis",
+      "Cationic hydrolysis",
+      "Both anionic and cationic hydrolysis",
+      "No hydrolysis"
+    ],
+    "answer": "Cationic hydrolysis"
+  },
+  {
+    "question": "The pH of a solution can be kept constant by using a:",
+    "options": [
+      "Strong acid",
+      "Strong base",
+      "Buffer",
+      "Saturated salt solution"
+    ],
+    "answer": "Buffer"
+  },
+  {
+    "question": "According to Lewis concept, $BF_3$ is an acid because it:",
+    "options": [
+      "Accepts a proton",
+      "Donates a proton",
+      "Accepts an electron pair",
+      "Donates an electron pair"
+    ],
+    "answer": "Accepts an electron pair"
+  },
+  {
+    "question": "The pKa of a weak acid is 4.74. The pH of its solution when half neutralized is:",
+    "options": [
+      "$4.74$",
+      "$9.26$",
+      "$7.00$",
+      "$2.37$"
+    ],
+    "answer": "$4.74$"
+  },
+  {
+    "question": "Which of the following is not a characteristic of equilibrium state?",
+    "options": [
+      "It can be approached from either side",
+      "It is dynamic in nature",
+      "Catalyst changes the equilibrium constant",
+      "Measurable properties become constant"
+    ],
+    "answer": "Catalyst changes the equilibrium constant"
+  },
+  {
+    "question": "In the equilibrium $I_2(s) \\rightleftharpoons I_2(g)$, $\\Delta H$ is positive. High pressure will:",
+    "options": [
+      "Favor sublimation",
+      "Favor deposition",
+      "Not affect equilibrium",
+      "Increase $K_p$"
+    ],
+    "answer": "Favor deposition"
+  },
+  {
+    "question": "Human blood pH is maintained around 7.4 by the buffer system:",
+    "options": [
+      "$H_2CO_3 / HCO_3^-$",
+      "$CH_3COOH / CH_3COO^-$",
+      "$NH_4OH / NH_4Cl$",
+      "$HCl / NaCl$"
+    ],
+    "answer": "$H_2CO_3 / HCO_3^-$"
+  },
+  {
+    "question": "The solubility product of $Al(OH)_3$ is given by:",
+    "options": [
+      "$K_{sp} = [Al^{3+}][OH^-]^3$",
+      "$K_{sp} = [Al^{3+}]^3[OH^-]$",
+      "$K_{sp} = [Al^{3+}][OH^-]$",
+      "$K_{sp} = [Al^{3+}]^3[OH^-]^3$"
+    ],
+    "answer": "$K_{sp} = [Al^{3+}][OH^-]^3$"
+  },
+  {
+    "question": "Hydrolysis of $CH_3COONa$ results in a solution with pH:",
+    "options": [
+      "$7$",
+      "$< 7$",
+      "$> 7$",
+      "$1$"
+    ],
+    "answer": "$> 7$"
+  },
+  {
+    "question": "Which factor will not shift the equilibrium $H_2(g) + I_2(g) \\rightleftharpoons 2HI(g)$?",
+    "options": [
+      "Adding $H_2$",
+      "Removing $HI$",
+      "Increasing pressure",
+      "Changing temperature"
+    ],
+    "answer": "Increasing pressure"
+  },
+  {
+    "question": "For a saturated solution of a salt, the condition is:",
+    "options": [
+      "$Q < K_{sp}$",
+      "$Q > K_{sp}$",
+      "$Q = K_{sp}$",
+      "$Q = 0$"
+    ],
+    "answer": "$Q = K_{sp}$"
+  },
+  {
+    "question": "The strength of an acid depends on its:",
+    "options": [
+      "Concentration",
+      "Basicity",
+      "Degree of ionization",
+      "Volume"
+    ],
+    "answer": "Degree of ionization"
+  },
+  {
+    "question": "In the process $H_2O(l) \\rightleftharpoons H_2O(g)$ at $100^\\circ C$ and $1 atm$, $K_p$ is:",
+    "options": [
+      "$1$",
+      "$0$",
+      "$100$",
+      "$\\infty$"
+    ],
+    "answer": "$1$"
+  },
+  {
+    "question": "A solution has $[OH^-] = 10^{-5} M$. Its pH is:",
+    "options": [
+      "$5$",
+      "$9$",
+      "$7$",
+      "$14$"
+    ],
+    "answer": "$9$"
+  },
+  {
+    "question": "Le Chatelier's principle is applicable to:",
+    "options": [
+      "Chemical equilibrium only",
+      "Physical equilibrium only",
+      "Both chemical and physical equilibrium",
+      "Neither chemical nor physical"
+    ],
+    "answer": "Both chemical and physical equilibrium"
+  },
+  {
+    "question": "Which of the following salts will not undergo hydrolysis?",
+    "options": [
+      "$NaCl$",
+      "$CH_3COONa$",
+      "$NH_4Cl$",
+      "$CH_3COONH_4$"
+    ],
+    "answer": "$NaCl$"
+  },
+  {
+    "question": "If $K_c$ for $A \\rightleftharpoons B$ is $K_1$ and for $B \\rightleftharpoons C$ is $K_2$, then $K_c$ for $A \\rightleftharpoons C$ is:",
+    "options": [
+      "$K_1 + K_2$",
+      "$K_1 - K_2$",
+      "$K_1 \\times K_2$",
+      "$K_1 / K_2$"
+    ],
+    "answer": "$K_1 \\times K_2$"
+  },
+  {
+    "question": "The pH of a neutral solution at $60^\\circ C$ (where $K_w > 10^{-14}$) will be:",
+    "options": [
+      "$7$",
+      "$> 7$",
+      "$< 7$",
+      "$14$"
+    ],
+    "answer": "$< 7$"
+  },
+  {
+    "question": "Common ion effect leads to:",
+    "options": [
+      "Increase in solubility",
+      "Decrease in solubility",
+      "No change in solubility",
+      "Complete precipitation"
+    ],
+    "answer": "Decrease in solubility"
+  },
+  {
+    "question": "In the reaction $2A + B \\rightleftharpoons C + 3D$, if concentration of $A$ is doubled, the rate of forward reaction becomes:",
+    "options": [
+      "Double",
+      "Four times",
+      "Half",
+      "Remains same"
+    ],
+    "answer": "Four times"
+  },
+  {
+    "question": "The indicator used in the titration of strong acid and weak base is:",
+    "options": [
+      "Phenolphthalein",
+      "Methyl orange",
+      "Starch",
+      "Potassium chromate"
+    ],
+    "answer": "Methyl orange"
+  },
+  {
+    "question": "The acid strength of $HF, HCl, HBr, HI$ increases in the order:",
+    "options": [
+      "$HF < HCl < HBr < HI$",
+      "$HI < HBr < HCl < HF$",
+      "$HCl < HF < HBr < HI$",
+      "$HF < HBr < HCl < HI$"
+    ],
+    "answer": "$HF < HCl < HBr < HI$"
+  },
+  {
+    "question": "For a reaction $N_2O_4(g) \\rightleftharpoons 2NO_2(g)$, the degree of dissociation $\\alpha$ increases with:",
+    "options": [
+      "Increase in pressure",
+      "Decrease in pressure",
+      "Decrease in temperature",
+      "Adding $NO_2$"
+    ],
+    "answer": "Decrease in pressure"
+  },
+  {
+    "question": "Which of the following is a polyprotic acid?",
+    "options": [
+      "$HCl$",
+      "$CH_3COOH$",
+      "$H_3PO_4$",
+      "$HNO_3$"
+    ],
+    "answer": "$H_3PO_4$"
+  },
+  {
+    "question": "The relationship between $pH$ and $pOH$ is:",
+    "options": [
+      "$pH + pOH = 14$",
+      "$pH \\times pOH = 14$",
+      "$pH - pOH = 14$",
+      "$pH / pOH = 14$"
+    ],
+    "answer": "$pH + pOH = 14$"
+  },
+  {
+    "question": "An example of a basic buffer is:",
+    "options": [
+      "$CH_3COOH + CH_3COONa$",
+      "$NH_4OH + NH_4Cl$",
+      "$HCl + NaCl$",
+      "$NaOH + CH_3COONa$"
+    ],
+    "answer": "$NH_4OH + NH_4Cl$"
+  },
+  {
+    "question": "The catalyst in a reversible reaction:",
+    "options": [
+      "Decreases activation energy of forward reaction only",
+      "Decreases activation energy of both forward and backward reactions",
+      "Shifts equilibrium to products",
+      "Increases equilibrium constant"
+    ],
+    "answer": "Decreases activation energy of both forward and backward reactions"
+  },
+  {
+    "question": "For a system at equilibrium, the Gibbs free energy change ($\\Delta G$) is:",
+    "options": [
+      "Maximum",
+      "Minimum",
+      "Zero",
+      "Negative"
+    ],
+    "answer": "Zero"
+  },
+  {
+    "question": "The pH of $0.1 M NaOH$ is:",
+    "options": [
+      "$1$",
+      "$13$",
+      "$7$",
+      "$14$"
+    ],
+    "answer": "$13$"
+  },
+  {
+    "question": "Which of the following will not change the pH when added to water?",
+    "options": [
+      "$NH_4Cl$",
+      "$CH_3COONa$",
+      "$K_2SO_4$",
+      "$Na_2CO_3$"
+    ],
+    "answer": "$K_2SO_4$"
+  },
+  {
+    "question": "The solubility of a salt $A_2B_3$ is $s$. Its $K_{sp}$ is:",
+    "options": [
+      "$6s^5$",
+      "$108s^5$",
+      "$36s^5$",
+      "$s^5$"
+    ],
+    "answer": "$108s^5$"
+  },
+  {
+    "question": "If $K_c$ is very large ($> 10^3$), it indicates that:",
+    "options": [
+      "Reaction hardly proceeds",
+      "Reaction proceeds almost to completion",
+      "Reactants and products are in equal amount",
+      "Reaction is at equilibrium"
+    ],
+    "answer": "Reaction proceeds almost to completion"
+  },
+  {
+    "question": "The conjugate base of $H_2O$ is:",
+    "options": [
+      "$H_3O^+$",
+      "$OH^-$",
+      "$O^{2-}$",
+      "$H_2$"
+    ],
+    "answer": "$OH^-$"
+  },
+  {
+    "question": "Which of the following is not a Lewis acid?",
+    "options": [
+      "$AlCl_3$",
+      "$BF_3$",
+      "$FeCl_3$",
+      "$C_2H_4$"
+    ],
+    "answer": "$C_2H_4$"
+  },
+  {
+    "question": "The buffer capacity is maximum when:",
+    "options": [
+      "$[Salt] = [Acid]$",
+      "$[Salt] > [Acid]$",
+      "$[Salt] < [Acid]$",
+      "$[Acid] = 0$"
+    ],
+    "answer": "$[Salt] = [Acid]$"
+  },
+  {
+    "question": "Addition of $H^+$ ions to a saturated solution of $AgCl$ will:",
+    "options": [
+      "Increase solubility",
+      "Decrease solubility",
+      "Have no effect",
+      "Cause precipitation"
+    ],
+    "answer": "Have no effect"
+  },
+  {
+    "question": "The pH of a solution is 3. Its $[H^+]$ is:",
+    "options": [
+      "$10^{-3} M$",
+      "$10^3 M$",
+      "$3 M$",
+      "$0.3 M$"
+    ],
+    "answer": "$10^{-3} M$"
+  }
+]

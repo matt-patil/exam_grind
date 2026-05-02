@@ -51,27 +51,57 @@ class _MCQChallengeScreenState extends State<MCQChallengeScreen> {
   Future<void> _loadQuestions() async {
     try {
       final String exam = widget.initialConfig?['exam'] ?? 'JEE';
-      final List<String> subjects = List<String>.from(widget.initialConfig?['subjects'] ?? ['Maths']);
+      final String className = widget.initialConfig?['class'] ?? '11th';
+      final Map<String, dynamic>? chaptersConfig = widget.initialConfig?['chapters'];
       
-      // Map subjects to file paths. Currently only JEE Maths is provided.
-      // Defaulting to JEE Maths for any selection for now.
-      String filePath = 'assets/MCQ datasets/JEE/Math/main2025-jan.jsonl';
-      
-      if (exam == 'JEE' && subjects.contains('Maths')) {
-        filePath = 'assets/MCQ datasets/JEE/Math/main2025-jan.jsonl';
+      List<Map<String, dynamic>> loadedQuestions = [];
+
+      if (chaptersConfig != null && chaptersConfig.isNotEmpty) {
+        for (var entry in chaptersConfig.entries) {
+          String subject = entry.key;
+          // Normalize Math/Maths
+          if (subject == 'Maths') subject = 'Math';
+          
+          final List<dynamic> chapters = entry.value is List ? entry.value : [];
+          
+          for (var chapter in chapters) {
+            final String filePath = 'assets/MCQ datasets/$exam/$className/$subject/$chapter/conceptual.json';
+            try {
+              final String content = await rootBundle.loadString(filePath);
+              final List<dynamic> data = jsonDecode(content);
+              for (var item in data) {
+                loadedQuestions.add(Map<String, dynamic>.from(item));
+              }
+            } catch (e) {
+              debugPrint('Error loading file $filePath: $e');
+            }
+          }
+        }
       }
 
-      final String content = await rootBundle.loadString(filePath);
-      final List<String> lines = content.split('\n');
-      
-      final List<Map<String, dynamic>> loadedQuestions = [];
-      for (var line in lines) {
-        if (line.trim().isNotEmpty) {
-          try {
-            loadedQuestions.add(jsonDecode(line));
-          } catch (e) {
-            debugPrint('Error decoding line: $e');
+      // Fallback for older config or 'Random'
+      if (loadedQuestions.isEmpty) {
+        final List<dynamic>? subjectsRaw = widget.initialConfig?['subjects'];
+        final List<String> subjects = subjectsRaw != null ? List<String>.from(subjectsRaw) : ['Math'];
+        
+        // If it's a test or no chapters selected, try to load at least one available dataset
+        String defaultPath = 'assets/MCQ datasets/JEE/11th/Math/Sets/conceptual.json';
+        if (subjects.contains('Physics')) {
+          defaultPath = 'assets/MCQ datasets/JEE/11th/Physics/Units and Dimensions/conceptual.json';
+        } else if (subjects.contains('Chemistry')) {
+          defaultPath = 'assets/MCQ datasets/JEE/11th/Chemistry/Mole Concept/conceptual.json';
+        } else if (subjects.contains('Math') || subjects.contains('Maths')) {
+          defaultPath = 'assets/MCQ datasets/JEE/11th/Math/Sets/conceptual.json';
+        }
+        
+        try {
+          final String content = await rootBundle.loadString(defaultPath);
+          final List<dynamic> data = jsonDecode(content);
+          for (var item in data) {
+            loadedQuestions.add(Map<String, dynamic>.from(item));
           }
+        } catch (e) {
+          debugPrint('Error loading default file: $e');
         }
       }
 
@@ -93,7 +123,13 @@ class _MCQChallengeScreenState extends State<MCQChallengeScreen> {
   }
 
   void _nextQuestion() {
-    if (_allQuestions.isEmpty) return;
+    if (_allQuestions.isEmpty) {
+      setState(() {
+        _currentQuestion = null;
+        _isLoading = false;
+      });
+      return;
+    }
     
     setState(() {
       _currentQuestion = _allQuestions[_random.nextInt(_allQuestions.length)];
@@ -136,8 +172,9 @@ class _MCQChallengeScreenState extends State<MCQChallengeScreen> {
   void _checkAnswer(int index) {
     if (_isAnswered) return;
 
-    final correctIndices = List<int>.from(_currentQuestion?['correct_options'] ?? []);
-    bool correct = correctIndices.contains(index);
+    final String correctAnswer = _currentQuestion?['answer'] ?? '';
+    final String selectedAnswer = (_currentQuestion?['options'] as List)[index];
+    bool correct = selectedAnswer == correctAnswer;
 
     setState(() {
       _selectedOptionIndex = index;
@@ -177,7 +214,7 @@ class _MCQChallengeScreenState extends State<MCQChallengeScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text('Failed to load questions', style: TextStyle(color: Colors.white)),
+              const Text('No questions found for selection', style: TextStyle(color: Colors.white)),
               const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () => Navigator.pop(context, false),
@@ -240,9 +277,8 @@ class _MCQChallengeScreenState extends State<MCQChallengeScreen> {
                     const SizedBox(height: 40),
 
                     // Options
-                    ...?((_currentQuestion!['options'] as List?)?.map((optionText) {
-                      int index = (_currentQuestion!['options'] as List).indexOf(optionText);
-                      return _buildOption(index);
+                    ...?((_currentQuestion!['options'] as List?)?.asMap().entries.map((entry) {
+                      return _buildOption(entry.key);
                     })),
                   ],
                 ),
@@ -263,8 +299,8 @@ class _MCQChallengeScreenState extends State<MCQChallengeScreen> {
     Widget? trailing;
 
     if (_isAnswered) {
-      final correctIndices = List<int>.from(_currentQuestion!['correct_options'] ?? []);
-      bool isCorrectOption = correctIndices.contains(index);
+      final String correctAnswer = _currentQuestion!['answer'] ?? '';
+      bool isCorrectOption = optionText == correctAnswer;
       
       if (isCorrectOption) {
         borderColor = Colors.green;
@@ -328,69 +364,80 @@ class LatexText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // This regex looks for \( ... \) or $ ... $ or $$ ... $$
-    // The dataset uses \\( and \\) (escaped in JSON)
-    final List<InlineSpan> spans = [];
-    final regex = RegExp(r'\\\(|\\\)|(?<!\\)\$|\$\$');
-    
-    int lastIndex = 0;
-    bool isMath = false;
-    
-    final matches = regex.allMatches(text);
-    
-    if (matches.isEmpty) {
-      return Text(
-        text,
-        style: TextStyle(color: color, fontSize: fontSize),
-      );
-    }
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        // This regex looks for \( ... \) or $ ... $ or $$ ... $$
+        // The dataset uses \\( and \\) (escaped in JSON)
+        final List<InlineSpan> spans = [];
+        final regex = RegExp(r'\\\(|\\\)|(?<!\\)\$|\$\$');
+        
+        int lastIndex = 0;
+        bool isMath = false;
+        
+        final matches = regex.allMatches(text);
+        
+        if (matches.isEmpty) {
+          return Text(
+            text,
+            style: TextStyle(color: color, fontSize: fontSize),
+          );
+        }
 
-    for (final match in matches) {
-      if (match.start > lastIndex) {
-        final plainText = text.substring(lastIndex, match.start);
-        if (isMath) {
-          spans.add(WidgetSpan(
-            alignment: PlaceholderAlignment.middle,
-            child: Math.tex(
-              _cleanTex(plainText),
-              textStyle: TextStyle(color: color, fontSize: fontSize),
-              onErrorFallback: (err) => Text(
-                plainText,
-                style: TextStyle(color: Colors.red, fontSize: fontSize),
-              ),
-            ),
-          ));
-        } else {
+        for (final match in matches) {
+          if (match.start > lastIndex) {
+            final content = text.substring(lastIndex, match.start);
+            if (isMath) {
+              spans.add(WidgetSpan(
+                alignment: PlaceholderAlignment.middle,
+                child: ConstrainedBox(
+                  constraints: BoxConstraints(maxWidth: constraints.maxWidth),
+                  child: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    alignment: Alignment.centerLeft,
+                    child: Math.tex(
+                      _cleanTex(content),
+                      textStyle: TextStyle(color: color, fontSize: fontSize),
+                      onErrorFallback: (err) => Text(
+                        content,
+                        style: TextStyle(color: Colors.red, fontSize: fontSize),
+                      ),
+                    ),
+                  ),
+                ),
+              ));
+            } else {
+              spans.add(TextSpan(
+                text: content,
+                style: TextStyle(color: color, fontSize: fontSize),
+              ));
+            }
+          }
+          
+          // Toggle isMath when we hit a delimiter
+          final delimiter = match.group(0);
+          if (delimiter == r'\(') {
+            isMath = true;
+          } else if (delimiter == r'\)') {
+            isMath = false;
+          } else {
+            isMath = !isMath;
+          }
+          
+          lastIndex = match.end;
+        }
+
+        if (lastIndex < text.length) {
+          final remainingText = text.substring(lastIndex);
           spans.add(TextSpan(
-            text: plainText,
+            text: remainingText,
             style: TextStyle(color: color, fontSize: fontSize),
           ));
         }
-      }
-      
-      // Toggle isMath when we hit a delimiter
-      final delimiter = match.group(0);
-      if (delimiter == r'\(') {
-        isMath = true;
-      } else if (delimiter == r'\)') {
-        isMath = false;
-      } else {
-        isMath = !isMath;
-      }
-      
-      lastIndex = match.end;
-    }
 
-    if (lastIndex < text.length) {
-      final remainingText = text.substring(lastIndex);
-      spans.add(TextSpan(
-        text: remainingText,
-        style: TextStyle(color: color, fontSize: fontSize),
-      ));
-    }
-
-    return RichText(
-      text: TextSpan(children: spans),
+        return RichText(
+          text: TextSpan(children: spans),
+        );
+      }
     );
   }
 
