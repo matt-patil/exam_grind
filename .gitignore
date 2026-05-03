@@ -33,3 +33,7 @@ android/kotlin/errors/
 
 # windows generated flutter files
 windows/flutter/generated_*
+
+#assets folder
+assets/
+
