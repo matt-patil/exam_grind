@@ -69,7 +69,20 @@ class _MCQMissionScreenState extends State<MCQMissionScreen> {
       'The Living World',
       'Biological Classification',
       'Plant Kingdom',
-      'Animal Kingdom'
+      'Animal Kingdom',
+      'Anatomy of Flowering Plants',
+      'Biomolecules',
+      'Body Fluids and Circulation',
+      'Breathing and Exchange of Gases',
+      'Cell Cycle and Cell Division',
+      'Cell The Unit of Life',
+      'Excretory Products and their Elimination',
+      'Locomotion and Movement',
+      'Neural Control and Coordination',
+      'Photosynthesis in Higher Plants',
+      'Plant Growth and Development',
+      'Respiration in Plants',
+      'Structural Organisation in Animals'
     ],
   };
 

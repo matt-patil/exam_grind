@@ -97,6 +97,23 @@ flutter:
     - assets/MCQ datasets/JEE/11th/Chemistry/The s-Block Elements/
     - assets/MCQ datasets/JEE/11th/Chemistry/The p-Block Elements/
     - assets/MCQ datasets/JEE/11th/Chemistry/Organic Chemistry – Basics/
+    - assets/MCQ datasets/NEET/11th/Biology/Anatomy of Flowering Plants/
+    - assets/MCQ datasets/NEET/11th/Biology/Animal Kingdom/
+    - assets/MCQ datasets/NEET/11th/Biology/Biological Classification/
+    - assets/MCQ datasets/NEET/11th/Biology/Biomolecules/
+    - assets/MCQ datasets/NEET/11th/Biology/Body Fluids and Circulation/
+    - assets/MCQ datasets/NEET/11th/Biology/Breathing and Exchange of Gases/
+    - assets/MCQ datasets/NEET/11th/Biology/Cell Cycle and Cell Division/
+    - assets/MCQ datasets/NEET/11th/Biology/Cell The Unit of Life/
+    - assets/MCQ datasets/NEET/11th/Biology/Excretory Products and their Elimination/
+    - assets/MCQ datasets/NEET/11th/Biology/Locomotion and Movement/
+    - assets/MCQ datasets/NEET/11th/Biology/Neural Control and Coordination/
+    - assets/MCQ datasets/NEET/11th/Biology/Photosynthesis in Higher Plants/
+    - assets/MCQ datasets/NEET/11th/Biology/Plant Growth and Development/
+    - assets/MCQ datasets/NEET/11th/Biology/Plant Kingdom/
+    - assets/MCQ datasets/NEET/11th/Biology/Respiration in Plants/
+    - assets/MCQ datasets/NEET/11th/Biology/Structural Organisation in Animals/
+    - assets/MCQ datasets/NEET/11th/Biology/The Living World/
 
   # To add assets to your application, add an assets section, like this:
   # assets:

@@ -62,10 +62,16 @@ class _MCQChallengeScreenState extends State<MCQChallengeScreen> {
           // Normalize Math/Maths
           if (subject == 'Maths') subject = 'Math';
           
+          // Both JEE and NEET 11th class share the same datasets for Physics and Chemistry
+          String pathExam = exam;
+          if (exam == 'NEET' && className == '11th' && (subject == 'Physics' || subject == 'Chemistry')) {
+            pathExam = 'JEE';
+          }
+          
           final List<dynamic> chapters = entry.value is List ? entry.value : [];
           
           for (var chapter in chapters) {
-            final String filePath = 'assets/MCQ datasets/$exam/$className/$subject/$chapter/conceptual.json';
+            final String filePath = 'assets/MCQ datasets/$pathExam/$className/$subject/$chapter/conceptual.json';
             try {
               final String content = await rootBundle.loadString(filePath);
               final List<dynamic> data = jsonDecode(content);
@@ -90,6 +96,8 @@ class _MCQChallengeScreenState extends State<MCQChallengeScreen> {
           defaultPath = 'assets/MCQ datasets/JEE/11th/Physics/Units and Dimensions/conceptual.json';
         } else if (subjects.contains('Chemistry')) {
           defaultPath = 'assets/MCQ datasets/JEE/11th/Chemistry/Mole Concept/conceptual.json';
+        } else if (subjects.contains('Biology')) {
+          defaultPath = 'assets/MCQ datasets/NEET/11th/Biology/The Living World/conceptual.json';
         } else if (subjects.contains('Math') || subjects.contains('Maths')) {
           defaultPath = 'assets/MCQ datasets/JEE/11th/Math/Sets/conceptual.json';
         }
