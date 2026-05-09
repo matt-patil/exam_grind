@@ -16,11 +16,17 @@ object NativeAlarmManager {
         }
         val requestCode = id.hashCode()
         
+        val flags = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+        } else {
+            PendingIntent.FLAG_UPDATE_CURRENT
+        }
+        
         val pendingIntent = PendingIntent.getBroadcast(
             context,
             requestCode,
             intent,
-            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+            flags
         )
         
         val showIntent = Intent(context, MainActivity::class.java)
@@ -28,7 +34,7 @@ object NativeAlarmManager {
             context,
             requestCode,
             showIntent,
-            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+            flags
         )
 
         val alarmClockInfo = AlarmManager.AlarmClockInfo(timeInMillis, showPendingIntent)
@@ -38,11 +44,18 @@ object NativeAlarmManager {
     fun cancelAlarm(context: Context, id: String) {
         val alarmManager = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
         val intent = Intent(context, AlarmReceiver::class.java)
+        
+        val flags = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+        } else {
+            PendingIntent.FLAG_UPDATE_CURRENT
+        }
+
         val pendingIntent = PendingIntent.getBroadcast(
             context,
             id.hashCode(),
             intent,
-            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+            flags
         )
         alarmManager.cancel(pendingIntent)
     }

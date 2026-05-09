@@ -39,7 +39,9 @@ dependencies:
   shared_preferences: ^2.5.4
   permission_handler: ^11.3.1
   sensors_plus: ^5.0.1
+  device_info_plus: ^10.1.0
   flutter_math_fork: ^0.7.1
+  url_launcher: ^6.3.0
 
 dev_dependencies:
   flutter_test:
