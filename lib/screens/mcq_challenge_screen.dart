@@ -31,7 +31,7 @@ class _MCQChallengeScreenState extends State<MCQChallengeScreen> {
   // Timer for active mission
   Timer? _timer;
   double _timerProgress = 1.0;
-  final int _totalSeconds = 60; // 60 seconds for MCQ
+  final int _totalSeconds = 40; // 40 seconds for MCQ
 
   final Random _random = Random();
 

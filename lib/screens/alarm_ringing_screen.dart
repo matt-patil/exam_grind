@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
 import 'package:just_audio/just_audio.dart';
 import '../models/alarm_model.dart';
@@ -25,6 +26,8 @@ class _AlarmRingingScreenState extends State<AlarmRingingScreen> {
   @override
   void initState() {
     super.initState();
+    // Hide navigation buttons and status bar, swipe to reveal
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
     _audioPlayer = AudioPlayer();
     if (widget.isTest) {
       _playAlarmSound();
@@ -45,6 +48,8 @@ class _AlarmRingingScreenState extends State<AlarmRingingScreen> {
 
   @override
   void dispose() {
+    // Revert back to normal edge-to-edge UI
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
     _audioPlayer.dispose();
     super.dispose();
   }
