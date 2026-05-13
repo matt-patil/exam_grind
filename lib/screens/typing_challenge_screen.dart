@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'phrase_selection_screen.dart';
+import 'emergency_escape_screen.dart';
 
 class TypingChallengeScreen extends StatefulWidget {
   final Map<String, dynamic>? initialConfig;
@@ -142,7 +143,20 @@ class _TypingChallengeScreenState extends State<TypingChallengeScreen> {
                     '${_currentPhraseIndex + 1} / ${_selectedPhrases.length}',
                     style: const TextStyle(color: Colors.grey, fontSize: 18, fontWeight: FontWeight.bold),
                   ),
-                  const Icon(Icons.volume_off, color: Colors.grey, size: 24),
+                  IconButton(
+                    icon: const Icon(Icons.emergency_share, color: Colors.redAccent, size: 28),
+                    padding: EdgeInsets.zero,
+                    constraints: const BoxConstraints(),
+                    onPressed: () async {
+                      final result = await Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const EmergencyEscapeScreen()),
+                      );
+                      if (result == true && mounted) {
+                        Navigator.pop(context, true);
+                      }
+                    },
+                  ),
                 ],
               ),
             ),

@@ -4,6 +4,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
+import 'emergency_escape_screen.dart';
 
 class MCQChallengeScreen extends StatefulWidget {
   final Map<String, dynamic>? initialConfig;
@@ -266,7 +267,20 @@ class _MCQChallengeScreenState extends State<MCQChallengeScreen> {
                     '$_currentCorrectCount / $_targetCorrectCount',
                     style: const TextStyle(color: Colors.grey, fontSize: 18, fontWeight: FontWeight.bold),
                   ),
-                  const Icon(Icons.volume_off, color: Colors.grey, size: 24),
+                  IconButton(
+                    icon: const Icon(Icons.emergency_share, color: Colors.redAccent, size: 28),
+                    padding: EdgeInsets.zero,
+                    constraints: const BoxConstraints(),
+                    onPressed: () async {
+                      final result = await Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const EmergencyEscapeScreen()),
+                      );
+                      if (result == true && mounted) {
+                        Navigator.pop(context, true);
+                      }
+                    },
+                  ),
                 ],
               ),
             ),
