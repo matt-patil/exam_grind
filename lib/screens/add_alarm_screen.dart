@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/services.dart';
 import 'package:just_audio/just_audio.dart';
 import '../models/alarm_model.dart';
 import 'sound_selection_screen.dart';
@@ -15,6 +16,8 @@ class AddAlarmScreen extends StatefulWidget {
 }
 
 class _AddAlarmScreenState extends State<AddAlarmScreen> {
+  static const MethodChannel _channel = MethodChannel('com.example.exam_grind/alarm');
+  
   late TimeOfDay selectedTime;
   late String alarmName;
   late bool isOneTime;
@@ -23,6 +26,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
   final AudioPlayer _audioPlayer = AudioPlayer();
   double _volume = 0.8;
   Map<String, dynamic>? selectedMission;
+  bool _isPlaying = false;
   
   // Controllers
   late final TextEditingController _nameController;
@@ -30,6 +34,14 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
   @override
   void initState() {
     super.initState();
+
+    _audioPlayer.playerStateStream.listen((state) {
+      if (mounted) {
+        setState(() {
+          _isPlaying = state.playing && state.processingState != ProcessingState.completed;
+        });
+      }
+    });
 
     if (widget.alarm != null) {
       selectedTime = widget.alarm!.time;
@@ -56,14 +68,22 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
     super.dispose();
   }
 
-  Future<void> _playVolumePreview() async {
+  Future<void> _togglePlayPause() async {
     try {
-      await _audioPlayer.stop();
-      await _audioPlayer.setVolume(_volume);
-      await _audioPlayer.setAsset('assets/$selectedSoundPath');
-      await _audioPlayer.play();
+      if (_isPlaying) {
+        await _audioPlayer.pause();
+      } else {
+        try {
+          await _channel.invokeMethod('setMediaVolume', {'volume': _volume});
+        } catch (e) {
+          debugPrint('Volume error: $e');
+        }
+        await _audioPlayer.setVolume(_volume);
+        await _audioPlayer.setAsset('assets/$selectedSoundPath');
+        await _audioPlayer.play();
+      }
     } catch (e) {
-      debugPrint('Error playing volume preview: $e');
+      debugPrint('Error toggling play/pause: $e');
     }
   }
 
@@ -314,12 +334,15 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
               const SizedBox(height: 10),
               Row(
                 children: [
-                  const Icon(
-                    Icons.access_alarm, 
-                    color: Colors.white, 
-                    size: 30
+                  IconButton(
+                    icon: Icon(
+                      _isPlaying ? Icons.pause : Icons.play_arrow,
+                      color: Colors.white,
+                      size: 30,
+                    ),
+                    onPressed: _togglePlayPause,
                   ),
-                  const SizedBox(width: 15),
+                  const SizedBox(width: 5),
                   // Clickable area for changing the sound
                   Expanded(
                     child: InkWell(
@@ -361,19 +384,24 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                 children: [
                   const Icon(Icons.volume_up, color: Colors.grey, size: 28),
                   Expanded(
-                    child: Slider(
-                      value: _volume,
-                      onChanged: (val) {
-                        setState(() {
-                          _volume = val;
-                        });
-                        _audioPlayer.setVolume(val);
-                      },
-                      onChangeEnd: (val) {
-                        _playVolumePreview();
-                      },
-                      activeColor: Colors.white,
-                      inactiveColor: Colors.grey[800],
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                      child: Slider(
+                        value: _volume,
+                        onChanged: (val) {
+                          setState(() {
+                            _volume = val;
+                          });
+                          _audioPlayer.setVolume(val);
+                          try {
+                            _channel.invokeMethod('setMediaVolume', {'volume': val});
+                          } catch (e) {
+                            debugPrint('Volume error: $e');
+                          }
+                        },
+                        activeColor: Colors.white,
+                        inactiveColor: Colors.grey[800],
+                      ),
                     ),
                   ),
                   const Icon(Icons.vibration, color: Colors.grey, size: 18),
